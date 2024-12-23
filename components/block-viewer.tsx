@@ -85,10 +85,10 @@ function BlockViewerProvider({
       <div
         id={item.name}
         data-view={view}
-        className="group/block-view-wrapper flex min-w-0 flex-col items-stretch gap-4"
+        className="group/block-view-wrapper flex min-w-0 flex-col items-stretch gap-4 mb-4"
         style={
           {
-            "--height": item.meta?.iframeHeight ?? "930px",
+            "--height": item.meta?.iframeHeight ?? "800px",
           } as React.CSSProperties
         }
       >
@@ -106,7 +106,7 @@ function BlockViewerToolbar() {
       <Tabs
         defaultValue="preview"
         onValueChange={(value) => setView(value as "preview" | "code")}
-        className="hidden lg:flex"
+        className=""
       >
         <TabsList className="h-7 items-center rounded-md p-0 px-[calc(theme(spacing.1)_-_2px)] py-[theme(spacing.1)]">
           <TabsTrigger
@@ -129,7 +129,7 @@ function BlockViewerToolbar() {
       >
         {item.description}
       </a>
-      <div className="ml-auto hidden items-center gap-2 md:flex">
+      <div className="ml-auto items-center gap-2 flex">
         <div className="hidden h-7 items-center gap-1.5 rounded-md border p-[2px] shadow-none lg:flex">
           <ToggleGroup
             type="single"
@@ -176,7 +176,22 @@ function BlockViewerToolbar() {
             </Button>
           </ToggleGroup>
         </div>
+      <div className="md:hidden">
+        <Button
+          size="icon"
+          variant="ghost"
+          className="h-[22px] w-[22px] rounded-sm p-0 mt-1"
+          asChild
+          title="Open in New Tab"
+        >
+          <Link href={`/view/${item.name}`} target="_blank">
+            <span className="sr-only">Open in New Tab</span>
+            <Fullscreen className="size-5" />
+          </Link>
+        </Button>
       </div>
+      </div>
+
     </div>
   )
 }
@@ -190,14 +205,14 @@ function BlockViewerView() {
         <ResizablePanelGroup direction="horizontal" className="relative z-10">
           <ResizablePanel
             ref={resizablePanelRef}
-            className="relative aspect-[4/2.5] rounded-xl border bg-background md:aspect-auto"
+            className="relative rounded-xl border bg-background md:aspect-auto"
             defaultSize={100}
             minSize={30}
           >
             <iframe
               src={`/view/${item.name}`}
-              height={item.meta?.iframeHeight ?? 930}
-              className="relative z-20 hidden w-full bg-background md:block"
+              height={800}
+              className="relative z-20 w-full bg-background"
             />
           </ResizablePanel>
           <ResizableHandle className="relative hidden w-3 bg-transparent p-0 after:absolute after:right-0 after:top-1/2 after:h-8 after:w-[6px] after:-translate-y-1/2 after:translate-x-[-1px] after:rounded-full after:bg-border after:transition-all after:hover:h-10 md:block" />
