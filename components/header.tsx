@@ -1,0 +1,132 @@
+"use client"
+
+import Link from "next/link"
+import { buttonVariants } from "./ui/button"
+import { Github, SearchCheck } from "lucide-react"
+import { cn } from "@/lib/utils"
+import { siteInfo } from "@/config/site-info"
+import { ThemeToggle } from "./theme-toggle"
+import Logo from "./logo"
+import { docsConfig } from "@/config/docs"
+import { MobileNav } from "./mobile-sidebar"
+import { usePathname } from "next/navigation"
+
+export function MainHeader() {
+  const pathname= usePathname()
+  return (
+    <>
+    <header className={cn("supports-backdrop-blur:bg-background/90 sticky top-0 z-40 w-full border-b bg-background/40 backdrop-blur-lg")}>
+      <div className="container flex h-16 items-center">
+        <MobileNav />
+
+        <div className="flex w-full justify-between items-center">
+          <Link href="/" className="flex items-center gap-2">
+            <Logo />
+            <span className="hidden font-bold capitalize lg:inline-block">
+              {siteInfo.name}
+            </span>
+          </Link>
+          
+          <nav className="hidden md:flex items-center gap-4 text-sm xl:gap-6">
+            {docsConfig.mainNav?.map(
+              (item) =>
+                item.href && (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={cn(
+                      "transition-colors hover:text-foreground/80",
+                      pathname?.startsWith(item.href)
+                        ? "text-foreground"
+                        : "text-foreground/60"
+                    )}
+                  >
+                    {item.title}
+                  </Link>
+                )
+            )}
+          </nav>
+
+          <div className="flex items-center gap-1">
+          <div className="w-full flex-1 md:w-auto md:flex-none">
+            <SearchCheck className="size-5"/>
+          </div>
+            <Link
+              href={"/"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={cn(
+                  buttonVariants({
+                    variant: "ghost",
+                  }),
+                  "w-9 px-0"
+                )}
+              >
+                <Github className="size-4" />
+                <span className="sr-only">GitHub</span>
+              </div>
+            </Link>
+            <ThemeToggle />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    {/* <header className={cn("supports-backdrop-blur:bg-background/90 sticky border-b top-0 z-40 w-full bg-background/40 backdrop-blur-lg")}>
+      <div className="container flex h-16 items-center justify-center">
+        <div className="hidden md:flex">
+          <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
+            <Logo/>
+            <span className="hidden capitalize font-bold lg:inline-block">
+              {siteInfo.name}
+            </span>
+          </Link>
+          <nav className="flex items-center gap-4 text-sm xl:gap-6">
+            {docsConfig.mainNav?.map(
+              (item) =>
+                item.href && (
+                  <Link key={item.href} href={item.href} className={cn("transition-colors hover:text-foreground/80",pathname?.startsWith(item.href!)
+                ? "text-foreground"
+                : "text-foreground/60")}>
+                    {item.title}
+                  </Link>
+                ),
+            )}
+          </nav>
+        </div>
+        <MobileNav />
+        <div className="flex flex-1 items-center justify-between gap-2 md:justify-end">
+          <div className="w-full flex-1 md:w-auto md:flex-none">
+            <SearchCheck className="size-5"/>
+          </div>
+          
+          <nav className="flex items-center gap-1">
+            <Link
+              href={"/"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={cn(
+                  buttonVariants({
+                    variant: "ghost",
+                  }),
+                  "w-9 px-0",
+                )}
+              >
+                <Github className="size-4" />
+                <span className="sr-only">GitHub</span>
+              </div>
+            </Link>
+            
+            <ThemeToggle />
+          </nav>
+        </div>
+      </div>
+    </header>  */}
+
+    </>
+  )
+}

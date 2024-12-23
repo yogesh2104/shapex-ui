@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/provider/theme-provider";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +25,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-svh bg-background font-sans antialiased`}
       >
-        {children}
+        <ThemeProvider 
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+          enableColorScheme
+        >
+          <div className="relative flex flex-col min-h-svh">
+            {children}
+          </div>
+          <TailwindIndicator/>
+        </ThemeProvider>
       </body>
     </html>
   );
