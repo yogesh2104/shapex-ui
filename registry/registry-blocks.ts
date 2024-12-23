@@ -73,4 +73,40 @@ export const blocks: Registry = [
     ],
     categories: ["signup"],
   },
+  {
+    name: "signup-03",
+    description: "A Signup form with Step",
+    type: "registry:block",
+    registryDependencies: ["button", "input", "label"],
+    files: [
+      {
+        path: "blocks/signup-03/page.tsx",
+        target: "app/signup/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/signup-03/components/signup-three.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["signup"],
+  },
+  {
+    name: "signup-04",
+    description: "A Signup form",
+    type: "registry:block",
+    registryDependencies: ["button", "card", "input", "label", "checkbox"],
+    files: [
+      {
+        path: "blocks/signup-04/page.tsx",
+        target: "app/signup/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/signup-04/components/signup-four.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["signup"],
+  },
 ];

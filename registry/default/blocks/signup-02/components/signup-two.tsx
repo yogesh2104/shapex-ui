@@ -64,7 +64,7 @@ const SignUpTwo = () => {
               <h2 className="text-3xl font-bold">Create Account</h2>
               <p className="mt-3">
                 Already have an account?{" "}
-                <Link 
+                <Link
                   href="#"
                   className="underline text-primary hover:text-primary font-medium"
                 >

@@ -486,6 +486,44 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/signup-02/page.tsx",
       meta: undefined,
     },
+    "signup-03": {
+      name: "signup-03",
+      description: "A Signup form with Step",
+      type: "registry:block",
+      registryDependencies: ["button","input","label"],
+      files: [{
+        path: "registry/default/blocks/signup-03/page.tsx",
+        type: "registry:page",
+        target: "app/signup/page.tsx"
+      },{
+        path: "registry/default/blocks/signup-03/components/signup-three.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["signup"],
+      component: React.lazy(() => import("@/registry/default/blocks/signup-03/page.tsx")),
+      source: "__registry__/default/blocks/signup-03/page.tsx",
+      meta: undefined,
+    },
+    "signup-04": {
+      name: "signup-04",
+      description: "A Signup form",
+      type: "registry:block",
+      registryDependencies: ["button","card","input","label","checkbox"],
+      files: [{
+        path: "registry/default/blocks/signup-04/page.tsx",
+        type: "registry:page",
+        target: "app/signup/page.tsx"
+      },{
+        path: "registry/default/blocks/signup-04/components/signup-four.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["signup"],
+      component: React.lazy(() => import("@/registry/default/blocks/signup-04/page.tsx")),
+      source: "__registry__/default/blocks/signup-04/page.tsx",
+      meta: undefined,
+    },
     "utils": {
       name: "utils",
       description: "",
