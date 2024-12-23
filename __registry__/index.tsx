@@ -185,6 +185,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "hover-card": {
+      name: "hover-card",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/ui/hover-card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/ui/hover-card.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "input": {
       name: "input",
       description: "",
@@ -431,6 +446,44 @@ export const Index: Record<string, any> = {
       categories: ["login"],
       component: React.lazy(() => import("@/registry/default/blocks/login-02/page.tsx")),
       source: "__registry__/default/blocks/login-02/page.tsx",
+      meta: undefined,
+    },
+    "signup-01": {
+      name: "signup-01",
+      description: "A simple Signup form.",
+      type: "registry:block",
+      registryDependencies: ["button","card","input","label"],
+      files: [{
+        path: "registry/default/blocks/signup-01/page.tsx",
+        type: "registry:page",
+        target: "app/signup/page.tsx"
+      },{
+        path: "registry/default/blocks/signup-01/components/signup-one.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["signup"],
+      component: React.lazy(() => import("@/registry/default/blocks/signup-01/page.tsx")),
+      source: "__registry__/default/blocks/signup-01/page.tsx",
+      meta: undefined,
+    },
+    "signup-02": {
+      name: "signup-02",
+      description: "A Signup form with Password Validation.",
+      type: "registry:block",
+      registryDependencies: ["button","card","input","label","hover-card"],
+      files: [{
+        path: "registry/default/blocks/signup-02/page.tsx",
+        type: "registry:page",
+        target: "app/signup/page.tsx"
+      },{
+        path: "registry/default/blocks/signup-02/components/signup-two.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["signup"],
+      component: React.lazy(() => import("@/registry/default/blocks/signup-02/page.tsx")),
+      source: "__registry__/default/blocks/signup-02/page.tsx",
       meta: undefined,
     },
     "utils": {

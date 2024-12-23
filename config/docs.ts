@@ -77,7 +77,12 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
-          title: "Company Logo",
+          title: "Login",
+          href: "/blocks/login",
+          items: [],
+        },
+        {
+          title: "Logo",
           href: "/blocks/company-logo",
           items: [],
         },
@@ -97,13 +102,8 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
-          title: "SignIn",
-          href: "/blocks/sign-in",
-          items: [],
-        },
-        {
           title: "SignUp",
-          href: "/blocks/sign-up",
+          href: "/blocks/signup",
           items: [],
         },
         {
