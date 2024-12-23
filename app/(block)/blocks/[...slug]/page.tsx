@@ -18,7 +18,7 @@ export default async function BlocksPage({
 
 
   return blocks.map((name) => (
-    <div key={name} className="border-grid container  md:py-4" >
+    <div key={name} className="border-grid" >
       <BlockDisplay name={name} />
     </div>
   ))
