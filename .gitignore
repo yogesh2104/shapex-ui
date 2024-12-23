@@ -42,3 +42,4 @@ next-env.d.ts
 .content-collections
 data.txt
 app/(view)/view/page.tsx
+info.txt
