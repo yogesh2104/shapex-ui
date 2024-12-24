@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Lock, Mail, UserRound } from "lucide-react";
-import { Label } from "@/registry/default/ui/label";    // npx shadcn@latest add label
-import { Input } from "@/registry/default/ui/input";    // npx shadcn@latest add input
-import { Button } from "@/registry/default/ui/button";    // npx shadcn@latest add button
-import { Card, CardContent } from "@/registry/default/ui/card";   // npx shadcn@latest add card
+import { Label } from "@/registry/default/ui/label"; // npx shadcn@latest add label
+import { Input } from "@/registry/default/ui/input"; // npx shadcn@latest add input
+import { Button } from "@/registry/default/ui/button"; // npx shadcn@latest add button
+import { Card, CardContent } from "@/registry/default/ui/card"; // npx shadcn@latest add card
 
 const SignUpOne = () => {
   return (

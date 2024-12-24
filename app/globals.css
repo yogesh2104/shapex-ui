@@ -86,14 +86,30 @@
   @apply grid min-w-full break-words rounded-none border-0 bg-transparent p-0;
   counter-reset: line;
   box-decoration-break: clone;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 [data-rehype-pretty-code-fragment] .line {
-  @apply px-4 min-h-[1rem] py-0.5 w-full inline-block;
+  @apply px-4 min-h-[0.6rem] py-0.5 w-full inline-block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
+/* [data-rehype-pretty-code-fragment] code {
+  @apply grid min-w-full break-words rounded-none border-0 bg-transparent p-0;
+  counter-reset: line;
+  box-decoration-break: clone;
+} */
+
+/* [data-rehype-pretty-code-fragment] .line {
+  @apply px-4 min-h-[1rem] py-0.5 w-full inline-block;
+} */
+
 [data-rehype-pretty-code-fragment] [data-line-numbers] .line {
-  @apply px-2 mb-2;
+  @apply px-2;
 }
 
 [data-rehype-pretty-code-fragment] [data-line-numbers] > .line::before {

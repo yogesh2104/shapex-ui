@@ -1,18 +1,18 @@
 import Link from "next/link";
 import Logo from "@/components/logo";
 import GoogleLogo from "./google-logo";
-import { Input } from "@/registry/default/ui/input";   // npx shadcn@latest add input
+import { Input } from "@/registry/default/ui/input"; // npx shadcn@latest add input
 import { Button } from "@/registry/default/ui/button"; // npx shadcn@latest add button
 import { Label } from "@/registry/default/ui/label"; // npx shadcn@latest add label
-import { Separator } from "@/registry/default/ui/separator";  // npx shadcn@latest add separator
-import { Card, CardContent } from "@/registry/default/ui/card";  // npx shadcn@latest add card
+import { Separator } from "@/registry/default/ui/separator"; // npx shadcn@latest add separator
+import { Card, CardContent } from "@/registry/default/ui/card"; // npx shadcn@latest add card
 
 export function LoginFormTwo({
   className,
 }: React.ComponentPropsWithoutRef<"div">) {
   return (
     <div
-      className={`flex justify-center items-center min-h-screen ${className}`}
+      className={`flex justify-center items-center min-h-[calc(100vh-3rem)] ${className}`}
     >
       <Card className="w-full max-w-md rounded-lg shadow-lg">
         <CardContent className="p-8">

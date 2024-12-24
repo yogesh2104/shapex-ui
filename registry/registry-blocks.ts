@@ -2,6 +2,42 @@ import { Registry } from "@/registry/schema";
 
 export const blocks: Registry = [
   {
+    name: "article-01",
+    description: "The Article Section for content presentation.",
+    type: "registry:block",
+    registryDependencies: ["card", "badge", "separator", "scroll-area"],
+    files: [
+      {
+        path: "blocks/article-01/page.tsx",
+        target: "app/article/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/article-01/components/article-one.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["article"],
+  },
+  {
+    name: "article-02",
+    description: "The Article Two Section for content presentation.",
+    type: "registry:block",
+    registryDependencies: ["card", "badge", "separator", "scroll-area"],
+    files: [
+      {
+        path: "blocks/article-02/page.tsx",
+        target: "app/article/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/article-02/components/article-two.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["article"],
+  },
+  {
     name: "login-01",
     description: "A simple login form.",
     type: "registry:block",

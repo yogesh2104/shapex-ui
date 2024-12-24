@@ -410,6 +410,44 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "article-01": {
+      name: "article-01",
+      description: "The Article Section for content presentation.",
+      type: "registry:block",
+      registryDependencies: ["card","badge","separator","scroll-area"],
+      files: [{
+        path: "registry/default/blocks/article-01/page.tsx",
+        type: "registry:page",
+        target: "app/article/page.tsx"
+      },{
+        path: "registry/default/blocks/article-01/components/article-one.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["article"],
+      component: React.lazy(() => import("@/registry/default/blocks/article-01/page.tsx")),
+      source: "__registry__/default/blocks/article-01/page.tsx",
+      meta: undefined,
+    },
+    "article-02": {
+      name: "article-02",
+      description: "The Article Two Section for content presentation.",
+      type: "registry:block",
+      registryDependencies: ["card","badge","separator","scroll-area"],
+      files: [{
+        path: "registry/default/blocks/article-02/page.tsx",
+        type: "registry:page",
+        target: "app/article/page.tsx"
+      },{
+        path: "registry/default/blocks/article-02/components/article-two.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["article"],
+      component: React.lazy(() => import("@/registry/default/blocks/article-02/page.tsx")),
+      source: "__registry__/default/blocks/article-02/page.tsx",
+      meta: undefined,
+    },
     "login-01": {
       name: "login-01",
       description: "A simple login form.",
