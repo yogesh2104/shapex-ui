@@ -442,6 +442,10 @@ export const Index: Record<string, any> = {
         path: "registry/default/blocks/login-02/components/login-form-two.tsx",
         type: "registry:component",
         target: ""
+      },{
+        path: "registry/default/blocks/login-02/components/google-logo.tsx",
+        type: "registry:component",
+        target: ""
       }],
       categories: ["login"],
       component: React.lazy(() => import("@/registry/default/blocks/login-02/page.tsx")),

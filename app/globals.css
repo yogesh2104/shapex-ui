@@ -93,7 +93,7 @@
 }
 
 [data-rehype-pretty-code-fragment] [data-line-numbers] .line {
-  @apply px-2;
+  @apply px-2 mb-2;
 }
 
 [data-rehype-pretty-code-fragment] [data-line-numbers] > .line::before {

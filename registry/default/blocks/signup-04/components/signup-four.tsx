@@ -1,9 +1,10 @@
-import { Button } from "@/registry/default/ui/button";
-import { Checkbox } from "@/registry/default/ui/checkbox";
-import { Input } from "@/registry/default/ui/input";
-import { Label } from "@/registry/default/ui/label";
-import { Flame, HeartHandshake } from "lucide-react";
 import Link from "next/link";
+import { Flame, HeartHandshake } from "lucide-react";
+
+import { Button } from "@/registry/default/ui/button";    // npx shadcn@latest add button
+import { Checkbox } from "@/registry/default/ui/checkbox";    // npx shadcn@latest add checkbox
+import { Input } from "@/registry/default/ui/input";    // npx shadcn@latest add input
+import { Label } from "@/registry/default/ui/label";   // npx shadcn@latest add label
 
 const SignupFour = () => {
   return (

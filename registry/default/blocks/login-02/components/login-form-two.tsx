@@ -1,66 +1,82 @@
-import { cn } from "@/registry/default/lib/utils";
-import { Button } from "@/registry/default/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/registry/default/ui/card";
-import { Input } from "@/registry/default/ui/input";
-import { Label } from "@/registry/default/ui/label";
+import Link from "next/link";
+import Logo from "@/components/logo";
+import GoogleLogo from "./google-logo";
+import { Input } from "@/registry/default/ui/input";   // npx shadcn@latest add input
+import { Button } from "@/registry/default/ui/button"; // npx shadcn@latest add button
+import { Label } from "@/registry/default/ui/label"; // npx shadcn@latest add label
+import { Separator } from "@/registry/default/ui/separator";  // npx shadcn@latest add separator
+import { Card, CardContent } from "@/registry/default/ui/card";  // npx shadcn@latest add card
 
 export function LoginFormTwo({
   className,
-  ...props
 }: React.ComponentPropsWithoutRef<"div">) {
   return (
-    <div className={cn("flex flex-col gap-6", className)} {...props}>
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl">Login</CardTitle>
-          <CardDescription>
-            Enter your email below to login to your account
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <form>
-            <div className="flex flex-col gap-6">
-              <div className="grid gap-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="m@example.com"
-                  required
-                />
-              </div>
-              <div className="grid gap-2">
-                <div className="flex items-center">
-                  <Label htmlFor="password">Password</Label>
-                  <a
-                    href="#"
-                    className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
-                  >
-                    Forgot your password?
-                  </a>
-                </div>
-                <Input id="password" type="password" required />
-              </div>
-              <Button type="submit" className="w-full">
-                Login
-              </Button>
-              <Button variant="outline" className="w-full">
-                Login with Google
-              </Button>
+    <div
+      className={`flex justify-center items-center min-h-screen ${className}`}
+    >
+      <Card className="w-full max-w-md rounded-lg shadow-lg">
+        <CardContent className="p-8">
+          <div className="flex flex-col items-center">
+            <Logo />
+            <p className="mt-4 text-2xl font-semibold ">Welcome Back</p>
+            <p className="mt-2 text-sm ">Login to continue to your account</p>
+          </div>
+          <form className="mt-6 space-y-5">
+            <div>
+              <Label htmlFor="email" className="">
+                Email Address
+              </Label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+                className="mt-1 w-full"
+              />
             </div>
-            <div className="mt-4 text-center text-sm">
-              Don&apos;t have an account?{" "}
-              <a href="#" className="underline underline-offset-4">
-                Sign up
-              </a>
+            <div>
+              <Label htmlFor="password" className="">
+                Password
+              </Label>
+              <Input
+                id="password"
+                type="password"
+                placeholder="Enter your password"
+                className="mt-1 w-full"
+              />
             </div>
+            <Button
+              type="submit"
+              className="w-full bg-primary hover:bg-primary-dark focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            >
+              Continue with Email
+            </Button>
+            <div className="my-7 w-full flex items-center justify-center overflow-hidden">
+              <Separator />
+              <span className="text-sm px-2">OR</span>
+              <Separator />
+            </div>
+            <Button className="w-full flex items-center justify-center gap-2 border border-gray-300 text-black  bg-white  hover:bg-gray-100 focus:ring-2 focus:ring-gray-300 focus:ring-offset-2">
+              <GoogleLogo />
+              Continue with Google
+            </Button>
           </form>
+          <div className="mt-6 text-center">
+            <Link
+              href="#"
+              className="text-sm text-primary underline hover:text-primary-dark"
+            >
+              Forgot your password?
+            </Link>
+            <p className="mt-2 text-sm ">
+              Don&apos;t have an account?{" "}
+              <Link
+                href="#"
+                className="font-medium text-primary underline hover:text-primary-dark"
+              >
+                Create one
+              </Link>
+            </p>
+          </div>
         </CardContent>
       </Card>
     </div>

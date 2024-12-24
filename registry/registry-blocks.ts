@@ -34,6 +34,10 @@ export const blocks: Registry = [
         path: "blocks/login-02/components/login-form-two.tsx",
         type: "registry:component",
       },
+      {
+        path: "blocks/login-02/components/google-logo.tsx",
+        type: "registry:component",
+      },
     ],
     categories: ["login"],
   },
