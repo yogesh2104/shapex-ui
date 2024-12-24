@@ -3,7 +3,7 @@ const nextConfig = {
   output: process.env.NODE_ENV === "production" ? "standalone" : undefined,
   reactStrictMode: true,
   images: {
-    domains: ["localhost"],
+    domains: ["localhost","unsplash","fastly.picsum.photos"],
   },
 };
 

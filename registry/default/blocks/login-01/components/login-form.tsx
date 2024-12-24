@@ -1,14 +1,14 @@
 import { cn } from "@/registry/default/lib/utils";
-import { Button } from "@/registry/default/ui/button";
+import { Button } from "@/registry/default/ui/button"; // npx shadcn@latest add button
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/registry/default/ui/card";
-import { Input } from "@/registry/default/ui/input";
-import { Label } from "@/registry/default/ui/label";
+} from "@/registry/default/ui/card"; // npx shadcn@latest add card
+import { Input } from "@/registry/default/ui/input"; // npx shadcn@latest add input
+import { Label } from "@/registry/default/ui/label"; // npx shadcn@latest add label
 
 export function LoginForm({
   className,

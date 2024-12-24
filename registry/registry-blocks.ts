@@ -2,6 +2,90 @@ import { Registry } from "@/registry/schema";
 
 export const blocks: Registry = [
   {
+    name: "article-01",
+    description: "The Article Section for content presentation.",
+    type: "registry:block",
+    registryDependencies: ["card", "badge", "separator", "scroll-area"],
+    files: [
+      {
+        path: "blocks/article-01/page.tsx",
+        target: "app/article/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/article-01/components/article-one.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["article"],
+  },
+  {
+    name: "article-02",
+    description: "The Article Two Section for content presentation.",
+    type: "registry:block",
+    registryDependencies: ["card", "badge", "separator", "scroll-area"],
+    files: [
+      {
+        path: "blocks/article-02/page.tsx",
+        target: "app/article/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/article-02/components/article-two.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["article"],
+  },
+  {
+    name: "blog-01",
+    description: "Blog Grid View",
+    type: "registry:block",
+    registryDependencies: ["card", "button", "badge"],
+    files: [
+      {
+        path: "blocks/blog-01/page.tsx",
+        target: "app/blog/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/blog-01/components/blog-one.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/blog-01/components/blog-header.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/blog-01/hook/use-outside-click.ts",
+        type: "registry:hook",
+      },
+    ],
+    categories: ["blog"],
+  },
+  {
+    name: "blog-02",
+    description: "Simple Blog List",
+    type: "registry:block",
+    registryDependencies: ["card", "badge", "separator", "scroll-area"],
+    files: [
+      {
+        path: "blocks/blog-02/page.tsx",
+        target: "app/blog/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/blog-02/components/blog-two.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/blog-02/components/blog-header.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["blog"],
+  },
+  {
     name: "login-01",
     description: "A simple login form.",
     type: "registry:block",
@@ -32,6 +116,10 @@ export const blocks: Registry = [
       },
       {
         path: "blocks/login-02/components/login-form-two.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/login-02/components/google-logo.tsx",
         type: "registry:component",
       },
     ],
@@ -68,6 +156,42 @@ export const blocks: Registry = [
       },
       {
         path: "blocks/signup-02/components/signup-two.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["signup"],
+  },
+  {
+    name: "signup-03",
+    description: "A Signup form with Step",
+    type: "registry:block",
+    registryDependencies: ["button", "input", "label"],
+    files: [
+      {
+        path: "blocks/signup-03/page.tsx",
+        target: "app/signup/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/signup-03/components/signup-three.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["signup"],
+  },
+  {
+    name: "signup-04",
+    description: "A Signup form",
+    type: "registry:block",
+    registryDependencies: ["button", "card", "input", "label", "checkbox"],
+    files: [
+      {
+        path: "blocks/signup-04/page.tsx",
+        target: "app/signup/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/signup-04/components/signup-four.tsx",
         type: "registry:component",
       },
     ],

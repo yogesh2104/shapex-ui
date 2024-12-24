@@ -33,7 +33,7 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: "Article",
-          href: "/blocks/Article",
+          href: "/blocks/article",
           items: [],
         },
         {

@@ -410,6 +410,94 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "article-01": {
+      name: "article-01",
+      description: "The Article Section for content presentation.",
+      type: "registry:block",
+      registryDependencies: ["card","badge","separator","scroll-area"],
+      files: [{
+        path: "registry/default/blocks/article-01/page.tsx",
+        type: "registry:page",
+        target: "app/article/page.tsx"
+      },{
+        path: "registry/default/blocks/article-01/components/article-one.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["article"],
+      component: React.lazy(() => import("@/registry/default/blocks/article-01/page.tsx")),
+      source: "__registry__/default/blocks/article-01/page.tsx",
+      meta: undefined,
+    },
+    "article-02": {
+      name: "article-02",
+      description: "The Article Two Section for content presentation.",
+      type: "registry:block",
+      registryDependencies: ["card","badge","separator","scroll-area"],
+      files: [{
+        path: "registry/default/blocks/article-02/page.tsx",
+        type: "registry:page",
+        target: "app/article/page.tsx"
+      },{
+        path: "registry/default/blocks/article-02/components/article-two.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["article"],
+      component: React.lazy(() => import("@/registry/default/blocks/article-02/page.tsx")),
+      source: "__registry__/default/blocks/article-02/page.tsx",
+      meta: undefined,
+    },
+    "blog-01": {
+      name: "blog-01",
+      description: "Blog Grid View",
+      type: "registry:block",
+      registryDependencies: ["card","button","badge"],
+      files: [{
+        path: "registry/default/blocks/blog-01/page.tsx",
+        type: "registry:page",
+        target: "app/blog/page.tsx"
+      },{
+        path: "registry/default/blocks/blog-01/components/blog-one.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/blog-01/components/blog-header.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/blog-01/hook/use-outside-click.ts",
+        type: "registry:hook",
+        target: ""
+      }],
+      categories: ["blog"],
+      component: React.lazy(() => import("@/registry/default/blocks/blog-01/page.tsx")),
+      source: "__registry__/default/blocks/blog-01/page.tsx",
+      meta: undefined,
+    },
+    "blog-02": {
+      name: "blog-02",
+      description: "Simple Blog List",
+      type: "registry:block",
+      registryDependencies: ["card","badge","separator","scroll-area"],
+      files: [{
+        path: "registry/default/blocks/blog-02/page.tsx",
+        type: "registry:page",
+        target: "app/blog/page.tsx"
+      },{
+        path: "registry/default/blocks/blog-02/components/blog-two.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/blog-02/components/blog-header.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["blog"],
+      component: React.lazy(() => import("@/registry/default/blocks/blog-02/page.tsx")),
+      source: "__registry__/default/blocks/blog-02/page.tsx",
+      meta: undefined,
+    },
     "login-01": {
       name: "login-01",
       description: "A simple login form.",
@@ -440,6 +528,10 @@ export const Index: Record<string, any> = {
         target: "app/login/page.tsx"
       },{
         path: "registry/default/blocks/login-02/components/login-form-two.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/login-02/components/google-logo.tsx",
         type: "registry:component",
         target: ""
       }],
@@ -484,6 +576,44 @@ export const Index: Record<string, any> = {
       categories: ["signup"],
       component: React.lazy(() => import("@/registry/default/blocks/signup-02/page.tsx")),
       source: "__registry__/default/blocks/signup-02/page.tsx",
+      meta: undefined,
+    },
+    "signup-03": {
+      name: "signup-03",
+      description: "A Signup form with Step",
+      type: "registry:block",
+      registryDependencies: ["button","input","label"],
+      files: [{
+        path: "registry/default/blocks/signup-03/page.tsx",
+        type: "registry:page",
+        target: "app/signup/page.tsx"
+      },{
+        path: "registry/default/blocks/signup-03/components/signup-three.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["signup"],
+      component: React.lazy(() => import("@/registry/default/blocks/signup-03/page.tsx")),
+      source: "__registry__/default/blocks/signup-03/page.tsx",
+      meta: undefined,
+    },
+    "signup-04": {
+      name: "signup-04",
+      description: "A Signup form",
+      type: "registry:block",
+      registryDependencies: ["button","card","input","label","checkbox"],
+      files: [{
+        path: "registry/default/blocks/signup-04/page.tsx",
+        type: "registry:page",
+        target: "app/signup/page.tsx"
+      },{
+        path: "registry/default/blocks/signup-04/components/signup-four.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["signup"],
+      component: React.lazy(() => import("@/registry/default/blocks/signup-04/page.tsx")),
+      source: "__registry__/default/blocks/signup-04/page.tsx",
       meta: undefined,
     },
     "utils": {
