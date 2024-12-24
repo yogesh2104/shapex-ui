@@ -38,6 +38,54 @@ export const blocks: Registry = [
     categories: ["article"],
   },
   {
+    name: "blog-01",
+    description: "Blog Grid View",
+    type: "registry:block",
+    registryDependencies: ["card", "button", "badge"],
+    files: [
+      {
+        path: "blocks/blog-01/page.tsx",
+        target: "app/blog/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/blog-01/components/blog-one.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/blog-01/components/blog-header.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/blog-01/hook/use-outside-click.ts",
+        type: "registry:hook",
+      },
+    ],
+    categories: ["blog"],
+  },
+  {
+    name: "blog-02",
+    description: "Simple Blog List",
+    type: "registry:block",
+    registryDependencies: ["card", "badge", "separator", "scroll-area"],
+    files: [
+      {
+        path: "blocks/blog-02/page.tsx",
+        target: "app/blog/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/blog-02/components/blog-two.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/blog-02/components/blog-header.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["blog"],
+  },
+  {
     name: "login-01",
     description: "A simple login form.",
     type: "registry:block",

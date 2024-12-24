@@ -262,7 +262,7 @@ function BlockViewerCode() {
 function Tree({ item, index }: { item: FileTree; index: number }) {
   const { activeFile, setActiveFile } = useBlockViewer()
   const renderItem = (item: FileTree, index: number) => (
-    <div onClick={() => item.path && setActiveFile(item.path)} className={cn(`flex items-center gap-2 cursor-pointer`,item.path === activeFile && "bg-card text-black px-3 py-1 rounded-xl")}>
+    <div onClick={() => item.path && setActiveFile(item.path)} className={cn(`flex items-center gap-2 cursor-pointer`,item.path === activeFile && "bg-card text-black dark:text-white px-3 py-1 rounded-xl")}>
       {item?.name?.split("\\")?.pop()}
     </div>
   )

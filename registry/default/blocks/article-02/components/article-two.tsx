@@ -89,5 +89,3 @@ const ArticleTwo = () => {
 };
 
 export default ArticleTwo;
-
-

@@ -448,6 +448,56 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/article-02/page.tsx",
       meta: undefined,
     },
+    "blog-01": {
+      name: "blog-01",
+      description: "Blog Grid View",
+      type: "registry:block",
+      registryDependencies: ["card","button","badge"],
+      files: [{
+        path: "registry/default/blocks/blog-01/page.tsx",
+        type: "registry:page",
+        target: "app/blog/page.tsx"
+      },{
+        path: "registry/default/blocks/blog-01/components/blog-one.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/blog-01/components/blog-header.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/blog-01/hook/use-outside-click.ts",
+        type: "registry:hook",
+        target: ""
+      }],
+      categories: ["blog"],
+      component: React.lazy(() => import("@/registry/default/blocks/blog-01/page.tsx")),
+      source: "__registry__/default/blocks/blog-01/page.tsx",
+      meta: undefined,
+    },
+    "blog-02": {
+      name: "blog-02",
+      description: "Simple Blog List",
+      type: "registry:block",
+      registryDependencies: ["card","badge","separator","scroll-area"],
+      files: [{
+        path: "registry/default/blocks/blog-02/page.tsx",
+        type: "registry:page",
+        target: "app/blog/page.tsx"
+      },{
+        path: "registry/default/blocks/blog-02/components/blog-two.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/blog-02/components/blog-header.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["blog"],
+      component: React.lazy(() => import("@/registry/default/blocks/blog-02/page.tsx")),
+      source: "__registry__/default/blocks/blog-02/page.tsx",
+      meta: undefined,
+    },
     "login-01": {
       name: "login-01",
       description: "A simple login form.",

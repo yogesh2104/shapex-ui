@@ -92,7 +92,7 @@
 }
 
 [data-rehype-pretty-code-fragment] .line {
-  @apply px-4 min-h-[0.6rem] py-0.5 w-full inline-block;
+  @apply   min-h-[0.6rem] py-[2px] w-full inline-block;
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -109,7 +109,7 @@
 } */
 
 [data-rehype-pretty-code-fragment] [data-line-numbers] .line {
-  @apply px-2;
+  @apply px-2 mb-1;
 }
 
 [data-rehype-pretty-code-fragment] [data-line-numbers] > .line::before {
