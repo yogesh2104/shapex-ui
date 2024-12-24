@@ -104,6 +104,42 @@ export const blocks: Registry = [
     categories: ["login"],
   },
   {
+    name: "contact-01",
+    description: "A simple Contact Form.",
+    type: "registry:block",
+    registryDependencies: ["button", "textarea", "input", "label"],
+    files: [
+      {
+        path: "blocks/contact-01/page.tsx",
+        target: "app/login/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/contact-01/components/contact-one.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["contact"],
+  },
+  {
+    name: "contact-02",
+    description: "A simple Contact Form.",
+    type: "registry:block",
+    registryDependencies: ["button", "textarea", "input", "label"],
+    files: [
+      {
+        path: "blocks/contact-02/page.tsx",
+        target: "app/login/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/contact-02/components/contact-two.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["contact"],
+  },
+  {
     name: "login-02",
     description: "A simple login form.",
     type: "registry:block",
