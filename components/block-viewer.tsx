@@ -234,8 +234,6 @@ function BlockViewerCode() {
     return null
   }
 
-  console.log("highlightedFiles",file.highlightedContent)
-
   return (
     <div className="mr-[14px] flex overflow-hidden bg-zinc-950 text-white group-data-[view=preview]/block-view-wrapper:hidden md:h-[calc(100vh-3rem)]">
       <div className="flex min-w-0 flex-1 flex-col h-[calc(100vh-3rem)]">
