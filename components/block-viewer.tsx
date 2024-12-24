@@ -155,7 +155,7 @@ function BlockViewerToolbar() {
               <Tablet className="h-3.5 w-3.5" />
             </ToggleGroupItem>
             <ToggleGroupItem
-              value="30"
+              value="40"
               className="h-[22px] w-[22px] min-w-0 rounded-sm p-0"
               title="Mobile"
             >
@@ -207,12 +207,12 @@ function BlockViewerView() {
             ref={resizablePanelRef}
             className="relative rounded-xl border bg-background md:aspect-auto"
             defaultSize={100}
-            minSize={30}
+            minSize={40}
           >
             <iframe
               src={`/view/${item.name}`}
               height={800}
-              className="relative z-20 w-full bg-background"
+              className="relative z-20 w-full bg-background overflow-auto"
             />
           </ResizablePanel>
           <ResizableHandle className="relative hidden w-3 bg-transparent p-0 after:absolute after:right-0 after:top-1/2 after:h-8 after:w-[6px] after:-translate-y-1/2 after:translate-x-[-1px] after:rounded-full after:bg-border after:transition-all after:hover:h-10 md:block" />
@@ -234,6 +234,8 @@ function BlockViewerCode() {
     return null
   }
 
+  console.log("highlightedFiles",file.highlightedContent)
+
   return (
     <div className="mr-[14px] flex overflow-hidden bg-zinc-950 text-white group-data-[view=preview]/block-view-wrapper:hidden md:h-[calc(100vh-3rem)]">
       <div className="flex min-w-0 flex-1 flex-col h-[calc(100vh-3rem)]">
@@ -251,7 +253,7 @@ function BlockViewerCode() {
           key={file?.path}
           data-rehype-pretty-code-fragment
           dangerouslySetInnerHTML={{ __html: file?.highlightedContent ?? "" }}
-          className="pl-10 relative flex-1 overflow-y-auto overflow-x-auto after:absolute after:inset-y-0 after:left-0 after:w-10 after:bg-zinc-950 [&_.line:before]:sticky [&_.line:before]:left-2 [&_.line:before]:z-10 [&_.line:before]:translate-y-[-1px] [&_.line:before]:pr-1 [&_pre]:h-full [&_pre]:!bg-transparent [&_pre]:pb-20 [&_pre]:pt-4 [&_pre]:font-mono [&_pre]:text-sm [&_pre]:leading-relaxed"
+          className="overflow-hidden after:absolute after:inset-y-0 after:left-0 after:w-10 after:bg-zinc-950 [&_.line:before]:sticky [&_.line:before]:left-2 [&_.line:before]:z-10 [&_.line:before]:translate-y-[-1px] [&_.line:before]:pr-1 [&_pre]:h-[--height] [&_pre]:overflow-auto [&_pre]:!bg-transparent [&_pre]:pb-20 [&_pre]:pt-4 [&_pre]:font-mono [&_pre]:text-sm [&_pre]:leading-relaxed"
         />
       </div>
     </div>
