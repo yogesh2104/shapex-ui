@@ -141,5 +141,3 @@ const contactMethods = [
 ];
 
 export default ContactTwo;
-
-

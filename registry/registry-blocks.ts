@@ -140,6 +140,64 @@ export const blocks: Registry = [
     categories: ["contact"],
   },
   {
+    name: "cta-01",
+    description: "Call To Action.",
+    type: "registry:block",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "blocks/cta-01/page.tsx",
+        target: "app/login/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/cta-01/components/cta-one.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["cta"],
+  },
+  {
+    name: "cta-02",
+    description: "A simple Contact Form.",
+    type: "registry:block",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "blocks/cta-02/page.tsx",
+        target: "app/login/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/cta-02/components/cta-two.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/cta-02/components/user-image.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["cta"],
+  },
+  {
+    name: "cta-03",
+    description: "A simple CTA.",
+    type: "registry:block",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "blocks/cta-03/page.tsx",
+        target: "app/login/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/cta-03/components/cta-three.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["cta"],
+  },
+  {
     name: "login-02",
     description: "A simple login form.",
     type: "registry:block",

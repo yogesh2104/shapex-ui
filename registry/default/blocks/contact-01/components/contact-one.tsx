@@ -74,10 +74,7 @@ export default function ContactForm() {
               </h2>
               <form className="space-y-6">
                 {["name", "email", "message"].map((field) => (
-                  <div
-                    key={field}
-                    className={`transition-all duration-300`}
-                  >
+                  <div key={field} className={`transition-all duration-300`}>
                     <label
                       htmlFor={field}
                       className="text-sm font-medium text-gray-300 mb-2 block"
@@ -109,7 +106,7 @@ export default function ContactForm() {
                   type="submit"
                   className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 rounded-lg transition-all duration-300 transform hover:-translate-y-1"
                 >
-                Send Message
+                  Send Message
                 </Button>
               </form>
             </CardContent>

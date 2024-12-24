@@ -555,6 +555,67 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/contact-02/page.tsx",
       meta: undefined,
     },
+    "cta-01": {
+      name: "cta-01",
+      description: "Call To Action.",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/blocks/cta-01/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/default/blocks/cta-01/components/cta-one.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["cta"],
+      component: React.lazy(() => import("@/registry/default/blocks/cta-01/page.tsx")),
+      source: "__registry__/default/blocks/cta-01/page.tsx",
+      meta: undefined,
+    },
+    "cta-02": {
+      name: "cta-02",
+      description: "A simple Contact Form.",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/blocks/cta-02/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/default/blocks/cta-02/components/cta-two.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/cta-02/components/user-image.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["cta"],
+      component: React.lazy(() => import("@/registry/default/blocks/cta-02/page.tsx")),
+      source: "__registry__/default/blocks/cta-02/page.tsx",
+      meta: undefined,
+    },
+    "cta-03": {
+      name: "cta-03",
+      description: "A simple CTA.",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/blocks/cta-03/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/default/blocks/cta-03/components/cta-three.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["cta"],
+      component: React.lazy(() => import("@/registry/default/blocks/cta-03/page.tsx")),
+      source: "__registry__/default/blocks/cta-03/page.tsx",
+      meta: undefined,
+    },
     "login-02": {
       name: "login-02",
       description: "A simple login form.",
