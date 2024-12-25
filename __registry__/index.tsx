@@ -754,6 +754,67 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/feature-03/page.tsx",
       meta: undefined,
     },
+    "footer-01": {
+      name: "footer-01",
+      description: "A Footer block.",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/blocks/footer-01/page.tsx",
+        type: "registry:page",
+        target: "app/footer/page.tsx"
+      },{
+        path: "registry/default/blocks/footer-01/components/footer-one.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/footer-01/components/animation-container.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["footer"],
+      component: React.lazy(() => import("@/registry/default/blocks/footer-01/page.tsx")),
+      source: "__registry__/default/blocks/footer-01/page.tsx",
+      meta: undefined,
+    },
+    "footer-02": {
+      name: "footer-02",
+      description: "A Footer block.",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/footer-02/page.tsx",
+        type: "registry:page",
+        target: "app/footer/page.tsx"
+      },{
+        path: "registry/default/blocks/footer-02/components/footer-two.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["footer"],
+      component: React.lazy(() => import("@/registry/default/blocks/footer-02/page.tsx")),
+      source: "__registry__/default/blocks/footer-02/page.tsx",
+      meta: undefined,
+    },
+    "footer-03": {
+      name: "footer-03",
+      description: "A Footer block.",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/footer-03/page.tsx",
+        type: "registry:page",
+        target: "app/footer/page.tsx"
+      },{
+        path: "registry/default/blocks/footer-03/components/footer-three.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["footer"],
+      component: React.lazy(() => import("@/registry/default/blocks/footer-03/page.tsx")),
+      source: "__registry__/default/blocks/footer-03/page.tsx",
+      meta: undefined,
+    },
     "login-02": {
       name: "login-02",
       description: "A simple login form.",

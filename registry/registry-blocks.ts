@@ -330,6 +330,64 @@ export const blocks: Registry = [
     categories: ["feature"],
   },
   {
+    name: "footer-01",
+    description: "A Footer block.",
+    type: "registry:block",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "blocks/footer-01/page.tsx",
+        target: "app/footer/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/footer-01/components/footer-one.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/footer-01/components/animation-container.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["footer"],
+  },
+  {
+    name: "footer-02",
+    description: "A Footer block.",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/footer-02/page.tsx",
+        target: "app/footer/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/footer-02/components/footer-two.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["footer"],
+  },
+  {
+    name: "footer-03",
+    description: "A Footer block.",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/footer-03/page.tsx",
+        target: "app/footer/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/footer-03/components/footer-three.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["footer"],
+  },
+  {
     name: "login-02",
     description: "A simple login form.",
     type: "registry:block",
