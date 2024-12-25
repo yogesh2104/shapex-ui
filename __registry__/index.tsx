@@ -616,6 +616,79 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/cta-03/page.tsx",
       meta: undefined,
     },
+    "faq-01": {
+      name: "faq-01",
+      description: "A FQAs block",
+      type: "registry:block",
+      registryDependencies: ["tabs","accordion","badge"],
+      files: [{
+        path: "registry/default/blocks/faq-01/page.tsx",
+        type: "registry:page",
+        target: "app/faq/page.tsx"
+      },{
+        path: "registry/default/blocks/faq-01/components/faq-one.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/faq-01/components/tabs.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["faq"],
+      component: React.lazy(() => import("@/registry/default/blocks/faq-01/page.tsx")),
+      source: "__registry__/default/blocks/faq-01/page.tsx",
+      meta: undefined,
+    },
+    "faq-02": {
+      name: "faq-02",
+      description: "A FAQs.",
+      type: "registry:block",
+      registryDependencies: ["badge","input","accordion"],
+      files: [{
+        path: "registry/default/blocks/faq-02/page.tsx",
+        type: "registry:page",
+        target: "app/faq/page.tsx"
+      },{
+        path: "registry/default/blocks/faq-02/components/faq-two.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/faq-02/components/accordion.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["faq"],
+      component: React.lazy(() => import("@/registry/default/blocks/faq-02/page.tsx")),
+      source: "__registry__/default/blocks/faq-02/page.tsx",
+      meta: undefined,
+    },
+    "faq-03": {
+      name: "faq-03",
+      description: "A FAQs.",
+      type: "registry:block",
+      registryDependencies: ["badge","input","accordion"],
+      files: [{
+        path: "registry/default/blocks/faq-03/page.tsx",
+        type: "registry:page",
+        target: "app/faq/page.tsx"
+      },{
+        path: "registry/default/blocks/faq-03/components/faq-three.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/faq-03/components/open-contact-form.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/faq-03/hook/use-outside-click.ts",
+        type: "registry:hook",
+        target: ""
+      }],
+      categories: ["faq"],
+      component: React.lazy(() => import("@/registry/default/blocks/faq-03/page.tsx")),
+      source: "__registry__/default/blocks/faq-03/page.tsx",
+      meta: undefined,
+    },
     "login-02": {
       name: "login-02",
       description: "A simple login form.",
