@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useOutsideClick } from "../hook/use-outside-click";
+import { useOutsideClick } from "@/registry/default/blocks/faq-03/hook/use-outside-click";
 import {
   Card,
   CardContent,
@@ -46,7 +46,6 @@ export function OpenContactForm() {
         {active ? (
           <div className="fixed inset-0  grid place-items-center z-[100]">
             <motion.button
-              
               layout
               initial={{
                 opacity: 0,
@@ -63,7 +62,7 @@ export function OpenContactForm() {
               className="flex absolute top-0 right-6 border bg-white lg:hidden items-center justify-center rounded-full"
               onClick={() => setActive(null)}
             >
-              <X className="text-black size-4"/>
+              <X className="text-black size-4" />
             </motion.button>
             <motion.div
               layoutId={`card-1`}

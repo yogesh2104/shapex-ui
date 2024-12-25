@@ -6,10 +6,15 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+} from "@/registry/default/ui/accordion";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/registry/default/ui/card";
 import { FAQ_SECTIONS } from "./data";
-import { OpenContactForm } from "./open-contact-form";
+import { OpenContactForm } from "@/registry/default/blocks/faq-03/components/open-contact-form";
 
 const FAQThree: React.FC = () => {
   return (
