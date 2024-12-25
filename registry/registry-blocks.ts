@@ -223,7 +223,7 @@ export const blocks: Registry = [
     name: "faq-02",
     description: "A FAQs.",
     type: "registry:block",
-    registryDependencies: ["badge", "input", "accordion"],
+    registryDependencies: ["badge", "input"],
     files: [
       {
         path: "blocks/faq-02/page.tsx",
@@ -245,7 +245,7 @@ export const blocks: Registry = [
     name: "faq-03",
     description: "A FAQs.",
     type: "registry:block",
-    registryDependencies: ["badge", "input", "accordion"],
+    registryDependencies: ["card"],
     files: [
       {
         path: "blocks/faq-03/page.tsx",
@@ -266,6 +266,68 @@ export const blocks: Registry = [
       },
     ],
     categories: ["faq"],
+  },
+  {
+    name: "feature-01",
+    description: "A Feature Block.",
+    type: "registry:block",
+    registryDependencies: ["card", "accordion"],
+    files: [
+      {
+        path: "blocks/feature-01/page.tsx",
+        target: "app/feature/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/feature-01/components/feature-one.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["feature"],
+  },
+  {
+    name: "feature-02",
+    description: "A Feature block.",
+    type: "registry:block",
+    registryDependencies: ["card", "accordion"],
+    files: [
+      {
+        path: "blocks/feature-02/page.tsx",
+        target: "app/feature/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/feature-02/components/feature-two.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/feature-02/components/video-dialog.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["feature"],
+  },
+  {
+    name: "feature-03",
+    description: "A Feature block.",
+    type: "registry:block",
+    registryDependencies: ["card"],
+    files: [
+      {
+        path: "blocks/feature-03/page.tsx",
+        target: "app/feature/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/feature-03/components/feature-three.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/feature-03/components/video-dialog.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["feature"],
   },
   {
     name: "login-02",

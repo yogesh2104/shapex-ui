@@ -643,7 +643,7 @@ export const Index: Record<string, any> = {
       name: "faq-02",
       description: "A FAQs.",
       type: "registry:block",
-      registryDependencies: ["badge","input","accordion"],
+      registryDependencies: ["badge","input"],
       files: [{
         path: "registry/default/blocks/faq-02/page.tsx",
         type: "registry:page",
@@ -666,7 +666,7 @@ export const Index: Record<string, any> = {
       name: "faq-03",
       description: "A FAQs.",
       type: "registry:block",
-      registryDependencies: ["badge","input","accordion"],
+      registryDependencies: ["card"],
       files: [{
         path: "registry/default/blocks/faq-03/page.tsx",
         type: "registry:page",
@@ -687,6 +687,71 @@ export const Index: Record<string, any> = {
       categories: ["faq"],
       component: React.lazy(() => import("@/registry/default/blocks/faq-03/page.tsx")),
       source: "__registry__/default/blocks/faq-03/page.tsx",
+      meta: undefined,
+    },
+    "feature-01": {
+      name: "feature-01",
+      description: "A Feature Block.",
+      type: "registry:block",
+      registryDependencies: ["card","accordion"],
+      files: [{
+        path: "registry/default/blocks/feature-01/page.tsx",
+        type: "registry:page",
+        target: "app/feature/page.tsx"
+      },{
+        path: "registry/default/blocks/feature-01/components/feature-one.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["feature"],
+      component: React.lazy(() => import("@/registry/default/blocks/feature-01/page.tsx")),
+      source: "__registry__/default/blocks/feature-01/page.tsx",
+      meta: undefined,
+    },
+    "feature-02": {
+      name: "feature-02",
+      description: "A Feature block.",
+      type: "registry:block",
+      registryDependencies: ["card","accordion"],
+      files: [{
+        path: "registry/default/blocks/feature-02/page.tsx",
+        type: "registry:page",
+        target: "app/feature/page.tsx"
+      },{
+        path: "registry/default/blocks/feature-02/components/feature-two.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/feature-02/components/video-dialog.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["feature"],
+      component: React.lazy(() => import("@/registry/default/blocks/feature-02/page.tsx")),
+      source: "__registry__/default/blocks/feature-02/page.tsx",
+      meta: undefined,
+    },
+    "feature-03": {
+      name: "feature-03",
+      description: "A Feature block.",
+      type: "registry:block",
+      registryDependencies: ["card"],
+      files: [{
+        path: "registry/default/blocks/feature-03/page.tsx",
+        type: "registry:page",
+        target: "app/feature/page.tsx"
+      },{
+        path: "registry/default/blocks/feature-03/components/feature-three.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/feature-03/components/video-dialog.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["feature"],
+      component: React.lazy(() => import("@/registry/default/blocks/feature-03/page.tsx")),
+      source: "__registry__/default/blocks/feature-03/page.tsx",
       meta: undefined,
     },
     "login-02": {
