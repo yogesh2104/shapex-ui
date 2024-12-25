@@ -198,6 +198,196 @@ export const blocks: Registry = [
     categories: ["cta"],
   },
   {
+    name: "faq-01",
+    description: "A FQAs block",
+    type: "registry:block",
+    registryDependencies: ["tabs", "accordion", "badge"],
+    files: [
+      {
+        path: "blocks/faq-01/page.tsx",
+        target: "app/faq/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/faq-01/components/faq-one.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/faq-01/components/tabs.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["faq"],
+  },
+  {
+    name: "faq-02",
+    description: "A FAQs.",
+    type: "registry:block",
+    registryDependencies: ["badge", "input"],
+    files: [
+      {
+        path: "blocks/faq-02/page.tsx",
+        target: "app/faq/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/faq-02/components/faq-two.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/faq-02/components/accordion.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["faq"],
+  },
+  {
+    name: "faq-03",
+    description: "A FAQs.",
+    type: "registry:block",
+    registryDependencies: ["card"],
+    files: [
+      {
+        path: "blocks/faq-03/page.tsx",
+        target: "app/faq/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/faq-03/components/faq-three.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/faq-03/components/open-contact-form.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/faq-03/hook/use-outside-click.ts",
+        type: "registry:hook",
+      },
+    ],
+    categories: ["faq"],
+  },
+  {
+    name: "feature-01",
+    description: "A Feature Block.",
+    type: "registry:block",
+    registryDependencies: ["card", "accordion"],
+    files: [
+      {
+        path: "blocks/feature-01/page.tsx",
+        target: "app/feature/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/feature-01/components/feature-one.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["feature"],
+  },
+  {
+    name: "feature-02",
+    description: "A Feature block.",
+    type: "registry:block",
+    registryDependencies: ["card", "accordion"],
+    files: [
+      {
+        path: "blocks/feature-02/page.tsx",
+        target: "app/feature/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/feature-02/components/feature-two.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/feature-02/components/video-dialog.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["feature"],
+  },
+  {
+    name: "feature-03",
+    description: "A Feature block.",
+    type: "registry:block",
+    registryDependencies: ["card"],
+    files: [
+      {
+        path: "blocks/feature-03/page.tsx",
+        target: "app/feature/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/feature-03/components/feature-three.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/feature-03/components/video-dialog.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["feature"],
+  },
+  {
+    name: "footer-01",
+    description: "A Footer block.",
+    type: "registry:block",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "blocks/footer-01/page.tsx",
+        target: "app/footer/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/footer-01/components/footer-one.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/footer-01/components/animation-container.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["footer"],
+  },
+  {
+    name: "footer-02",
+    description: "A Footer block.",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/footer-02/page.tsx",
+        target: "app/footer/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/footer-02/components/footer-two.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["footer"],
+  },
+  {
+    name: "footer-03",
+    description: "A Footer block.",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/footer-03/page.tsx",
+        target: "app/footer/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/footer-03/components/footer-three.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["footer"],
+  },
+  {
     name: "login-02",
     description: "A simple login form.",
     type: "registry:block",

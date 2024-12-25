@@ -2,10 +2,8 @@ import CallToActionThree from "@/registry/default/blocks/cta-03/components/cta-t
 
 export default function Page() {
   return (
-    <div className="container flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-screen">
       <CallToActionThree />
     </div>
   );
 }
-
-
