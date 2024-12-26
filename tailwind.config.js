@@ -67,11 +67,21 @@ module.exports = {
 		},
 		animation: {
 			'spin-slow': 'spin 3s linear infinite',
+			marquee: "marquee var(--duration) linear infinite",
+        	"marquee-vertical": "marquee-vertical var(--duration) linear infinite",
 		},
 		keyframes: {
 			spin: {
 			  from: { transform: 'rotate(0deg)' },
 			  to: { transform: 'rotate(360deg)' },
+			},
+			marquee: {
+				from: { transform: "translateX(0)" },
+				to: { transform: "translateX(calc(-100% - var(--gap)))" },
+			},
+			"marquee-vertical": {
+				from: { transform: "translateY(0)" },
+				to: { transform: "translateY(calc(-100% - var(--gap)))" },
 			},
 		},
   	}
