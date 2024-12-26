@@ -815,6 +815,94 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/footer-03/page.tsx",
       meta: undefined,
     },
+    "header-01": {
+      name: "header-01",
+      description: "header block",
+      type: "registry:block",
+      registryDependencies: ["sheet","button"],
+      files: [{
+        path: "registry/default/blocks/header-01/page.tsx",
+        type: "registry:page",
+        target: ""
+      },{
+        path: "registry/default/blocks/header-01/components/header-one.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/header-01/components/animation-container.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/header-01/components/mobile-navbar.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["header"],
+      component: React.lazy(() => import("@/registry/default/blocks/header-01/page.tsx")),
+      source: "__registry__/default/blocks/header-01/page.tsx",
+      meta: undefined,
+    },
+    "header-02": {
+      name: "header-02",
+      description: "header block",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/header-02/page.tsx",
+        type: "registry:page",
+        target: ""
+      },{
+        path: "registry/default/blocks/header-02/components/header-two.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["header"],
+      component: React.lazy(() => import("@/registry/default/blocks/header-02/page.tsx")),
+      source: "__registry__/default/blocks/header-02/page.tsx",
+      meta: undefined,
+    },
+    "header-03": {
+      name: "header-03",
+      description: "header block",
+      type: "registry:block",
+      registryDependencies: ["button","sheet","navigation-menu"],
+      files: [{
+        path: "registry/default/blocks/header-03/page.tsx",
+        type: "registry:page",
+        target: ""
+      },{
+        path: "registry/default/blocks/header-03/components/header-three.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["header"],
+      component: React.lazy(() => import("@/registry/default/blocks/header-03/page.tsx")),
+      source: "__registry__/default/blocks/header-03/page.tsx",
+      meta: undefined,
+    },
+    "header-04": {
+      name: "header-04",
+      description: "header block",
+      type: "registry:block",
+      registryDependencies: ["button","sheet"],
+      files: [{
+        path: "registry/default/blocks/header-04/page.tsx",
+        type: "registry:page",
+        target: ""
+      },{
+        path: "registry/default/blocks/header-04/components/header-four.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/header-04/components/contact-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["header"],
+      component: React.lazy(() => import("@/registry/default/blocks/header-04/page.tsx")),
+      source: "__registry__/default/blocks/header-04/page.tsx",
+      meta: undefined,
+    },
     "login-02": {
       name: "login-02",
       description: "A simple login form.",
