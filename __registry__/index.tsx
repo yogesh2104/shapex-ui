@@ -903,6 +903,79 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/header-04/page.tsx",
       meta: undefined,
     },
+    "logo-01": {
+      name: "logo-01",
+      description: "logo-cloud block",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/logo-01/page.tsx",
+        type: "registry:page",
+        target: ""
+      },{
+        path: "registry/default/blocks/logo-01/components/logo-one.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/logo-01/components/marquee.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["company-logo"],
+      component: React.lazy(() => import("@/registry/default/blocks/logo-01/page.tsx")),
+      source: "__registry__/default/blocks/logo-01/page.tsx",
+      meta: undefined,
+    },
+    "logo-02": {
+      name: "logo-02",
+      description: "logo-cloud block",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/logo-02/page.tsx",
+        type: "registry:page",
+        target: ""
+      },{
+        path: "registry/default/blocks/logo-02/components/logo-two.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/logo-02/components/marquee.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/logo-02/components/tailwind.config.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: ["company-logo"],
+      component: React.lazy(() => import("@/registry/default/blocks/logo-02/page.tsx")),
+      source: "__registry__/default/blocks/logo-02/page.tsx",
+      meta: undefined,
+    },
+    "logo-03": {
+      name: "logo-03",
+      description: "logo-cloud block",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/logo-03/page.tsx",
+        type: "registry:page",
+        target: ""
+      },{
+        path: "registry/default/blocks/logo-03/components/logo-three.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/logo-03/components/logo-slider.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["company-logo"],
+      component: React.lazy(() => import("@/registry/default/blocks/logo-03/page.tsx")),
+      source: "__registry__/default/blocks/logo-03/page.tsx",
+      meta: undefined,
+    },
     "login-02": {
       name: "login-02",
       description: "A simple login form.",

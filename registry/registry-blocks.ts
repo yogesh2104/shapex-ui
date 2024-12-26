@@ -468,6 +468,73 @@ export const blocks: Registry = [
     categories: ["header"],
   },
   {
+    name: "logo-01",
+    description: "logo-cloud block",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/logo-01/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/logo-01/components/logo-one.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/logo-01/components/marquee.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["company-logo"],
+  },
+  {
+    name: "logo-02",
+    description: "logo-cloud block",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/logo-02/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/logo-02/components/logo-two.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/logo-02/components/marquee.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/logo-02/components/tailwind.config.ts",
+        type: "registry:lib",
+      },
+    ],
+    categories: ["company-logo"],
+  },
+  {
+    name: "logo-03",
+    description: "logo-cloud block",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/logo-03/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/logo-03/components/logo-three.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/logo-03/components/logo-slider.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["company-logo"],
+  },
+  {
     name: "login-02",
     description: "A simple login form.",
     type: "registry:block",
