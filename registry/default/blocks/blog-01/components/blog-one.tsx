@@ -75,7 +75,7 @@ const BlogOne: React.FC = () => {
             <motion.div
               layoutId={`card-${activePost.title}-${id}`}
               ref={ref}
-              className="w-fullbg-white max-w-xl dark:bg-neutral-900 rounded-lg shadow-lg overflow-hidden"
+              className="w-fullbg-white max-w-xl dark:bg-neutral-900 bg-background rounded-lg shadow-lg overflow-hidden"
             >
               <div className="relative">
                 <Image
