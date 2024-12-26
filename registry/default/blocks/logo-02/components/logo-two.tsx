@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Marquee from "./marquee";
 
-
 const LogoTwo = () => {
   return (
     <section className="py-16 rounded-xl bg-gradient-to-b from-gray-900 via-gray-800 to-black">

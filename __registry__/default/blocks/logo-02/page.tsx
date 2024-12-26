@@ -1,5 +1,9 @@
-import LogoTwo from "@/registry/default/blocks/logo-03/components/logo-three";
+import LogoTwo from "@/registry/default/blocks/logo-02/components/logo-two";
 
 export default function Page() {
-  return <LogoTwo />;
+  return (
+    <div className="container flex justify-center items-center h-screen">
+      <LogoTwo />
+    </div>
+  );
 }

@@ -44,7 +44,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".content-collections/generated"
-  ],
+, "registry/default/blocks/newsletter-01/components"  ],
   "exclude": [
     "node_modules",
     "packages/**/*",

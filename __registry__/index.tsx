@@ -999,6 +999,67 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/login-02/page.tsx",
       meta: undefined,
     },
+    "newsletter-01": {
+      name: "newsletter-01",
+      description: "newsletter block 1",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/newsletter-01/page.tsx",
+        type: "registry:page",
+        target: ""
+      },{
+        path: "registry/default/blocks/newsletter-01/components/newsletter-one.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["newsletter"],
+      component: React.lazy(() => import("@/registry/default/blocks/newsletter-01/page.tsx")),
+      source: "__registry__/default/blocks/newsletter-01/page.tsx",
+      meta: undefined,
+    },
+    "newsletter-02": {
+      name: "newsletter-02",
+      description: "newsletter block 2",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/newsletter-02/page.tsx",
+        type: "registry:page",
+        target: ""
+      },{
+        path: "registry/default/blocks/newsletter-02/components/newsletter-two.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/newsletter-02/components/user-image.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["newsletter"],
+      component: React.lazy(() => import("@/registry/default/blocks/newsletter-02/page.tsx")),
+      source: "__registry__/default/blocks/newsletter-02/page.tsx",
+      meta: undefined,
+    },
+    "newsletter-03": {
+      name: "newsletter-03",
+      description: "newsletter block 3",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/newsletter-03/page.tsx",
+        type: "registry:page",
+        target: ""
+      },{
+        path: "registry/default/blocks/newsletter-03/components/newsletter-three.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["newsletter"],
+      component: React.lazy(() => import("@/registry/default/blocks/newsletter-03/page.tsx")),
+      source: "__registry__/default/blocks/newsletter-03/page.tsx",
+      meta: undefined,
+    },
     "signup-01": {
       name: "signup-01",
       description: "A simple Signup form.",
