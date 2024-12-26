@@ -612,6 +612,78 @@ export const blocks: Registry = [
     categories: ["newsletter"],
   },
   {
+    name: "pricing-01",
+    description: "pricing block 1",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/pricing-01/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/pricing-01/components/pricing-one.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/pricing-01/components/price-slider.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["pricing"],
+  },
+  {
+    name: "pricing-02",
+    description: "pricing block 2",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/pricing-02/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/pricing-02/components/pricing-two.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["pricing"],
+  },
+  {
+    name: "pricing-03",
+    description: "pricing block 3",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/pricing-03/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/pricing-03/components/pricing-three.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["pricing"],
+  },
+  {
+    name: "pricing-04",
+    description: "pricing block 4",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/pricing-04/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/pricing-04/components/pricing-four.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["pricing"],
+  },
+  {
     name: "signup-01",
     description: "A simple Signup form.",
     type: "registry:block",
