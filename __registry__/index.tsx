@@ -1300,6 +1300,63 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/roadmap-03/page.tsx",
       meta: undefined,
     },
+    "stats-01": {
+      name: "stats-01",
+      description: "stats block 3",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/stats-01/page.tsx",
+        type: "registry:page",
+        target: "@/components/stats.tsx"
+      },{
+        path: "registry/default/blocks/stats-01/components/stats-one.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["stats"],
+      component: React.lazy(() => import("@/registry/default/blocks/stats-01/page.tsx")),
+      source: "__registry__/default/blocks/stats-01/page.tsx",
+      meta: undefined,
+    },
+    "stats-02": {
+      name: "stats-02",
+      description: "stats block 2",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/stats-02/page.tsx",
+        type: "registry:page",
+        target: "@/components/stats.tsx"
+      },{
+        path: "registry/default/blocks/stats-02/components/stats-two.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["stats"],
+      component: React.lazy(() => import("@/registry/default/blocks/stats-02/page.tsx")),
+      source: "__registry__/default/blocks/stats-02/page.tsx",
+      meta: undefined,
+    },
+    "stats-03": {
+      name: "stats-03",
+      description: "stats block 3",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/stats-03/page.tsx",
+        type: "registry:page",
+        target: "@/components/stats.tsx"
+      },{
+        path: "registry/default/blocks/stats-03/components/stats-three.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["stats"],
+      component: React.lazy(() => import("@/registry/default/blocks/stats-03/page.tsx")),
+      source: "__registry__/default/blocks/stats-03/page.tsx",
+      meta: undefined,
+    },
     "signup-01": {
       name: "signup-01",
       description: "A simple Signup form.",

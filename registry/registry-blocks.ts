@@ -808,6 +808,60 @@ export const blocks: Registry = [
     categories: ["roadmap"],
   },
   {
+    name: "stats-01",
+    description: "stats block 3",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/stats-01/page.tsx",
+        type: "registry:page",
+        target: "@/components/stats.tsx",
+      },
+      {
+        path: "blocks/stats-01/components/stats-one.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["stats"],
+  },
+  {
+    name: "stats-02",
+    description: "stats block 2",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/stats-02/page.tsx",
+        type: "registry:page",
+        target: "@/components/stats.tsx",
+      },
+      {
+        path: "blocks/stats-02/components/stats-two.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["stats"],
+  },
+  {
+    name: "stats-03",
+    description: "stats block 3",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/stats-03/page.tsx",
+        type: "registry:page",
+        target: "@/components/stats.tsx",
+      },
+      {
+        path: "blocks/stats-03/components/stats-three.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["stats"],
+  },
+  {
     name: "signup-01",
     description: "A simple Signup form.",
     type: "registry:block",
