@@ -117,12 +117,6 @@ export const docsConfig: DocsConfig = {
           count:0
         },
         {
-          title: "Review",
-          href: "/blocks/review",
-          items: [],
-          count:0
-        },
-        {
           title: "Roadmap",
           href: "/blocks/roadmap",
           items: [],
