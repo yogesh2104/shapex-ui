@@ -1,13 +1,15 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Badge } from "./ui/badge";
+import { docsConfig } from "@/config/docs";
 
 export default async function HeroSection() {
-
   return (
     <section id="hero">
       <div className="relative mb-4 h-full overflow-hidden py-5 md:py-10">
+      <div className="absolute inset-0 bg-gradient-to-b from-purple-500/20 via-transparent to-transparent" />
         <div className="z-10 flex flex-col">
           <div className="mt-4 grid grid-cols-1 md:mt-20">
             <div className="flex flex-col items-start gap-6 px-7 pb-8 text-center md:items-center md:px-10">
@@ -58,6 +60,23 @@ export default async function HeroSection() {
                         <ChevronRight className="ml-1 size-4 shrink-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
                     </Link>
                     </div>
+                </div>
+                <div className="flex flex-wrap gap-3 justify-center max-w-6xl mt-10">
+                  {docsConfig.sidebarNav.map((items) => (
+                    items?.items.slice(1,14).map((item)=>(
+                      <Link
+                        key={item.title}
+                        href={item.href || "/"}
+                        className={`rounded-full px-6 py-2 relative text-white bg-zinc-900/90 hover:bg-zinc-900 border border-zinc-800`}
+                      >
+                        {item.title}
+                        <Badge className="absolute -top-2 -right-2 bg-yellow-500 text-xs px-2 py-0.5">
+                          {item.count}
+                        </Badge>
+                          
+                      </Link>
+                    ))
+                  ))}
                 </div>
 
             </div>

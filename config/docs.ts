@@ -3,6 +3,7 @@ export interface NavItem {
   href?: string
   disabled?: boolean
   external?: boolean
+  count?:number
 }
 
 export interface NavItemWithChildren extends NavItem {
@@ -35,96 +36,121 @@ export const docsConfig: DocsConfig = {
           title: "Article",
           href: "/blocks/article",
           items: [],
+          count:2
         },
         {
           title: "Blog",
           href: "/blocks/blog",
           items: [],
+          count:2
         },
         {
           title: "Contact",
           href: "/blocks/contact",
           items: [],
+          count:2
         },
         {
           title: "CTA",
           href: "/blocks/cta",
           items: [],
+          count:3
         },
         {
           title: "FAQs",
           href: "/blocks/faq",
           items: [],
+          count:3
         },
         {
           title: "Feature",
           href: "/blocks/feature",
           items: [],
+          count:4
         },
         {
           title: "Footer",
           href: "/blocks/footer",
           items: [],
+          count:3
         },
         {
           title: "Gallery",
           href: "/blocks/gallery",
           items: [],
+          count:0
         },
         {
           title: "Header",
           href: "/blocks/header",
           items: [],
+          count:4
         },
         {
           title: "Login",
           href: "/blocks/login",
           items: [],
+          count:2
         },
         {
           title: "Logo",
           href: "/blocks/company-logo",
           items: [],
+          count:3
         },
         {
           title: "Newsletter",
           href: "/blocks/newsletter",
           items: [],
+          count:3
         },
         {
           title: "Pricing",
           href: "/blocks/pricing",
           items: [],
+          count:4
+        },
+        {
+          title: "Rating",
+          href: "/blocks/rating",
+          items: [],
+          count:0
         },
         {
           title: "Roadmap",
           href: "/blocks/roadmap",
           items: [],
+          count:0
         },
         {
           title: "SignUp",
           href: "/blocks/signup",
           items: [],
+          count:0
         },
         {
           title: "Stats",
           href: "/blocks/stats",
           items: [],
+          count:0
         },
         {
           title: "Steps",
           href: "/blocks/steps",
           items: [],
+          count:0
         },
         {
           title: "Teams",
           href: "/blocks/teams",
           items: [],
+          count:0
         },
         {
           title: "Testimonial",
           href: "/blocks/testimonial",
           items: [],
+          count:0
         },
       ],
     },
