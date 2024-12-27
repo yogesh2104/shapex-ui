@@ -73,54 +73,33 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 240 4.9% 83.9%;
   }
-}
- */
+} */
 
 
 
- @layer base {
+
+@layer base {
   :root {
-    /* Main background and text colors - light gray and white theme */
     --background: 220 13% 95%;
     --foreground: 220 10% 20%;
-    
-    /* Card styling - subtle gray for product cards */
     --card: 220 15% 93%;
     --card-foreground: 220 10% 20%;
-    
-    /* Popover/dropdown styling */
     --popover: 0 0% 100%;
     --popover-foreground: 220 10% 20%;
-    
-    /* Primary colors - used for buttons and important elements */
     --primary: 220 10% 40%;
     --primary-foreground: 0 0% 100%;
-    
-    /* Secondary colors - used for less prominent elements */
     --secondary: 220 13% 85%;
     --secondary-foreground: 220 10% 20%;
-    
-    /* Muted elements - used for disabled or less important content */
     --muted: 220 13% 90%;
     --muted-foreground: 220 10% 45%;
-    
-    /* Accent colors - used for highlighting and hover states */
     --accent: 220 13% 88%;
     --accent-foreground: 220 10% 20%;
-    
-    /* Destructive colors - for error states */
     --destructive: 0 85% 60%;
     --destructive-foreground: 0 0% 98%;
-    
-    /* Border and input styling */
     --border: 220 13% 85%;
     --input: 220 13% 85%;
     --ring: 220 13% 75%;
-    
-    /* Border radius */
     --radius: 0.5rem;
-    
-    /* Sidebar specific styling */
     --sidebar-background: 220 13% 93%;
     --sidebar-foreground: 220 10% 20%;
     --sidebar-primary: 220 10% 40%;
@@ -132,35 +111,25 @@
   }
 
   .dark {
-    /* Dark mode colors - maintaining the same general style but darker */
     --background: 220 13% 18%;
     --foreground: 0 0% 98%;
-    
     --card: 220 13% 23%;
     --card-foreground: 0 0% 98%;
-    
     --popover: 220 13% 23%;
     --popover-foreground: 0 0% 98%;
-    
     --primary: 220 13% 75%;
     --primary-foreground: 220 13% 18%;
-    
     --secondary: 220 13% 30%;
     --secondary-foreground: 0 0% 98%;
-    
     --muted: 220 13% 30%;
     --muted-foreground: 220 13% 70%;
-    
     --accent: 220 13% 30%;
     --accent-foreground: 0 0% 98%;
-    
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 98%;
-    
     --border: 220 13% 30%;
     --input: 220 13% 30%;
     --ring: 220 13% 70%;
-    
     --sidebar-background: 220 13% 23%;
     --sidebar-foreground: 0 0% 98%;
     --sidebar-primary: 220 13% 75%;
@@ -171,7 +140,6 @@
     --sidebar-ring: 220 13% 70%;
   }
 }
-
 
 
 [data-rehype-pretty-code-fragment] {
