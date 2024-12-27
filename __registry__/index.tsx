@@ -1357,6 +1357,44 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/stats-03/page.tsx",
       meta: undefined,
     },
+    "steps-01": {
+      name: "steps-01",
+      description: "steps block 1",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/steps-01/page.tsx",
+        type: "registry:page",
+        target: "@/components/steps.tsx"
+      },{
+        path: "registry/default/blocks/steps-01/components/steps-one.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["steps"],
+      component: React.lazy(() => import("@/registry/default/blocks/steps-01/page.tsx")),
+      source: "__registry__/default/blocks/steps-01/page.tsx",
+      meta: undefined,
+    },
+    "steps-02": {
+      name: "steps-02",
+      description: "steps block 2",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/steps-02/page.tsx",
+        type: "registry:page",
+        target: "@/components/steps.tsx"
+      },{
+        path: "registry/default/blocks/steps-02/components/steps-two.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["steps"],
+      component: React.lazy(() => import("@/registry/default/blocks/steps-02/page.tsx")),
+      source: "__registry__/default/blocks/steps-02/page.tsx",
+      meta: undefined,
+    },
     "signup-01": {
       name: "signup-01",
       description: "A simple Signup form.",
