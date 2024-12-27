@@ -111,6 +111,16 @@ export const ui: Registry = [
     ],
   },
   {
+    name: "carousel",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/carousel.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
     name: "checkbox",
     type: "registry:ui",
     dependencies: ["@radix-ui/react-checkbox"],

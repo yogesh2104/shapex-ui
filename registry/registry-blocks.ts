@@ -969,4 +969,62 @@ export const blocks: Registry = [
     ],
     categories: ["signup"],
   },
+  // {
+  //   name: "testimonial-01",
+  //   description: "testimonial block 1",
+  //   type: "registry:block",
+  //   registryDependencies: [],
+  //   files: [
+  //     {
+  //       path: "blocks/testimonial-01/page.tsx",
+  //       type: "registry:page",
+  //       target: "@/components/testimonial.tsx",
+  //     },
+  //     {
+  //       path: "blocks/testimonial-01/components/testimonial-one.tsx",
+  //       type: "registry:component",
+  //     },
+  //   ],
+  //   categories: ["testimonial"],
+  // },
+  {
+    name: "testimonial-02",
+    description: "testimonial block 1",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/testimonial-02/page.tsx",
+        type: "registry:page",
+        target: "@/components/testimonial.tsx",
+      },
+      {
+        path: "blocks/testimonial-02/components/testimonial-two.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/testimonial-02/components/testimonial-card.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["testimonial"],
+  },
+  {
+    name: "testimonial-03",
+    description: "testimonial block 2",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/testimonial-03/page.tsx",
+        type: "registry:page",
+        target: "@/components/testimonial.tsx",
+      },
+      {
+        path: "blocks/testimonial-03/components/testimonial-three.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["testimonial"],
+  },
 ];

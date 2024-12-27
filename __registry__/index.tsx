@@ -125,6 +125,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "carousel": {
+      name: "carousel",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/ui/carousel.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/ui/carousel.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "checkbox": {
       name: "checkbox",
       description: "",
@@ -1469,6 +1484,48 @@ export const Index: Record<string, any> = {
       categories: ["signup"],
       component: React.lazy(() => import("@/registry/default/blocks/signup-04/page.tsx")),
       source: "__registry__/default/blocks/signup-04/page.tsx",
+      meta: undefined,
+    },
+    "testimonial-02": {
+      name: "testimonial-02",
+      description: "testimonial block 1",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/testimonial-02/page.tsx",
+        type: "registry:page",
+        target: "@/components/testimonial.tsx"
+      },{
+        path: "registry/default/blocks/testimonial-02/components/testimonial-two.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/testimonial-02/components/testimonial-card.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["testimonial"],
+      component: React.lazy(() => import("@/registry/default/blocks/testimonial-02/page.tsx")),
+      source: "__registry__/default/blocks/testimonial-02/page.tsx",
+      meta: undefined,
+    },
+    "testimonial-03": {
+      name: "testimonial-03",
+      description: "testimonial block 2",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/testimonial-03/page.tsx",
+        type: "registry:page",
+        target: "@/components/testimonial.tsx"
+      },{
+        path: "registry/default/blocks/testimonial-03/components/testimonial-three.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["testimonial"],
+      component: React.lazy(() => import("@/registry/default/blocks/testimonial-03/page.tsx")),
+      source: "__registry__/default/blocks/testimonial-03/page.tsx",
       meta: undefined,
     },
     "utils": {
