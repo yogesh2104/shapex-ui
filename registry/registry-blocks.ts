@@ -754,6 +754,60 @@ export const blocks: Registry = [
     categories: ["rating"],
   },
   {
+    name: "roadmap-01",
+    description: "roadmap block 1",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/roadmap-01/page.tsx",
+        type: "registry:page",
+        target: "@/components/roadmap.tsx",
+      },
+      {
+        path: "blocks/roadmap-01/components/roadmap-one.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["roadmap"],
+  },
+  {
+    name: "roadmap-02",
+    description: "roadmap block 2",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/roadmap-02/page.tsx",
+        type: "registry:page",
+        target: "@/components/roadmap.tsx",
+      },
+      {
+        path: "blocks/roadmap-02/components/roadmap-two.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["roadmap"],
+  },
+  {
+    name: "roadmap-03",
+    description: "roadmap block 3",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/roadmap-03/page.tsx",
+        type: "registry:page",
+        target: "@/components/roadmap.tsx",
+      },
+      {
+        path: "blocks/roadmap-03/components/roadmap-three.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["roadmap"],
+  },
+  {
     name: "signup-01",
     description: "A simple Signup form.",
     type: "registry:block",
