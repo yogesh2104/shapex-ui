@@ -50,6 +50,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "avatar": {
+      name: "avatar",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/ui/avatar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/ui/avatar.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "badge": {
       name: "badge",
       description: "",
@@ -257,6 +272,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/ui/navigation-menu.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "progress": {
+      name: "progress",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/ui/progress.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/ui/progress.tsx")),
       source: "",
       meta: undefined,
     },
@@ -1138,6 +1168,79 @@ export const Index: Record<string, any> = {
       categories: ["pricing"],
       component: React.lazy(() => import("@/registry/default/blocks/pricing-04/page.tsx")),
       source: "__registry__/default/blocks/pricing-04/page.tsx",
+      meta: undefined,
+    },
+    "rating-01": {
+      name: "rating-01",
+      description: "rating block 1",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/rating-01/page.tsx",
+        type: "registry:page",
+        target: "@/components/rating.tsx"
+      },{
+        path: "registry/default/blocks/rating-01/components/rating-one.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/rating-01/hooks/useClickOutside.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["rating"],
+      component: React.lazy(() => import("@/registry/default/blocks/rating-01/page.tsx")),
+      source: "__registry__/default/blocks/rating-01/page.tsx",
+      meta: undefined,
+    },
+    "rating-02": {
+      name: "rating-02",
+      description: "rating block 2",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/rating-02/page.tsx",
+        type: "registry:page",
+        target: "@/components/rating.tsx"
+      },{
+        path: "registry/default/blocks/rating-02/components/rating-two.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["rating"],
+      component: React.lazy(() => import("@/registry/default/blocks/rating-02/page.tsx")),
+      source: "__registry__/default/blocks/rating-02/page.tsx",
+      meta: undefined,
+    },
+    "rating-03": {
+      name: "rating-03",
+      description: "rating block 3",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/rating-03/page.tsx",
+        type: "registry:page",
+        target: "@/components/rating.tsx"
+      },{
+        path: "registry/default/blocks/rating-03/components/rating-three.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/rating-03/components/dialog-box.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/rating-03/components/write-review.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/rating-03/hooks/useClickOutside.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["rating"],
+      component: React.lazy(() => import("@/registry/default/blocks/rating-03/page.tsx")),
+      source: "__registry__/default/blocks/rating-03/page.tsx",
       meta: undefined,
     },
     "signup-01": {

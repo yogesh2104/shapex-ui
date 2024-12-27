@@ -684,6 +684,76 @@ export const blocks: Registry = [
     categories: ["pricing"],
   },
   {
+    name: "rating-01",
+    description: "rating block 1",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/rating-01/page.tsx",
+        type: "registry:page",
+        target: "@/components/rating.tsx",
+      },
+      {
+        path: "blocks/rating-01/components/rating-one.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/rating-01/hooks/useClickOutside.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["rating"],
+  },
+  {
+    name: "rating-02",
+    description: "rating block 2",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/rating-02/page.tsx",
+        type: "registry:page",
+        target: "@/components/rating.tsx",
+      },
+      {
+        path: "blocks/rating-02/components/rating-two.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["rating"],
+  },
+  {
+    name: "rating-03",
+    description: "rating block 3",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/rating-03/page.tsx",
+        type: "registry:page",
+        target: "@/components/rating.tsx",
+      },
+      {
+        path: "blocks/rating-03/components/rating-three.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/rating-03/components/dialog-box.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/rating-03/components/write-review.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/rating-03/hooks/useClickOutside.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["rating"],
+  },
+  {
     name: "signup-01",
     description: "A simple Signup form.",
     type: "registry:block",
