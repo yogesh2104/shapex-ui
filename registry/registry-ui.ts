@@ -57,6 +57,17 @@ export const ui: Registry = [
     ],
   },
   {
+    name: "avatar",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-avatar"],
+    files: [
+      {
+        path: "ui/avatar.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
     name: "badge",
     type: "registry:ui",
     files: [
@@ -205,6 +216,17 @@ export const ui: Registry = [
     files: [
       {
         path: "ui/navigation-menu.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
+    name: "progress",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-progress"],
+    files: [
+      {
+        path: "ui/progress.tsx",
         type: "registry:ui",
       },
     ],
