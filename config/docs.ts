@@ -170,3 +170,23 @@ export const docsConfig: DocsConfig = {
     },
   ],
 }
+
+
+export const FEATURED_BLOCKS = [
+  "login-02",
+  "signup-02",
+  "blog-01",
+  "contact-02",
+  "cta-02",
+  "faq-01",
+  "feature-03",
+  "footer-03",
+  "header-04",
+  "logo-03",
+  "newsletter-02",
+  "pricing-02",
+  "rating-03",
+  "stats-03",
+  "team-01",
+  "testimonial-02"
+]
