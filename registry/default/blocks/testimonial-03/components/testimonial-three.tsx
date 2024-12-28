@@ -139,7 +139,11 @@ const TestimonialCard = ({
   <Card
     className={cn(
       "h-full transition-transform duration-300",
-      isMobile ? "scale-100" : isCurrent ? "bg-gray-50 scale-110 text-black" : "scale-90",
+      isMobile
+        ? "scale-100"
+        : isCurrent
+          ? "bg-gray-50 scale-110 text-black"
+          : "scale-90",
     )}
   >
     <CardContent className="p-6">

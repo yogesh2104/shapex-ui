@@ -988,6 +988,72 @@ export const blocks: Registry = [
   //   categories: ["testimonial"],
   // },
   {
+    name: "team-01",
+    description: "team block 1",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/team-01/page.tsx",
+        type: "registry:page",
+        target: "@/components/team.tsx",
+      },
+      {
+        path: "blocks/team-01/components/team-one.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["teams"],
+  },
+  {
+    name: "team-02",
+    description: "team block 2",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/team-02/page.tsx",
+        type: "registry:page",
+        target: "@/components/team.tsx",
+      },
+      {
+        path: "blocks/team-02/components/team-two.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/team-02/components/team-card.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["teams"],
+  },
+  {
+    name: "team-03",
+    description: "team block 3",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/team-03/page.tsx",
+        type: "registry:page",
+        target: "@/components/team.tsx",
+      },
+      {
+        path: "blocks/team-03/components/team-three.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/team-03/components/marquee.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/team-03/components/tailwind.config.ts",
+        type: "registry:component",
+      },
+    ],
+    categories: ["teams"],
+  },
+  {
     name: "testimonial-02",
     description: "testimonial block 1",
     type: "registry:block",

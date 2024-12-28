@@ -1486,6 +1486,75 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/signup-04/page.tsx",
       meta: undefined,
     },
+    "team-01": {
+      name: "team-01",
+      description: "team block 1",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/team-01/page.tsx",
+        type: "registry:page",
+        target: "@/components/team.tsx"
+      },{
+        path: "registry/default/blocks/team-01/components/team-one.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["teams"],
+      component: React.lazy(() => import("@/registry/default/blocks/team-01/page.tsx")),
+      source: "__registry__/default/blocks/team-01/page.tsx",
+      meta: undefined,
+    },
+    "team-02": {
+      name: "team-02",
+      description: "team block 2",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/team-02/page.tsx",
+        type: "registry:page",
+        target: "@/components/team.tsx"
+      },{
+        path: "registry/default/blocks/team-02/components/team-two.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/team-02/components/team-card.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["teams"],
+      component: React.lazy(() => import("@/registry/default/blocks/team-02/page.tsx")),
+      source: "__registry__/default/blocks/team-02/page.tsx",
+      meta: undefined,
+    },
+    "team-03": {
+      name: "team-03",
+      description: "team block 3",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/team-03/page.tsx",
+        type: "registry:page",
+        target: "@/components/team.tsx"
+      },{
+        path: "registry/default/blocks/team-03/components/team-three.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/team-03/components/marquee.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/team-03/components/tailwind.config.ts",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["teams"],
+      component: React.lazy(() => import("@/registry/default/blocks/team-03/page.tsx")),
+      source: "__registry__/default/blocks/team-03/page.tsx",
+      meta: undefined,
+    },
     "testimonial-02": {
       name: "testimonial-02",
       description: "testimonial block 1",
