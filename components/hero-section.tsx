@@ -61,7 +61,7 @@ export default async function HeroSection() {
                     </Link>
                     </div>
                 </div>
-                <div className="flex flex-wrap gap-3 justify-center max-w-6xl mt-10">
+                <div className="flex items-center flex-wrap gap-3 justify-center max-w-6xl mt-10">
                   {docsConfig.sidebarNav.map((items) => (
                     items?.items.slice(1,14).map((item)=>(
                       <Link
@@ -77,8 +77,13 @@ export default async function HeroSection() {
                       </Link>
                     ))
                   ))}
+                  <Link
+                    href={"/blocks"}
+                    className={`rounded-full px-6 py-2 underline relative text-white bg-zinc-900/90 hover:bg-zinc-900 border border-zinc-800`}
+                  >
+                  More                          
+                  </Link> 
                 </div>
-
             </div>
           </div>
         </div>
