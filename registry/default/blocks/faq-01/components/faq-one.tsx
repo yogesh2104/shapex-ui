@@ -62,8 +62,8 @@ export default function FAQSection() {
         >
           <TabsList className="w-full justify-start h-12 p-1">
             <TabsTrigger value="general">General FAQs</TabsTrigger>
-            <TabsTrigger value="icons">Untitled UI Icons</TabsTrigger>
-            <TabsTrigger value="library">Webflow Library</TabsTrigger>
+            <TabsTrigger value="icons">UI Icons</TabsTrigger>
+            <TabsTrigger value="library">Library</TabsTrigger>
           </TabsList>
         </Tabs>
       </div>
