@@ -23,10 +23,10 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { title: "Home", href: "/" },
-  { title: "About", href: "/about" },
-  { title: "Policy", href: "/booking" },
-  { title: "Blog", href: "/blog" },
+  { title: "Home", href: "#" },
+  { title: "About", href: "#" },
+  { title: "Policy", href: "#" },
+  { title: "Blog", href: "#" },
 ];
 
 const listVariants = {
