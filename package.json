@@ -6,9 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "development": "next dev",
-    "prebuild": "pnpm build:registry",
-    "build": "next build",
-    "build:registry": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/build-registry.mts && prettier --log-level silent --write \"registry/**/*.{ts,tsx,jsx,mdx}\" --cache",
+    "build": "pnpm build:registry && next build",
+    "build:registry": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/build-registry.mts --log-level silent --write \"registry/**/*.{ts,tsx,jsx,mdx}\" --cache",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix"
