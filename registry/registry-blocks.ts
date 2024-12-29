@@ -395,6 +395,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/header-01/page.tsx",
+        target: "@/components/header.tsx",
         type: "registry:page",
       },
       {
@@ -420,6 +421,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/header-02/page.tsx",
+        target: "@/components/header.tsx",
         type: "registry:page",
       },
       {
@@ -437,6 +439,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/header-03/page.tsx",
+        target: "@/components/header.tsx",
         type: "registry:page",
       },
       {
@@ -454,6 +457,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/header-04/page.tsx",
+        target: "@/components/header.tsx",
         type: "registry:page",
       },
       {
@@ -475,6 +479,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/logo-01/page.tsx",
+        target: "@/components/logo.tsx",
         type: "registry:page",
       },
       {
@@ -496,6 +501,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/logo-02/page.tsx",
+        target: "@/components/logo.tsx",
         type: "registry:page",
       },
       {
@@ -521,6 +527,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/logo-03/page.tsx",
+        target: "@/components/logo.tsx",
         type: "registry:page",
       },
       {
@@ -564,6 +571,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/newsletter-01/page.tsx",
+        target: "@/components/newsletter.tsx",
         type: "registry:page",
       },
       {
@@ -581,6 +589,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/newsletter-02/page.tsx",
+        target: "@/components/newsletter.tsx",
         type: "registry:page",
       },
       {
@@ -602,6 +611,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/newsletter-03/page.tsx",
+        target: "@/components/newsletter.tsx",
         type: "registry:page",
       },
       {
@@ -619,6 +629,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/pricing-01/page.tsx",
+        target: "@/components/pricing.tsx",
         type: "registry:page",
       },
       {
@@ -640,6 +651,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/pricing-02/page.tsx",
+        target: "@/components/pricing.tsx",
         type: "registry:page",
       },
       {
@@ -657,6 +669,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/pricing-03/page.tsx",
+        target: "@/components/pricing.tsx",
         type: "registry:page",
       },
       {
@@ -674,6 +687,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/pricing-04/page.tsx",
+        target: "@/components/pricing.tsx",
         type: "registry:page",
       },
       {
@@ -923,7 +937,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/signup-02/page.tsx",
-        target: "app/signup/page.tsx",
+        target: "@/components/signup.tsx",
         type: "registry:page",
       },
       {
@@ -941,7 +955,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/signup-03/page.tsx",
-        target: "app/signup/page.tsx",
+        target: "@/components/signup.tsx",
         type: "registry:page",
       },
       {
@@ -959,7 +973,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/signup-04/page.tsx",
-        target: "app/signup/page.tsx",
+        target: "@/components/signup.tsx",
         type: "registry:page",
       },
       {
