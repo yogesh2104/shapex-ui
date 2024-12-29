@@ -15,14 +15,13 @@ export const ThemeToggle = React.forwardRef<
   return (
     <Button
       ref={ref}
-      variant="link"
-      size="icon"
-      className={cn("px-2", className)}
+      variant={"link"}
+      className={cn("", className)}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       {...props}
     >
-      <Moon className="hidden size-10 text-neutral-800 dark:block dark:text-neutral-200" />
-      <Sun className="size-10 text-neutral-800 dark:hidden dark:text-neutral-200" />
+      <Moon className="hidden size-8 text-neutral-800 dark:block dark:text-neutral-200" />
+      <Sun className="size-8 text-neutral-800 dark:hidden dark:text-neutral-200" />
     </Button>
   );
 });

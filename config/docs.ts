@@ -164,10 +164,10 @@ export const docsConfig: DocsConfig = {
       title: "Template",
       href: "/coming-soon",
     },
-    {
-      title: "Themes",
-      href: "/themes",
-    },
+    // {
+    //   title: "Themes",
+    //   href: "/themes",
+    // },
   ],
 }
 

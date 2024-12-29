@@ -1,0 +1,53 @@
+@keyframes rotateCircle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateRect {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes ping {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.rotateCircle {
+    animation: rotateCircle 2s linear infinite;
+    transform-origin: 28px 28px;
+}
+
+.rotateRect {
+    animation: rotateRect 3s linear infinite;
+    transform-origin: 20px 20px;
+}
+
+.pingCircle {
+    animation: ping 1.5s ease-in-out infinite;
+    transform-origin: 28px 28px;
+}
+
+.pingTriangle {
+    animation: ping 1.5s ease-in-out infinite;
+    transform-origin: 10px 10px;
+}
+
