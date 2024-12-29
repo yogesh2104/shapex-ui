@@ -4,7 +4,7 @@
  *
  * This component is inspire by Eldora UI
  *
- * Source: [https://www.eldoraui.site/docs/components/features by Manu Arora]
+ * Source: [https://www.eldoraui.site/docs/components/features]
  */
 
 import React, { useEffect, useRef, useState } from "react";
