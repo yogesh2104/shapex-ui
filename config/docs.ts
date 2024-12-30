@@ -27,6 +27,17 @@ export const docsConfig: DocsConfig = {
           href: "/blocks",
           items: [],
         },
+        {
+          title: "Why ShapeX-UI",
+          href: "/blocks/why-shapex-ui",
+          items: [],
+        },
+        {
+          title: "Templates",
+          href: "/coming-soon",
+          disabled: true,
+          items: [],
+        },
       ],
     },
     {
@@ -66,7 +77,7 @@ export const docsConfig: DocsConfig = {
           title: "Feature",
           href: "/blocks/feature",
           items: [],
-          count:4
+          count:3
         },
         {
           title: "Footer",
@@ -114,43 +125,43 @@ export const docsConfig: DocsConfig = {
           title: "Rating",
           href: "/blocks/rating",
           items: [],
-          count:0
+          count:3
         },
         {
           title: "Roadmap",
           href: "/blocks/roadmap",
           items: [],
-          count:0
+          count:3
         },
         {
           title: "SignUp",
           href: "/blocks/signup",
           items: [],
-          count:0
+          count:3
         },
         {
           title: "Stats",
           href: "/blocks/stats",
           items: [],
-          count:0
+          count:3
         },
         {
           title: "Steps",
           href: "/blocks/steps",
           items: [],
-          count:0
+          count:2
         },
         {
           title: "Teams",
           href: "/blocks/teams",
           items: [],
-          count:0
+          count:3
         },
         {
           title: "Testimonial",
           href: "/blocks/testimonial",
           items: [],
-          count:0
+          count:3
         },
       ],
     },

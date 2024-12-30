@@ -20,7 +20,7 @@ export function BlockSideBar({ items }: BlockSideBarProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="mt-5 flex flex-col gap-2 mb-5"
+      className="pt-5 flex flex-col gap-2 mb-5"
     >
       {items.map((item, index) => (
         <SidebarGroup key={index} item={item} pathname={pathname} />
@@ -78,7 +78,7 @@ function BlockSideBarItems({
   groupId: string
 }) {
   return items?.length ? (
-    <div className="relative grid grid-flow-row auto-rows-max gap-0.5 text-sm pl-4">
+    <div className="relative grid grid-flow-row auto-rows-max gap-1 text-sm pl-4">
       {items.map((item, index) =>
         item.href ? (
           <Link
@@ -88,10 +88,9 @@ function BlockSideBarItems({
               "group relative flex w-full items-center rounded-md border border-transparent px-2 py-1 transition-colors",
               pathname === item.href
                 ? "font-medium text-foreground"
-                : "text-muted-foreground hover:text-foreground"
+                : "text-muted-foreground hover:text-foreground",
+              item.disabled && "opacity-60 cursor-not-allowed hover:opacity-60"
             )}
-            target={item.external ? "_blank" : ""}
-            rel={item.external ? "noreferrer" : ""}
           >
             {pathname === item.href && (
               <motion.div
@@ -105,7 +104,14 @@ function BlockSideBarItems({
                 }}
               />
             )}
-            <span className="relative z-10 shrink-0">{item.title}</span>
+            <span className="relative z-10 shrink-0 text-xs">
+              {item.title}
+              {item.disabled && (
+              <span className="ml-2 rounded-md bg-muted px-1.5 py-0.5 text-xs leading-none text-muted-foreground no-underline group-hover:no-underline">
+                coming soon
+              </span>
+            )}
+            </span>
           </Link>
         ) : (
           <span
