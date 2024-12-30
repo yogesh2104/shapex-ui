@@ -4,53 +4,101 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Badge } from "./ui/badge";
 import { docsConfig } from "@/config/docs";
+import { TextEffect } from "./text-effect";
+import { Magnetic } from "./magnetic.button";
 
 export default async function HeroSection() {
+  const springOptions = { bounce: 0.1 };
+
   return (
     <section id="hero">
       <div className="relative mb-4 h-full overflow-hidden py-5 md:py-10">
       <div className="absolute inset-0 bg-gradient-to-b from-purple-500/20 via-transparent to-transparent" />
         <div className="z-10 flex flex-col">
           <div className="mt-4 grid grid-cols-1 md:mt-20">
-            <div className="flex flex-col items-start gap-6 px-7 pb-8 text-center md:items-center md:px-10">
+            <div className="flex flex-col items-start gap-6 px-7 pb-3 text-center md:items-center md:px-10">
                 
                 <div className="relative mt-4 flex flex-col gap-4 md:items-center lg:flex-row">
-                    <h1 className="relative mx-0 max-w-[43.5rem] text-balance pt-5 text-left text-5xl font-extrabold tracking-tight text-black dark:text-white sm:text-7xl md:mx-auto md:px-4 md:py-2 md:text-center md:text-7xl lg:text-7xl">
-                    UI library for Design <span className="text-primary">Engineers</span>
-                    </h1>
-                    <span className="text-neutral-90 absolute -top-3.5 left-0 z-10 rotate-3 whitespace-nowrap rounded-full bg-neutral-800 px-2.5 py-1 text-[11px] font-semibold uppercase leading-5 tracking-wide text-white md:top-12 md:-rotate-12">
-                    Open-source
-                    </span>
+                  <h1 className="relative mx-0 w-full md:max-w-[60.5rem] text-balance pt-5 text-left text-5xl font-extrabold tracking-tight text-black dark:text-white sm:text-7xl md:mx-auto md:px-4 md:py-2 md:text-center md:text-7xl lg:text-7xl">
+                  <TextEffect
+                    per='char'
+                    delay={0.5}
+                    variants={{
+                      container: { hidden: { opacity: 0 },
+                        visible: { opacity: 1, transition: { staggerChildren: 0.05 } },
+                      },
+                      item: {
+                        hidden: { opacity: 0, rotateX: 90, y: 10 },
+                        visible: { opacity: 1, rotateX: 0, y: 0, transition: { duration: 0.2 } },
+                      },
+                    }}
+                  >
+                    A UI Library Tailored for
+                  </TextEffect>
+                  <TextEffect
+                    per='char'
+                    delay={2.5}
+                    preset="blur"
+                    variants={{
+                      container: {
+                        hidden: { opacity: 0 },
+                        visible: {
+                          opacity: 1,
+                          transition: { staggerChildren: 0.05 },
+                        },
+                      },
+                      item: {
+                        hidden: { opacity: 0, rotateX: 90, y: 10 },
+                        visible: { opacity: 1, rotateX: 0, y: 0, transition: { duration: 0.2 } },
+                      },
+                    }}
+                  >
+                    Design Engineers
+                  </TextEffect>
+                  </h1>  
                 </div>
 
-                <p className="max-w-xl text-balance text-left text-base tracking-tight text-black dark:font-medium dark:text-white md:text-center md:text-lg ">
-                    50+ free and open-source animated components built with{" "}
-                    <b>React</b>, <b>Typescript</b>, <b>Tailwind CSS</b>, and{" "}
-                    <b>Framer Motion</b>.
+                <p className="max-w-2xl text-balance text-left text-base tracking-tight text-black dark:font-medium dark:text-white md:text-center md:text-lg ">
+                    Boost your web application's performance with reusable components built on <b>shadcn/ui</b>, <b>Framer Motion</b>, designed for efficiency and scalability.
                 </p>
 
-                <div className="mx-0 flex w-full max-w-full flex-col gap-4 py-4 sm:max-w-lg sm:flex-row md:mx-auto">
+                <div className="mx-0 flex w-full max-w-full flex-col gap-4 py-4 md:max-w-md sm:flex-row md:mx-auto">
                     <div className="flex w-full flex-col gap-2 sm:flex-row sm:gap-4">
-                    <Link
-                        href="/components"  
-                        className={cn(
-                        buttonVariants({
-                            variant: "default",
-                            size: "lg",
-                        }),
-                        "gap-2 whitespace-pre md:flex",
-                        "group relative w-full gap-1 rounded-full text-sm font-semibold tracking-tighter",
-                        )}
-                    >
-                        Browse Components
-                        <ChevronRight className="ml-1  size-4 shrink-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
-                    </Link>
+                      <Magnetic
+                        intensity={0.2}
+                        springOptions={springOptions}
+                        actionArea='global'
+                        range={300}
+                      >
+                        <Link
+                          href="/components"  
+                          className={cn(
+                          buttonVariants({
+                              variant: "default",
+                              size: "lg",
+                          }),
+                          "gap-2 whitespace-pre md:flex",
+                          "group relative w-full gap-1 rounded-full text-sm font-semibold tracking-tighter",
+                          )}>
+                          <Magnetic
+                            intensity={0.1}
+                            springOptions={springOptions}
+                            actionArea='global'
+                            range={300}
+                          >
+                            <span>Browse Blocks</span>
+                          </Magnetic>
+                          
+                          <ChevronRight className="ml-1  size-4 shrink-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
+                        </Link>
+
+                      </Magnetic>
                     <Link
                         href="/docs"
                         className={cn(
                         buttonVariants({
                             size: "lg",
-                            variant: "ghost",
+                            variant: "outline",
                         }),
                         "gap-2 whitespace-pre md:flex",
                         "group relative w-full gap-1 overflow-hidden rounded-full text-sm font-semibold tracking-tighter",
@@ -61,16 +109,17 @@ export default async function HeroSection() {
                     </Link>
                     </div>
                 </div>
-                <div className="flex items-center flex-wrap gap-3 justify-center max-w-6xl mt-10">
+                <div className="flex items-center flex-wrap gap-3 justify-center max-w-5xl mt-10">
                   {docsConfig.sidebarNav.map((items) => (
-                    items?.items.slice(1,14).map((item)=>(
+                    items?.items.slice(1,13).map((item)=>(
+                      item.count !=0 &&
                       <Link
                         key={item.title}
                         href={item.href || "/"}
-                        className={`rounded-full px-6 py-2 relative text-white bg-zinc-900/90 hover:bg-zinc-900 border border-zinc-800`}
+                        className={`rounded-full text-sm px-6 py-2 relative text-white bg-zinc-900/90 hover:bg-zinc-900 border border-zinc-800`}
                       >
                         {item.title}
-                        <Badge className="absolute -top-2 -right-2 bg-yellow-500 text-xs px-2 py-0.5">
+                        <Badge className="absolute -top-2 -right-2 bg-yellow-500 text-xs px-1 py-0.8">
                           {item.count}
                         </Badge>
                           
@@ -79,9 +128,12 @@ export default async function HeroSection() {
                   ))}
                   <Link
                     href={"/blocks"}
-                    className={`rounded-full px-6 py-2 underline relative text-white bg-zinc-900/90 hover:bg-zinc-900 border border-zinc-800`}
+                    className={`rounded-full px-2 md:px-6 py-1 text-sm md:py-2 underline relative text-white bg-zinc-900/90 hover:bg-zinc-900 border border-zinc-800`}
                   >
                   More                          
+                  <Badge className="absolute -top-2 -right-2 text-xs bg-yellow-500 text-xs px-1 py-0.8">
+                    17
+                  </Badge>
                   </Link> 
                 </div>
             </div>
