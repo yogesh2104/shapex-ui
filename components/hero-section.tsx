@@ -1,6 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Badge } from "./ui/badge";
 import { docsConfig } from "@/config/docs";
@@ -33,7 +33,7 @@ export default async function HeroSection() {
                       },
                     }}
                   >
-                    A UI Library Tailored for
+                    A UI Blocks Tailored for
                   </TextEffect>
                   <TextEffect
                     per='char'
@@ -71,7 +71,7 @@ export default async function HeroSection() {
                         range={200}
                       >
                         <Link
-                          href="/components"  
+                          href="/blocks"  
                           className={cn(
                           buttonVariants({
                               variant: "default",
@@ -84,7 +84,7 @@ export default async function HeroSection() {
                             intensity={0.1}
                             springOptions={springOptions}
                             actionArea='global'
-                            range={200}
+                            range={300}
                           >
                             <span>Browse Blocks</span>
                           </Magnetic>
@@ -94,7 +94,7 @@ export default async function HeroSection() {
 
                       </Magnetic>
                     <Link
-                        href="/docs"
+                        href="/why-shapex-ui"
                         className={cn(
                         buttonVariants({
                             size: "lg",
@@ -104,7 +104,7 @@ export default async function HeroSection() {
                         "group relative w-full gap-1 overflow-hidden rounded-full text-sm font-semibold tracking-tighter",
                         )}
                     >
-                        Get Started
+                        Why Shapex-UI
                         <ChevronRight className="ml-1 size-4 shrink-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
                     </Link>
                     </div>
@@ -116,10 +116,10 @@ export default async function HeroSection() {
                       <Link
                         key={item.title}
                         href={item.href || "/"}
-                        className={`rounded-full text-sm px-6 py-2 relative text-white bg-zinc-900/90 hover:bg-zinc-900 border border-zinc-800`}
+                        className={`rounded-full text-sm px-6 py-2 relative text-black dark:text-white bg-background border`}
                       >
                         {item.title}
-                        <Badge className="absolute -top-2 -right-2 bg-yellow-500 text-xs px-1 py-0.8">
+                        <Badge className="absolute -top-2 -right-1 bg-yellow-500 text-xs px-1 py-0.8">
                           {item.count}
                         </Badge>
                           
@@ -128,10 +128,10 @@ export default async function HeroSection() {
                   ))}
                   <Link
                     href={"/blocks"}
-                    className={`rounded-full px-2 md:px-6 py-1 text-sm md:py-2 underline relative text-white bg-zinc-900/90 hover:bg-zinc-900 border border-zinc-800`}
+                    className={`rounded-full px-2 md:px-6 py-1 text-sm md:py-2 underline relative text-black dark:text-white bg-background border `}
                   >
                   More                          
-                  <Badge className="absolute -top-2 -right-2 text-xs bg-yellow-500 text-xs px-1 py-0.8">
+                  <Badge className="absolute -top-2 -right-2 text-xs bg-yellow-500 px-1 py-0.8">
                     17
                   </Badge>
                   </Link> 

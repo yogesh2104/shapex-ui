@@ -4,15 +4,15 @@ import { Card, CardContent } from "@/components/ui/card"
 export default function WhyChooseShapex() {
   return (
     <div className="min-h-screen px-4 py-12 md:py-24">
-      <div className="container mx-auto max-w-5xl space-y-16">
+      <div className="container mx-auto max-w-6xl space-y-16">
         <div className="text-center space-y-4">
-          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-primary-foreground bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold">
             Why Choose ShapeX-UI?
           </h1>
           <div className="h-1 w-20 mx-auto bg-gradient-to-r from-primary to-primary-foreground rounded-full" />
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-2">
           <FeatureCard
             icon={<Zap className="size-8" />}
             title="Super Fast & Easy"
@@ -94,8 +94,8 @@ export default function WhyChooseShapex() {
             With ShapeX-UI, focus less on repetitive tasks and more on building amazing applications.
           </p>
           <div className="flex items-center justify-center gap-2 text-2xl md:text-3xl font-bold">
-            Design with ShapeX-UI! 
-            <Rocket className="size-8 animate-bounce" />
+            Start Design with ShapeX-UI! 
+            <Rocket className="size-8 animate-bounce text-pink-600" />
           </div>
         </div>
       </div>
