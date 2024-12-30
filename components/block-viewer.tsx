@@ -117,7 +117,7 @@ function BlockViewerToolbar() {
           </TabsTrigger>
           <TabsTrigger
             value="code"
-            className="h-[1.45rem] rounded-sm px-2 text-xs"
+            className="h-[1.45rem] hidden md:block rounded-sm px-2 text-xs"
           >
             Code
           </TabsTrigger>
@@ -251,7 +251,7 @@ function BlockViewerCode() {
           key={file?.path}
           data-rehype-pretty-code-fragment
           dangerouslySetInnerHTML={{ __html: file?.highlightedContent ?? "" }}
-          className="overflow-hidden w-full after:absolute after:inset-y-0 after:left-3 after:bg-zinc-950 [&_.line:before]:sticky [&_.line:before]:left-2 [&_.line:before]:z-10 [&_.line:before]:translate-y-[-1px] [&_.line:before]:pr-2 [&_pre]:h-[--height] [&_pre]:overflow-auto [&_pre]:!bg-transparent [&_pre]:pb-28"
+          className="overflow-hidden border w-full  after:absolute after:inset-y-0 after:left-3 after:bg-zinc-950 [&_.line:before]:sticky [&_.line:before]:left-2 [&_.line:before]:z-10 [&_.line:before]:translate-y-[-1px] [&_.line:before]:pr-2 [&_pre]:h-[--height] [&_pre]:overflow-auto [&_pre]:!bg-transparent [&_pre]:pb-28"
         />
       </div>
     </div>

@@ -8,6 +8,7 @@ import { ThemeToggle } from "./theme-toggle"
 import Logo from "./logo"
 import { MobileNav } from "./mobile-sidebar"
 import { CommandMenu } from "./command-menu"
+import { Badge } from "@/registry/default/ui/badge"
 
 export function MainHeader() {
   return (
@@ -20,7 +21,7 @@ export function MainHeader() {
           <Link href="/" className="flex items-center gap-2">
             <Logo />
             <span className="hidden font-bold capitalize lg:inline-block">
-              {siteInfo.name}
+              {siteInfo.name}<Badge variant={"outline"} className="ml-1 text-xs bg-gradient-to-r from-red-600 via-purple-500 to-blue-700 bg-clip-text text-transparent">Beta</Badge>
             </span>
           </Link>
           <div className="flex items-center">

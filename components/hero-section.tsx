@@ -6,6 +6,7 @@ import { Badge } from "./ui/badge";
 import { docsConfig } from "@/config/docs";
 import { TextEffect } from "./text-effect";
 import { Magnetic } from "./magnetic.button";
+import { Spotlight } from "./Spotlight";
 
 export default async function HeroSection() {
   const springOptions = { bounce: 0.1 };
@@ -13,7 +14,10 @@ export default async function HeroSection() {
   return (
     <section id="hero">
       <div className="relative h-full overflow-hidden md:py-10">
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-700/10 via-transparent to-transparent" />
+      <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        fill="white"
+      />
         <div className="z-10 flex flex-col">
           <div className="mt-4 grid grid-cols-1 md:mt-20">
             <div className="flex flex-col items-start gap-6 px-7 pb-3 text-center md:items-center md:px-10">
@@ -35,31 +39,12 @@ export default async function HeroSection() {
                   >
                     A UI Blocks Tailored for
                   </TextEffect>
-                  <TextEffect
-                    per='char'
-                    delay={2.5}
-                    preset="blur"
-                    variants={{
-                      container: {
-                        hidden: { opacity: 0 },
-                        visible: {
-                          opacity: 1,
-                          transition: { staggerChildren: 0.05 },
-                        },
-                      },
-                      item: {
-                        hidden: { opacity: 0, rotateX: 90, y: 10 },
-                        visible: { opacity: 1, rotateX: 0, y: 0, transition: { duration: 0.2 } },
-                      },
-                    }}
-                  >
-                    Design Engineers
-                  </TextEffect>
+                  <span className="bg-gradient-to-r from-red-600 via-purple-500 to-blue-700 bg-clip-text text-transparent">Design Engineers</span>
                   </h1>  
                 </div>
 
                 <p className="max-w-2xl text-balance text-left text-base tracking-tight text-black dark:font-medium dark:text-white md:text-center md:text-lg ">
-                    Boost your web application's performance with reusable components built on <b>shadcn/ui</b>, <b>Framer Motion</b>, designed for efficiency and scalability.
+                    Boost your web application's performance with reusable components built on <b className="bg-gradient-to-r from-red-600 via-purple-500 to-blue-700 bg-clip-text text-transparent">shadcn/ui</b>, <b className="bg-gradient-to-r from-red-600 via-purple-500 to-blue-700 bg-clip-text text-transparent">Framer Motion</b>, designed for efficiency and scalability.
                 </p>
 
                 <div className="mx-0 flex w-full max-w-full flex-col gap-4 py-4 md:max-w-md sm:flex-row md:mx-auto">

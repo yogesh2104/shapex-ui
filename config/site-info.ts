@@ -1,5 +1,5 @@
 export const siteInfo = {
-    name: "shapex-ui",
+    name: "Shapex UI",
     url: "https://shapex-ui.com",
     ogImage: "https://shapex-ui.com/og.jpg",
     description:"Pre-defined that you can copy and paste. Open Source.",
