@@ -162,7 +162,7 @@ const TestimonialCard = ({
           <StarRating rating={testimonial.rating} />
         </div>
       </div>
-      <p className="text-gray-600">{testimonial.quote}</p>
+      <p className="text-gray-600 text-sm">{testimonial.quote}</p>
     </CardContent>
   </Card>
 );
