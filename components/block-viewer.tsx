@@ -125,7 +125,7 @@ function BlockViewerToolbar() {
       </Tabs>
       <a
         href={`#${item.name}`}
-        className="text-sm font-medium underline-offset-2 hover:underline"
+        className="text-sm hidden md:block font-medium underline-offset-2 hover:underline"
       >
         {item.description}
       </a>

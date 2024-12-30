@@ -1,4 +1,5 @@
 import { Clock, Sparkles } from 'lucide-react';
+import Link from 'next/link';
 
 const ComingSoon = () => {
   return (
@@ -21,10 +22,10 @@ const ComingSoon = () => {
           </div>
 
           <div className="mt-8 space-y-4 animate-fadeIn">
-            <p className="text-foreground/90">Want to be notified when we launch?</p>
-            <button className="px-6 py-2 bg-primary text-primary-foreground rounded-full font-semibold transition-all duration-300 hover:shadow-lg transform hover:scale-105 hover:opacity-90">
+            <p className="text-foreground/90 mb-4">Want to be notified when we launch?</p>
+            <Link target='_blank' href="https://getwaitlist.com/waitlist/23491" className="px-6 py-2 bg-primary text-primary-foreground rounded-full font-semibold transition-all duration-300 hover:shadow-lg transform hover:scale-105 hover:opacity-90">
               Join Waitlist
-            </button>
+            </Link>
           </div>
         </div>
       </div>
