@@ -20,8 +20,8 @@ export const ThemeToggle = React.forwardRef<
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       {...props}
     >
-      <Moon className="hidden size-8 text-neutral-800 dark:block dark:text-neutral-200" />
-      <Sun className="size-8 text-neutral-800 dark:hidden dark:text-neutral-200" />
+      <Moon className="hidden size-10 text-neutral-800 dark:block dark:text-neutral-200" />
+      <Sun className="size-10 text-neutral-800 dark:hidden dark:text-neutral-200" />
     </Button>
   );
 });
