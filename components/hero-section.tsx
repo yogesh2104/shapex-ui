@@ -68,7 +68,7 @@ export default async function HeroSection() {
                         intensity={0.2}
                         springOptions={springOptions}
                         actionArea='global'
-                        range={300}
+                        range={200}
                       >
                         <Link
                           href="/components"  
@@ -84,7 +84,7 @@ export default async function HeroSection() {
                             intensity={0.1}
                             springOptions={springOptions}
                             actionArea='global'
-                            range={300}
+                            range={200}
                           >
                             <span>Browse Blocks</span>
                           </Magnetic>
@@ -111,7 +111,7 @@ export default async function HeroSection() {
                 </div>
                 <div className="flex items-center flex-wrap gap-3 justify-center max-w-5xl mt-10">
                   {docsConfig.sidebarNav.map((items) => (
-                    items?.items.slice(1,13).map((item)=>(
+                    items?.title =="Blocks" && items?.items.slice(1,13).map((item)=>(
                       item.count !=0 &&
                       <Link
                         key={item.title}

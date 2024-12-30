@@ -104,7 +104,7 @@ function BlockSideBarItems({
                 }}
               />
             )}
-            <span className="relative z-10 shrink-0 text-xs">
+            <span className="relative z-10 shrink-0 text-sm">
               {item.title}
               {item.disabled && (
               <span className="ml-2 rounded-md bg-muted px-1.5 py-0.5 text-xs leading-none text-muted-foreground no-underline group-hover:no-underline">
