@@ -12,8 +12,8 @@ export default async function HeroSection() {
 
   return (
     <section id="hero">
-      <div className="relative mb-4 h-full overflow-hidden py-5 md:py-10">
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-500/20 via-transparent to-transparent" />
+      <div className="relative h-full overflow-hidden md:py-10">
+      <div className="absolute inset-0 bg-gradient-to-b from-purple-700/10 via-transparent to-transparent" />
         <div className="z-10 flex flex-col">
           <div className="mt-4 grid grid-cols-1 md:mt-20">
             <div className="flex flex-col items-start gap-6 px-7 pb-3 text-center md:items-center md:px-10">
