@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -73,12 +73,12 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 240 4.9% 83.9%;
   }
-} */
+}
 
 
 
 
-@layer base {
+/* @layer base {
   :root {
     --background: 220 13% 95%;
     --foreground: 220 10% 20%;
@@ -139,7 +139,7 @@
     --sidebar-border: 220 13% 30%;
     --sidebar-ring: 220 13% 70%;
   }
-}
+} */
 
 
 [data-rehype-pretty-code-fragment] {
