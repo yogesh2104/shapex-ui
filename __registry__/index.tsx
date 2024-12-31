@@ -849,7 +849,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/header-01/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/header.tsx"
       },{
         path: "registry/default/blocks/header-01/components/header-one.tsx",
         type: "registry:component",
@@ -876,7 +876,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/header-02/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/header.tsx"
       },{
         path: "registry/default/blocks/header-02/components/header-two.tsx",
         type: "registry:component",
@@ -895,7 +895,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/header-03/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/header.tsx"
       },{
         path: "registry/default/blocks/header-03/components/header-three.tsx",
         type: "registry:component",
@@ -914,7 +914,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/header-04/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/header.tsx"
       },{
         path: "registry/default/blocks/header-04/components/header-four.tsx",
         type: "registry:component",
@@ -937,7 +937,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/logo-01/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/logo.tsx"
       },{
         path: "registry/default/blocks/logo-01/components/logo-one.tsx",
         type: "registry:component",
@@ -960,7 +960,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/logo-02/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/logo.tsx"
       },{
         path: "registry/default/blocks/logo-02/components/logo-two.tsx",
         type: "registry:component",
@@ -987,7 +987,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/logo-03/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/logo.tsx"
       },{
         path: "registry/default/blocks/logo-03/components/logo-three.tsx",
         type: "registry:component",
@@ -1033,7 +1033,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/newsletter-01/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/newsletter.tsx"
       },{
         path: "registry/default/blocks/newsletter-01/components/newsletter-one.tsx",
         type: "registry:component",
@@ -1052,7 +1052,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/newsletter-02/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/newsletter.tsx"
       },{
         path: "registry/default/blocks/newsletter-02/components/newsletter-two.tsx",
         type: "registry:component",
@@ -1075,7 +1075,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/newsletter-03/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/newsletter.tsx"
       },{
         path: "registry/default/blocks/newsletter-03/components/newsletter-three.tsx",
         type: "registry:component",
@@ -1094,7 +1094,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/pricing-01/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/pricing.tsx"
       },{
         path: "registry/default/blocks/pricing-01/components/pricing-one.tsx",
         type: "registry:component",
@@ -1117,7 +1117,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/pricing-02/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/pricing.tsx"
       },{
         path: "registry/default/blocks/pricing-02/components/pricing-two.tsx",
         type: "registry:component",
@@ -1136,7 +1136,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/pricing-03/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/pricing.tsx"
       },{
         path: "registry/default/blocks/pricing-03/components/pricing-three.tsx",
         type: "registry:component",
@@ -1155,7 +1155,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/pricing-04/page.tsx",
         type: "registry:page",
-        target: ""
+        target: "@/components/pricing.tsx"
       },{
         path: "registry/default/blocks/pricing-04/components/pricing-four.tsx",
         type: "registry:component",
@@ -1418,7 +1418,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/signup-02/page.tsx",
         type: "registry:page",
-        target: "app/signup/page.tsx"
+        target: "@/components/signup.tsx"
       },{
         path: "registry/default/blocks/signup-02/components/signup-two.tsx",
         type: "registry:component",
@@ -1437,7 +1437,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/signup-03/page.tsx",
         type: "registry:page",
-        target: "app/signup/page.tsx"
+        target: "@/components/signup.tsx"
       },{
         path: "registry/default/blocks/signup-03/components/signup-three.tsx",
         type: "registry:component",
@@ -1456,7 +1456,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/signup-04/page.tsx",
         type: "registry:page",
-        target: "app/signup/page.tsx"
+        target: "@/components/signup.tsx"
       },{
         path: "registry/default/blocks/signup-04/components/signup-four.tsx",
         type: "registry:component",

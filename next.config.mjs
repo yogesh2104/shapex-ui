@@ -1,12 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    outputFileTracingIncludes: {
-      "/blocks/*": ["./registry/**/*"],
-    },
+  outputFileTracingIncludes: {
+    "/blocks/*": ["./registry/**/*"],
   },
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     remotePatterns: [
       {
