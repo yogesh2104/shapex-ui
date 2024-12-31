@@ -16,10 +16,7 @@ export const dynamicParams = false
 
 export async function generateMetadata({
   params,
-}: {
-  params: {
-    name: string
-  }
+}: {params: Promise<{ name: string }>
 }): Promise<Metadata> {
   const { name } = await params
   const item = await getCachedRegistryItem(name)
