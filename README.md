@@ -12,7 +12,7 @@
 
 
 
-<img src="https://github.com/yogesh2104/shapex-ui/blob/main/public/og.png" alt="Logo" width="100%" height="500">
+<img src="https://github.com/yogesh2104/shapex-ui/blob/main/public/og.png" alt="Logo" width="100%" height="450">
 
 ## Explore components
 
