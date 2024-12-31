@@ -63,7 +63,7 @@ const FeatureTwo = () => {
   };
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-black to-gray-900 rounded-2xl overflow-hidden relative">
+    <section className="py-10 lg:py-16 bg-gradient-to-br from-black to-gray-900 rounded-2xl overflow-hidden relative">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -123,13 +123,13 @@ const FeatureTwo = () => {
           </motion.div>
 
           <motion.div variants={itemVariants}>
-            <ul className="space-y-10">
+            <ul className="space-y-5">
               {features.map((feature, index) => (
                 <motion.li
                   key={index}
                   variants={itemVariants}
                   whileHover={{ x: 10 }}
-                  className="transform transition-all duration-200 hover:shadow-lg hover:bg-gray-800/30 p-6 rounded-xl"
+                  className="transform transition-all duration-200 hover:shadow-lg hover:bg-gray-800/30 p-4 rounded-xl"
                 >
                   <h3 className="font-sans text-2xl font-semibold text-white">
                     {feature.title}
@@ -143,7 +143,7 @@ const FeatureTwo = () => {
           </motion.div>
         </div>
 
-        <div className="mt-16 flex justify-start md:justify-center mb-10">
+        <div className="mt-12 flex justify-start md:justify-center mb-16">
           <VideoDialog videoSrc="https://www.youtube.com/embed/5Peo-ivmupE?si=YNTQs95Rx0-4FOvp" />
         </div>
       </motion.div>

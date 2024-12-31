@@ -95,7 +95,7 @@ const pricingTiers: PricingTier[] = [
 
 const PricingTwo = () => {
   return (
-    <div className="relative min-h-screen w-full bg-[#0a192f] overflow-hidden">
+    <div className="relative w-full bg-[#0a192f] overflow-hidden">
       <div className="absolute top-0 right-0 w-1/2 h-full">
         <div
           className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-blue-500/20"
@@ -105,7 +105,7 @@ const PricingTwo = () => {
         />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 py-24">
+      <div className="relative max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Influencer And Affiliate Marketing Plans and Pricing

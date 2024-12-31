@@ -27,7 +27,7 @@ const features = [
 
 export default function FeatureThree() {
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-background to-background/80">
+    <section className="py-16 md:py-24 lg:py-28 bg-gradient-to-b from-background to-background/80">
       <div className="container px-4 md:px-6">
         <div className="grid lg:gap-10 gap-32 lg:grid-cols-2 ">
           <div className="space-y-8">

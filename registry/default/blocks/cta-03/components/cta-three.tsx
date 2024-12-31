@@ -8,7 +8,7 @@ import { Button } from "@/registry/default/ui/button";
 
 const CallToActionThree = () => {
   return (
-    <section className=" py-16 bg-gradient-to-br from-purple-700 via-indigo-800 to-blue-900 relative overflow-hidden">
+    <section className=" py-12 bg-gradient-to-br from-purple-700 via-indigo-800 to-blue-900 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <Image
           src="/placeholder.svg?height=600&width=800"

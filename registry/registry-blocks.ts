@@ -86,24 +86,6 @@ export const blocks: Registry = [
     categories: ["blog"],
   },
   {
-    name: "login-01",
-    description: "A simple login form.",
-    type: "registry:block",
-    registryDependencies: ["button", "card", "input", "label"],
-    files: [
-      {
-        path: "blocks/login-01/page.tsx",
-        target: "app/login/page.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/login-01/components/login-form.tsx",
-        type: "registry:component",
-      },
-    ],
-    categories: ["login"],
-  },
-  {
     name: "contact-01",
     description: "A simple Contact Form.",
     type: "registry:block",
@@ -111,7 +93,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/contact-01/page.tsx",
-        target: "app/login/page.tsx",
+        target: "@/components/contact.tsx",
         type: "registry:page",
       },
       {
@@ -129,7 +111,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/contact-02/page.tsx",
-        target: "app/login/page.tsx",
+        target: "@/components/contact.tsx",
         type: "registry:page",
       },
       {
@@ -156,6 +138,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["cta"],
+    meta:{
+      iframeHeight:"410px"
+    }
   },
   {
     name: "cta-02",
@@ -165,7 +150,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/cta-02/page.tsx",
-        target: "app/login/page.tsx",
+        target: "@/components/cta.tsx",
         type: "registry:page",
       },
       {
@@ -178,6 +163,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["cta"],
+    meta:{
+      iframeHeight:"480px"
+    }
   },
   {
     name: "cta-03",
@@ -187,7 +175,7 @@ export const blocks: Registry = [
     files: [
       {
         path: "blocks/cta-03/page.tsx",
-        target: "app/login/page.tsx",
+        target: "@/components/cta.tsx",
         type: "registry:page",
       },
       {
@@ -196,6 +184,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["cta"],
+    meta:{
+      iframeHeight:"629px"
+    }
   },
   {
     name: "faq-01",
@@ -218,6 +209,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["faq"],
+    meta:{
+      iframeHeight:"600px"
+    }
   },
   {
     name: "faq-02",
@@ -240,6 +234,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["faq"],
+    meta:{
+      iframeHeight:"700px"
+    }
   },
   {
     name: "faq-03",
@@ -266,6 +263,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["faq"],
+    meta:{
+      iframeHeight:"750px"
+    }
   },
   {
     name: "feature-01",
@@ -284,6 +284,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["feature"],
+    meta:{
+      iframeHeight:"500px"
+    }
   },
   {
     name: "feature-02",
@@ -306,6 +309,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["feature"],
+    meta:{
+      iframeHeight:"797px"
+    }
   },
   {
     name: "feature-03",
@@ -328,6 +334,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["feature"],
+    meta:{
+      iframeHeight:"600px"
+    }
   },
   {
     name: "footer-01",
@@ -350,6 +359,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["footer"],
+    meta:{
+      iframeHeight:"250px"
+    }
   },
   {
     name: "footer-02",
@@ -368,6 +380,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["footer"],
+    meta:{
+      iframeHeight:"462px"
+    }
   },
   {
     name: "footer-03",
@@ -386,6 +401,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["footer"],
+    meta:{
+      iframeHeight:"460px"
+    }
   },
   {
     name: "header-01",
@@ -412,6 +430,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["header"],
+    meta:{
+      iframeHeight:"300px"
+    }
   },
   {
     name: "header-02",
@@ -430,6 +451,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["header"],
+    meta:{
+      iframeHeight:"300px"
+    }
   },
   {
     name: "header-03",
@@ -448,6 +472,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["header"],
+    meta:{
+      iframeHeight:"300px"
+    }
   },
   {
     name: "header-04",
@@ -470,6 +497,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["header"],
+    meta:{
+      iframeHeight:"400px"
+    }
   },
   {
     name: "logo-01",
@@ -492,6 +522,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["company-logo"],
+    meta:{
+      iframeHeight:"230px"
+    }
   },
   {
     name: "logo-02",
@@ -518,6 +551,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["company-logo"],
+    meta:{
+      iframeHeight:"460px"
+    }
   },
   {
     name: "logo-03",
@@ -540,6 +576,30 @@ export const blocks: Registry = [
       },
     ],
     categories: ["company-logo"],
+    meta:{
+      iframeHeight:"495px"
+    }
+  },
+  {
+    name: "login-01",
+    description: "A simple login form.",
+    type: "registry:block",
+    registryDependencies: ["button", "card", "input", "label"],
+    files: [
+      {
+        path: "blocks/login-01/page.tsx",
+        target: "app/login/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/login-01/components/login-form.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["login"],
+    meta:{
+      iframeHeight:"530px"
+    }
   },
   {
     name: "login-02",
@@ -562,6 +622,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["login"],
+    meta:{
+      iframeHeight:"625px"
+    }
   },
   {
     name: "newsletter-01",
@@ -580,6 +643,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["newsletter"],
+    meta:{
+      iframeHeight:"442px"
+    }
   },
   {
     name: "newsletter-02",
@@ -602,6 +668,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["newsletter"],
+    meta:{
+      iframeHeight:"570px"
+    }
   },
   {
     name: "newsletter-03",
@@ -620,6 +689,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["newsletter"],
+    meta:{
+      iframeHeight:"368px"
+    }
   },
   {
     name: "pricing-01",
@@ -678,6 +750,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["pricing"],
+    meta:{
+      iframeHeight:"670px"
+    }
   },
   {
     name: "pricing-04",
@@ -696,6 +771,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["pricing"],
+    meta:{
+      iframeHeight:"740px"
+    }
   },
   {
     name: "rating-01",
@@ -718,6 +796,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["rating"],
+    meta:{
+      iframeHeight:"300px"
+    }
   },
   {
     name: "rating-02",
@@ -736,6 +817,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["rating"],
+    meta:{
+      iframeHeight:"550px"
+    }
   },
   {
     name: "rating-03",
@@ -766,6 +850,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["rating"],
+    meta:{
+      iframeHeight:"560px"
+    }
   },
   {
     name: "roadmap-01",
@@ -784,6 +871,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["roadmap"],
+    meta:{
+      iframeHeight:"650px"
+    }
   },
   {
     name: "roadmap-02",
@@ -820,6 +910,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["roadmap"],
+    meta:{
+      iframeHeight:"500px"
+    }
   },
   {
     name: "stats-01",

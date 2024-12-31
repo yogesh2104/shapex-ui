@@ -2,7 +2,7 @@ import FAQOne from "./components/faq-one";
 
 export default function Page() {
   return (
-    <div className="mb-32">
+    <div className="">
       <FAQOne />
     </div>
   );

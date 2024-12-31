@@ -56,15 +56,15 @@ const ReviewForm = () => {
       >
         <DialogTrigger
           style={{ borderRadius: "4px" }}
-          className="border bg-white text-black border-gray-200/60 h-10 px-10 text-center flex justify-center items-center"
+          className="border bg-white text-black border-gray-200/60 h-10 px-5 text-center flex justify-center items-center"
         >
           Write Review
         </DialogTrigger>
         <DialogContainer>
           <DialogContent>
             <Card className="w-full max-w-xl mx-auto">
-              <CardContent className="pt-6">
-                <form onSubmit={handleSubmit} className="space-y-6">
+              <CardContent className="pt-3">
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-2">
                     <h2 className="text-xl font-semibold">Overall rating</h2>
                     <div className="flex justify-center gap-5">
@@ -73,7 +73,7 @@ const ReviewForm = () => {
                           key={star}
                           type="button"
                           onClick={() => handleStarClick(star)}
-                          className="text-2xl"
+                          className="text-2xl focus-visible:ring-offset-0"
                         >
                           <span
                             className={`text-2xl ${formData.rating >= star ? "text-teal-500 " : "text-gray-300"}`}

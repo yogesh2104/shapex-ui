@@ -91,7 +91,7 @@ export default function RootLayout({
             {children}
             <Analytics mode="production"/>
           </div>
-          <TailwindIndicator/>
+          {/* <TailwindIndicator/> */}
         </ThemeProvider>
       </body>
     </html>

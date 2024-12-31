@@ -2,7 +2,7 @@ import { LoginFormTwo } from "@/registry/default/blocks/login-02/components/logi
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh w-full items-center justify-center p-3">
+    <div className="flex w-full items-center justify-center p-3">
       <div className="w-full max-w-md">
         <LoginFormTwo />
       </div>

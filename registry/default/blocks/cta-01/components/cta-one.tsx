@@ -1,39 +1,33 @@
-import { cn } from "@/registry/default/lib/utils";
-import { buttonVariants } from "@/registry/default/ui/button";
-import Link from "next/link";
-import { MoveRight } from "lucide-react";
+import { Button } from "@/registry/default/ui/button";
+import { Github } from "lucide-react";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/registry/default/ui/card";
 
 const CallToActionOne = () => {
   return (
-    <div className="bg-[#151413] p-2 mx-auto flex justify-center items-center h-64 mb-8 rounded-xl mt-5 w-full">
-      <div className="text-center max-w-xl">
-        <h1 className="text-xl md:text-3xl text-white font-bold mb-6 capitalize">
-          {getRandomFromArray()}
-        </h1>
-        <div
-          className={cn(
-            `group flex justify-center items-center gap-2`,
-            buttonVariants({ variant: "outline" }),
-          )}
-        >
-          <Link href="/debate">Try Now</Link>
-          <MoveRight className="size-4 group-hover:-rotate-45 " />
+    <section id="community">
+      <div className="container py-10">
+        <div className=" mx-auto">
+          <Card className="bg-background border-none shadow-none text-center flex flex-col items-center justify-center">
+            <CardHeader>
+              <CardTitle className="text-2xl md:text-5xl font-bold flex flex-col items-center">
+                <Github className="size-16 mb-4" />
+                <div>We welcome everyone to join
+                </div>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="lg:w-[60%] text-xl text-muted-foreground">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore cupiditate veniam sapiente maxime.
+            </CardContent>
+
+            <CardFooter className="flex gap-5">
+              <Button asChild  className="rounded-full" size="lg"><a href="https://github.com/yogesh2104/shapex-ui" target="_blank">Fork on Github</a></Button>
+            </CardFooter>
+          </Card>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default CallToActionOne;
 
-const callToActionData = [
-  "Get Started for Free Today!",
-  "Claim Your Exclusive Offer Now!",
-  "Discover How It Works – Watch the Demo!",
-  "Join Thousands of Happy Customers – Sign Up Now!",
-  "Boost Your Results in Just Minutes – Try It Now!",
-];
-
-export function getRandomFromArray() {
-  return callToActionData[Math.floor(Math.random() * callToActionData.length)];
-}

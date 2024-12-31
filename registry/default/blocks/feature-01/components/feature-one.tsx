@@ -166,7 +166,7 @@ const FeatureOne = ({
   return (
     <section
       ref={containerRef}
-      className={cn("py-12", className)}
+      className={cn("py-6", className)}
       id="features"
     >
       <div className="container">

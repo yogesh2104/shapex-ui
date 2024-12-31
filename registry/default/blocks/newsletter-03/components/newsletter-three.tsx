@@ -6,7 +6,7 @@ import { UserCircle } from "lucide-react";
 
 const NewsletterThree = () => {
   return (
-    <div className="relative w-full h-[80vh] flex items-center justify-center">
+    <div className="relative w-full h-full flex items-center justify-center">
       <img
         src="https://fastly.picsum.photos/id/60/1920/1200.jpg?hmac=fAMNjl4E_sG_WNUjdU39Kald5QAHQMh-_-TsIbbeDNI"
         alt="Background"

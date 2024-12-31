@@ -78,7 +78,7 @@ export function OpenContactForm() {
                 </CardHeader>
                 <CardContent>
                   <form className="space-y-4">
-                    <div className="space-y-2">
+                    <div className="space-y-2 text-start">
                       <Label htmlFor="name">Name</Label>
                       <Input
                         type="text"
@@ -88,7 +88,7 @@ export function OpenContactForm() {
                         required
                       />
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-2 text-start">
                       <Label htmlFor="email">Email</Label>
                       <Input
                         type="email"
@@ -98,7 +98,7 @@ export function OpenContactForm() {
                         required
                       />
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-2 text-start">
                       <Label htmlFor="message">Message</Label>
                       <Textarea
                         id="message"

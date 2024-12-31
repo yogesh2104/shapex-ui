@@ -77,7 +77,7 @@ const SocialIcon = ({
 
 const NewsletterOne = () => {
   return (
-    <div className="relative min-h-[calc(100vh-3rem)] bg-gray-50 flex items-center justify-center overflow-hidden">
+    <div className="relative py-10 bg-gray-50 flex items-center justify-center overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative">
         <h1 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-tight">
           Whatever you make grow your business by email marketing.

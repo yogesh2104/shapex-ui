@@ -2,7 +2,7 @@ import RoadmapTwo from "@/registry/default/blocks/roadmap-02/components/roadmap-
 
 export default function Page() {
   return (
-    <div className="mt-10 flex items-center justify-center">
+    <div className="mt-6 flex items-center justify-center">
       <RoadmapTwo />
     </div>
   );

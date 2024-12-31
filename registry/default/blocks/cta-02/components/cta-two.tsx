@@ -53,7 +53,7 @@ const CallToActionTwo = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-20 overflow-hidden w-full">
+    <section className="py-6 overflow-hidden w-full">
       <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl"></div>
         <div className="relative py-6">

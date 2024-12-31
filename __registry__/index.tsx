@@ -524,25 +524,6 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/blog-02/page.tsx",
       meta: undefined,
     },
-    "login-01": {
-      name: "login-01",
-      description: "A simple login form.",
-      type: "registry:block",
-      registryDependencies: ["button","card","input","label"],
-      files: [{
-        path: "registry/default/blocks/login-01/page.tsx",
-        type: "registry:page",
-        target: "app/login/page.tsx"
-      },{
-        path: "registry/default/blocks/login-01/components/login-form.tsx",
-        type: "registry:component",
-        target: ""
-      }],
-      categories: ["login"],
-      component: React.lazy(() => import("@/registry/default/blocks/login-01/page.tsx")),
-      source: "__registry__/default/blocks/login-01/page.tsx",
-      meta: undefined,
-    },
     "contact-01": {
       name: "contact-01",
       description: "A simple Contact Form.",
@@ -551,7 +532,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/contact-01/page.tsx",
         type: "registry:page",
-        target: "app/login/page.tsx"
+        target: "@/components/contact.tsx"
       },{
         path: "registry/default/blocks/contact-01/components/contact-one.tsx",
         type: "registry:component",
@@ -570,7 +551,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/contact-02/page.tsx",
         type: "registry:page",
-        target: "app/login/page.tsx"
+        target: "@/components/contact.tsx"
       },{
         path: "registry/default/blocks/contact-02/components/contact-two.tsx",
         type: "registry:component",
@@ -598,7 +579,7 @@ export const Index: Record<string, any> = {
       categories: ["cta"],
       component: React.lazy(() => import("@/registry/default/blocks/cta-01/page.tsx")),
       source: "__registry__/default/blocks/cta-01/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"410px"},
     },
     "cta-02": {
       name: "cta-02",
@@ -608,7 +589,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/cta-02/page.tsx",
         type: "registry:page",
-        target: "app/login/page.tsx"
+        target: "@/components/cta.tsx"
       },{
         path: "registry/default/blocks/cta-02/components/cta-two.tsx",
         type: "registry:component",
@@ -621,7 +602,7 @@ export const Index: Record<string, any> = {
       categories: ["cta"],
       component: React.lazy(() => import("@/registry/default/blocks/cta-02/page.tsx")),
       source: "__registry__/default/blocks/cta-02/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"480px"},
     },
     "cta-03": {
       name: "cta-03",
@@ -631,7 +612,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/cta-03/page.tsx",
         type: "registry:page",
-        target: "app/login/page.tsx"
+        target: "@/components/cta.tsx"
       },{
         path: "registry/default/blocks/cta-03/components/cta-three.tsx",
         type: "registry:component",
@@ -640,7 +621,7 @@ export const Index: Record<string, any> = {
       categories: ["cta"],
       component: React.lazy(() => import("@/registry/default/blocks/cta-03/page.tsx")),
       source: "__registry__/default/blocks/cta-03/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"629px"},
     },
     "faq-01": {
       name: "faq-01",
@@ -663,7 +644,7 @@ export const Index: Record<string, any> = {
       categories: ["faq"],
       component: React.lazy(() => import("@/registry/default/blocks/faq-01/page.tsx")),
       source: "__registry__/default/blocks/faq-01/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"600px"},
     },
     "faq-02": {
       name: "faq-02",
@@ -686,7 +667,7 @@ export const Index: Record<string, any> = {
       categories: ["faq"],
       component: React.lazy(() => import("@/registry/default/blocks/faq-02/page.tsx")),
       source: "__registry__/default/blocks/faq-02/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"700px"},
     },
     "faq-03": {
       name: "faq-03",
@@ -713,7 +694,7 @@ export const Index: Record<string, any> = {
       categories: ["faq"],
       component: React.lazy(() => import("@/registry/default/blocks/faq-03/page.tsx")),
       source: "__registry__/default/blocks/faq-03/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"750px"},
     },
     "feature-01": {
       name: "feature-01",
@@ -732,7 +713,7 @@ export const Index: Record<string, any> = {
       categories: ["feature"],
       component: React.lazy(() => import("@/registry/default/blocks/feature-01/page.tsx")),
       source: "__registry__/default/blocks/feature-01/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"500px"},
     },
     "feature-02": {
       name: "feature-02",
@@ -755,7 +736,7 @@ export const Index: Record<string, any> = {
       categories: ["feature"],
       component: React.lazy(() => import("@/registry/default/blocks/feature-02/page.tsx")),
       source: "__registry__/default/blocks/feature-02/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"797px"},
     },
     "feature-03": {
       name: "feature-03",
@@ -778,7 +759,7 @@ export const Index: Record<string, any> = {
       categories: ["feature"],
       component: React.lazy(() => import("@/registry/default/blocks/feature-03/page.tsx")),
       source: "__registry__/default/blocks/feature-03/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"600px"},
     },
     "footer-01": {
       name: "footer-01",
@@ -801,7 +782,7 @@ export const Index: Record<string, any> = {
       categories: ["footer"],
       component: React.lazy(() => import("@/registry/default/blocks/footer-01/page.tsx")),
       source: "__registry__/default/blocks/footer-01/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"250px"},
     },
     "footer-02": {
       name: "footer-02",
@@ -820,7 +801,7 @@ export const Index: Record<string, any> = {
       categories: ["footer"],
       component: React.lazy(() => import("@/registry/default/blocks/footer-02/page.tsx")),
       source: "__registry__/default/blocks/footer-02/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"462px"},
     },
     "footer-03": {
       name: "footer-03",
@@ -839,7 +820,7 @@ export const Index: Record<string, any> = {
       categories: ["footer"],
       component: React.lazy(() => import("@/registry/default/blocks/footer-03/page.tsx")),
       source: "__registry__/default/blocks/footer-03/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"460px"},
     },
     "header-01": {
       name: "header-01",
@@ -866,7 +847,7 @@ export const Index: Record<string, any> = {
       categories: ["header"],
       component: React.lazy(() => import("@/registry/default/blocks/header-01/page.tsx")),
       source: "__registry__/default/blocks/header-01/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"300px"},
     },
     "header-02": {
       name: "header-02",
@@ -885,7 +866,7 @@ export const Index: Record<string, any> = {
       categories: ["header"],
       component: React.lazy(() => import("@/registry/default/blocks/header-02/page.tsx")),
       source: "__registry__/default/blocks/header-02/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"300px"},
     },
     "header-03": {
       name: "header-03",
@@ -904,7 +885,7 @@ export const Index: Record<string, any> = {
       categories: ["header"],
       component: React.lazy(() => import("@/registry/default/blocks/header-03/page.tsx")),
       source: "__registry__/default/blocks/header-03/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"300px"},
     },
     "header-04": {
       name: "header-04",
@@ -927,7 +908,7 @@ export const Index: Record<string, any> = {
       categories: ["header"],
       component: React.lazy(() => import("@/registry/default/blocks/header-04/page.tsx")),
       source: "__registry__/default/blocks/header-04/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"400px"},
     },
     "logo-01": {
       name: "logo-01",
@@ -950,7 +931,7 @@ export const Index: Record<string, any> = {
       categories: ["company-logo"],
       component: React.lazy(() => import("@/registry/default/blocks/logo-01/page.tsx")),
       source: "__registry__/default/blocks/logo-01/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"230px"},
     },
     "logo-02": {
       name: "logo-02",
@@ -977,7 +958,7 @@ export const Index: Record<string, any> = {
       categories: ["company-logo"],
       component: React.lazy(() => import("@/registry/default/blocks/logo-02/page.tsx")),
       source: "__registry__/default/blocks/logo-02/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"460px"},
     },
     "logo-03": {
       name: "logo-03",
@@ -1000,7 +981,26 @@ export const Index: Record<string, any> = {
       categories: ["company-logo"],
       component: React.lazy(() => import("@/registry/default/blocks/logo-03/page.tsx")),
       source: "__registry__/default/blocks/logo-03/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"495px"},
+    },
+    "login-01": {
+      name: "login-01",
+      description: "A simple login form.",
+      type: "registry:block",
+      registryDependencies: ["button","card","input","label"],
+      files: [{
+        path: "registry/default/blocks/login-01/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/default/blocks/login-01/components/login-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["login"],
+      component: React.lazy(() => import("@/registry/default/blocks/login-01/page.tsx")),
+      source: "__registry__/default/blocks/login-01/page.tsx",
+      meta: {"iframeHeight":"530px"},
     },
     "login-02": {
       name: "login-02",
@@ -1023,7 +1023,7 @@ export const Index: Record<string, any> = {
       categories: ["login"],
       component: React.lazy(() => import("@/registry/default/blocks/login-02/page.tsx")),
       source: "__registry__/default/blocks/login-02/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"625px"},
     },
     "newsletter-01": {
       name: "newsletter-01",
@@ -1042,7 +1042,7 @@ export const Index: Record<string, any> = {
       categories: ["newsletter"],
       component: React.lazy(() => import("@/registry/default/blocks/newsletter-01/page.tsx")),
       source: "__registry__/default/blocks/newsletter-01/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"442px"},
     },
     "newsletter-02": {
       name: "newsletter-02",
@@ -1065,7 +1065,7 @@ export const Index: Record<string, any> = {
       categories: ["newsletter"],
       component: React.lazy(() => import("@/registry/default/blocks/newsletter-02/page.tsx")),
       source: "__registry__/default/blocks/newsletter-02/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"570px"},
     },
     "newsletter-03": {
       name: "newsletter-03",
@@ -1084,7 +1084,7 @@ export const Index: Record<string, any> = {
       categories: ["newsletter"],
       component: React.lazy(() => import("@/registry/default/blocks/newsletter-03/page.tsx")),
       source: "__registry__/default/blocks/newsletter-03/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"368px"},
     },
     "pricing-01": {
       name: "pricing-01",
@@ -1145,7 +1145,7 @@ export const Index: Record<string, any> = {
       categories: ["pricing"],
       component: React.lazy(() => import("@/registry/default/blocks/pricing-03/page.tsx")),
       source: "__registry__/default/blocks/pricing-03/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"670px"},
     },
     "pricing-04": {
       name: "pricing-04",
@@ -1164,7 +1164,7 @@ export const Index: Record<string, any> = {
       categories: ["pricing"],
       component: React.lazy(() => import("@/registry/default/blocks/pricing-04/page.tsx")),
       source: "__registry__/default/blocks/pricing-04/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"740px"},
     },
     "rating-01": {
       name: "rating-01",
@@ -1187,7 +1187,7 @@ export const Index: Record<string, any> = {
       categories: ["rating"],
       component: React.lazy(() => import("@/registry/default/blocks/rating-01/page.tsx")),
       source: "__registry__/default/blocks/rating-01/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"300px"},
     },
     "rating-02": {
       name: "rating-02",
@@ -1206,7 +1206,7 @@ export const Index: Record<string, any> = {
       categories: ["rating"],
       component: React.lazy(() => import("@/registry/default/blocks/rating-02/page.tsx")),
       source: "__registry__/default/blocks/rating-02/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"550px"},
     },
     "rating-03": {
       name: "rating-03",
@@ -1237,7 +1237,7 @@ export const Index: Record<string, any> = {
       categories: ["rating"],
       component: React.lazy(() => import("@/registry/default/blocks/rating-03/page.tsx")),
       source: "__registry__/default/blocks/rating-03/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"560px"},
     },
     "roadmap-01": {
       name: "roadmap-01",
@@ -1256,7 +1256,7 @@ export const Index: Record<string, any> = {
       categories: ["roadmap"],
       component: React.lazy(() => import("@/registry/default/blocks/roadmap-01/page.tsx")),
       source: "__registry__/default/blocks/roadmap-01/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"650px"},
     },
     "roadmap-02": {
       name: "roadmap-02",
@@ -1294,7 +1294,7 @@ export const Index: Record<string, any> = {
       categories: ["roadmap"],
       component: React.lazy(() => import("@/registry/default/blocks/roadmap-03/page.tsx")),
       source: "__registry__/default/blocks/roadmap-03/page.tsx",
-      meta: undefined,
+      meta: {"iframeHeight":"500px"},
     },
     "stats-01": {
       name: "stats-01",

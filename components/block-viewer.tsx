@@ -211,7 +211,7 @@ function BlockViewerView() {
           >
             <iframe
               src={`/view/${item.name}`}
-              height={800}
+              height={item.meta?.iframeHeight ?? 800}
               className="relative z-20 w-full bg-background overflow-auto"
             />
           </ResizablePanel>
