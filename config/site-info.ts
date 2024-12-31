@@ -1,8 +1,8 @@
 export const siteInfo = {
     name: "Shapex UI",
-    url: "https://shapex-ui.com",
-    ogImage: "https://shapex-ui.com/og.jpg",
-    description:"Pre-defined that you can copy and paste. Open Source.",
+    url: "https://shapexui.site/",
+    ogImage: "https://shapexui.site/og.png",
+    description:"Boost your web application's performance with reusable blocks built on shadcn/ui, Framer Motion, designed for efficiency and scalability. You can copy and paste. Open Source.",
   }
   
 export type SiteInfo = typeof siteInfo

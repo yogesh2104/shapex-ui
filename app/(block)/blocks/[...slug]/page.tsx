@@ -1,9 +1,18 @@
 import { BlockDisplay } from "@/components/block-display";
 import { BlockPagination } from "@/components/BlockPagination";
 import { getAllBlockIds } from "@/lib/blocks";
+import { registryCategories } from "@/registry/registry-categories";
 import { Clock, Sparkles } from "lucide-react";
 
 export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return registryCategories.map((category) =>{
+    return {
+      params: { category: category.slug },
+    };
+  })
+}
 
 export default async function BlocksPage({
   params,
