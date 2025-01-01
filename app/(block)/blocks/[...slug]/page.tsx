@@ -7,11 +7,9 @@ import { Clock, Sparkles } from "lucide-react";
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  return registryCategories.map((category) =>{
-    return {
-      params: { slug: category.slug },
-    };
-  })
+  return registryCategories.map((category) => ({
+    slug: [category.slug],
+  }))
 }
 
 export default async function BlocksPage({
