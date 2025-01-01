@@ -4,7 +4,7 @@ import { Database, Eye, Gauge, Play, Users } from "lucide-react";
 
 const StatsThree = () => {
   return (
-    <div className="w-full space-y-8 py-12 px-2">
+    <div className="w-full space-y-8 py-6 px-2">
       <Card className="mx-auto max-w-6xl p-8 rounded-3xl">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-4">

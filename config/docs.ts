@@ -165,6 +165,83 @@ export const docsConfig: DocsConfig = {
         },
       ],
     },
+    {
+      title: "Full Featured",
+      items: [
+        {
+          title: "Analytics",
+          href: "#",
+          disabled: true,
+          items: [],
+        },
+        {
+          title: "Admin Panel",
+          href: "#",
+          disabled: true,
+          items: [],
+        },
+        {
+          title: "E-Commerce",
+          href: "#",
+          disabled: true,
+          items: [],
+        },
+        {
+          title: "Blog Page",
+          href: "#",
+          disabled: true,
+          items: [],
+        },
+        {
+          title: "Blog Details",
+          href: "#",
+          disabled: true,
+          items: [],
+        },
+        {
+          title: "File Management",
+          href: "#",
+          disabled: true,
+          items: [],
+        },
+        {
+          title: "Kanban",
+          href: "#",
+          disabled: true,
+          items: [],
+        },
+        {
+          title: "Messaging",
+          href: "#",
+          disabled: true,
+          items: [],
+        },
+        {
+          title: "Settings",
+          href: "#",
+          disabled: true,
+          items: [],
+        },
+        {
+          title: "Socila Media",
+          href: "#",
+          disabled: true,
+          items: [],
+        },
+        {
+          title: "Settings",
+          href: "#",
+          disabled: true,
+          items: [],
+        },
+        {
+          title: "Video Streaming",
+          href: "#",
+          disabled: true,
+          items: [],
+        },
+      ],
+    },
   ],
   mainNav: [
     {

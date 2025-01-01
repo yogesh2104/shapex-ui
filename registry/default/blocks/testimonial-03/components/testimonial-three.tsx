@@ -178,7 +178,7 @@ const NavigationControls = ({
   onPrevious: () => void;
   onNext: () => void;
 }) => (
-  <div className="flex items-center justify-center gap-4 mt-8">
+  <div className="flex items-center justify-center gap-4 mt-2">
     <Button
       variant="outline"
       size="icon"
@@ -239,7 +239,7 @@ const TestimonialThree = () => {
   }, [next]);
 
   return (
-    <section className="px-4 py-12" aria-label="Customer testimonials">
+    <section className="px-4 py-6" aria-label="Customer testimonials">
       <h1 className="text-4xl font-bold text-center mb-12 max-w-3xl mx-auto">
         Read trusted reviews from our customers
       </h1>
@@ -247,7 +247,7 @@ const TestimonialThree = () => {
       <div className="relative max-w-6xl mx-auto">
         <div
           className={cn(
-            "flex items-center h-80 overflow-hidden",
+            "flex items-center h-72 overflow-hidden",
             isMobile ? "gap-0" : "gap-4",
           )}
         >

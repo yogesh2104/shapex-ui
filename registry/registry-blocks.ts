@@ -851,7 +851,7 @@ export const blocks: Registry = [
     ],
     categories: ["rating"],
     meta:{
-      iframeHeight:"560px"
+      iframeHeight:"610px"
     }
   },
   {
@@ -911,7 +911,7 @@ export const blocks: Registry = [
     ],
     categories: ["roadmap"],
     meta:{
-      iframeHeight:"500px"
+      iframeHeight:"550px"
     }
   },
   {
@@ -931,6 +931,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["stats"],
+    meta:{
+      iframeHeight:"467px"
+    }
   },
   {
     name: "stats-02",
@@ -949,6 +952,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["stats"],
+    meta:{
+      iframeHeight:"345px"
+    }
   },
   {
     name: "stats-03",
@@ -967,6 +973,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["stats"],
+    meta:{
+      iframeHeight:"420px"
+    }
   },
   {
     name: "steps-01",
@@ -1039,6 +1048,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["signup"],
+    meta:{
+      iframeHeight:"750px"
+    }
   },
   {
     name: "signup-03",
@@ -1057,6 +1069,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["signup"],
+    meta:{
+      iframeHeight:"650px"
+    }
   },
   {
     name: "signup-04",
@@ -1159,6 +1174,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["teams"],
+    meta:{
+      iframeHeight:"640px"
+    }
   },
   {
     name: "testimonial-02",
@@ -1181,6 +1199,9 @@ export const blocks: Registry = [
       },
     ],
     categories: ["testimonial"],
+    meta:{
+      iframeHeight:"560px"
+    }
   },
   {
     name: "testimonial-03",
@@ -1199,5 +1220,8 @@ export const blocks: Registry = [
       },
     ],
     categories: ["testimonial"],
+    meta:{
+      iframeHeight:"560px"
+    }
   },
 ];

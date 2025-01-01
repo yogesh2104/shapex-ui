@@ -19,7 +19,7 @@ const statsData: StatsData[] = [
 
 const StatsOne = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white rounded-3xl">
+    <section className="py-12 bg-gradient-to-b from-gray-50 to-white rounded-2xl">
       <div className="px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

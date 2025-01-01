@@ -2,7 +2,7 @@ import StatsThree from "@/registry/default/blocks/stats-03/components/stats-thre
 
 export default function Page() {
   return (
-    <div className="mt-10 flex items-center justify-center">
+    <div className="flex items-center justify-center">
       <StatsThree />
     </div>
   );

@@ -56,8 +56,8 @@ const SignUpTwo = () => {
   }, [password]);
 
   return (
-    <section className="min-h-screen ">
-      <div className="pt-[2.4rem] mb-[2.4rem]">
+    <section className="">
+      <div className="py-10">
         <Card className="mx-auto max-w-lg rounded-xl">
           <CardHeader>
             <div className="text-center mb-4">
