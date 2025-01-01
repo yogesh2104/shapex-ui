@@ -9,7 +9,7 @@ export const dynamicParams = false;
 export async function generateStaticParams() {
   return registryCategories.map((category) =>{
     return {
-      params: { category: category.slug },
+      params: { slug: category.slug },
     };
   })
 }
