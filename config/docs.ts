@@ -29,12 +29,12 @@ export const docsConfig: DocsConfig = {
         },
         {
           title: "Why ShapeX-UI",
-          href: "/why-shapex-ui",
+          href: "/blocks/why-shapex-ui",
           items: [],
         },
         {
           title: "Templates",
-          href: "/coming-soon",
+          href: "#",
           disabled: true,
           items: [],
         },

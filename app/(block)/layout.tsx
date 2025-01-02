@@ -19,7 +19,7 @@ export default async function MarketingLayout({
   return (
     <>
       <MainHeader />
-      <main className="flex flex-1 flex-col mt-2">{children}</main>
+      <main className="flex flex-1 flex-col">{children}</main>
     </>
   );
 }
