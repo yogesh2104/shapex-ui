@@ -37,9 +37,9 @@ export default async function HeroSection() {
                       },
                     }}
                   >
-                    A UI Blocks Tailored for
+                    Boost Your Workflow with
                   </TextEffect>
-                  <span className="bg-gradient-to-r from-red-600 via-purple-500 to-blue-700 bg-clip-text text-transparent">Design Engineers</span>
+                  <span className="bg-gradient-to-r from-red-600 via-purple-500 to-blue-700 bg-clip-text text-transparent">Tailored UI Blocks</span>
                   </h1>  
                 </div>
 

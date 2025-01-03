@@ -235,9 +235,9 @@ function BlockViewerCode() {
   }
 
   return (
-    <div className="mr-[14px] flex overflow-hidden bg-zinc-950 text-white group-data-[view=preview]/block-view-wrapper:hidden md:h-[calc(100vh-3rem)]">
-      <div className="flex min-w-0 flex-1 flex-col h-[calc(100vh-3rem)]">
-        <div className="flex h-12 items-center gap-2 border-b border-zinc-700 bg-zinc-900 px-4 text-sm font-medium">
+    <div className="mr-[14px] flex overflow-hidden rounded-xl bg-zinc-950 text-white group-data-[view=preview]/block-view-wrapper:hidden md:h-[--height]">
+      <div className="flex min-w-0 flex-1 flex-col">
+        <div className="flex h-12 items-center gap-2 border-zinc-700 bg-zinc-900 px-4 text-sm font-medium">
           <div className="flex gap-2">
             {tree?.map((file, index) => (
               <Tree key={index} item={file} index={1} />
@@ -251,7 +251,7 @@ function BlockViewerCode() {
           key={file?.path}
           data-rehype-pretty-code-fragment
           dangerouslySetInnerHTML={{ __html: file?.highlightedContent ?? "" }}
-          className="overflow-hidden border w-full  after:absolute after:inset-y-0 after:left-3 after:bg-zinc-950 [&_.line:before]:sticky [&_.line:before]:left-2 [&_.line:before]:z-10 [&_.line:before]:translate-y-[-1px] [&_.line:before]:pr-2 [&_pre]:h-[--height] [&_pre]:overflow-auto [&_pre]:!bg-transparent [&_pre]:pb-28"
+          className="overflow-hidden border border-t-0 rounded-b-xl w-auto  after:absolute after:inset-y-0 after:left-3 after:bg-zinc-950 [&_.line:before]:sticky [&_.line:before]:left-2 [&_.line:before]:z-10 [&_.line:before]:translate-y-[-1px] [&_.line:before]:pr-2 [&_pre]:h-[--height] [&_pre]:overflow-auto [&_pre]:!bg-transparent [&_pre]:pb-28"
         />
       </div>
     </div>

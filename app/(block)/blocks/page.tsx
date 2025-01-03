@@ -23,7 +23,7 @@ export default async function BlocksPage() {
       </p>
 
       <p className="leading-relaxed">
-      ShapeX-UI embodies this principle by offering over 50 pre-designed blocks across 20 categories. Built on top of ShadCN UI and Framer Motion, these blocks combine aesthetics, functionality, and ease of use. Our mission is to empower developers with robust, reusable components that elevate user experiences and bring their projects to life with minimal effort.
+      ShapeX-UI embodies this principle by offering over 50 pre-designed blocks across 20 categories. Built on top of shadcn/ui and Framer Motion, these blocks combine aesthetics, functionality, and ease of use. Our mission is to empower developers with robust, reusable components that elevate user experiences and bring their projects to life with minimal effort.
       </p>
 
       <p className="leading-relaxed">
