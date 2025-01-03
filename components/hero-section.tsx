@@ -44,7 +44,7 @@ export default async function HeroSection() {
                 </div>
 
                 <p className="max-w-2xl text-balance text-left text-base tracking-tight text-black dark:font-medium dark:text-white md:text-center md:text-lg ">
-                    Boost your web application's performance with reusable components built on <b className="bg-gradient-to-r from-red-600 via-purple-500 to-blue-700 bg-clip-text text-transparent">shadcn/ui</b>, <b className="bg-gradient-to-r from-red-600 via-purple-500 to-blue-700 bg-clip-text text-transparent">Framer Motion</b>, designed for efficiency and scalability.
+                    Enhance your web application's performance with reusable components powered by <b className="bg-gradient-to-r from-red-600 via-purple-500 to-blue-700 bg-clip-text text-transparent">shadcn/ui</b> and <b className="bg-gradient-to-r from-red-600 via-purple-500 to-blue-700 bg-clip-text text-transparent">Framer Motion</b>, crafted for efficiency and scalability..
                 </p>
 
                 <div className="mx-0 flex w-full max-w-full flex-col gap-4 py-4 md:max-w-md sm:flex-row md:mx-auto">
