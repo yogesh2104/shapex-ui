@@ -44,3 +44,4 @@ data.txt
 app/(view)/view/page.tsx
 info.txt
 ref.txt
+.env

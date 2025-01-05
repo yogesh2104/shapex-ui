@@ -3,8 +3,10 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/provider/theme-provider";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
-import { siteInfo } from "@/config/site-info";
-import { Analytics } from '@vercel/analytics/next';
+import { siteInfo } from "@/config/site-info"
+import Script from "next/script";
+import { CSPostHogProvider } from "@/components/posthog-provider";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -77,22 +79,37 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-7CB2CK12LQ"></Script>
+      <Script id="google-analytics">
+        {
+          `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+  
+          gtag('config', 'G-7CB2CK12LQ');
+          `
+        }
+      </Script>
+      </head>
       <body
         className={`${geistSans.variable} min-h-svh bg-background font-sans antialiased`}
       >
-        <ThemeProvider 
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-          enableColorScheme
-        >
-          <div className="relative flex flex-col min-h-svh">
-            {children}
-            <Analytics mode="production"/>
-          </div>
-          {/* <TailwindIndicator/> */}
-        </ThemeProvider>
+        <CSPostHogProvider>
+          <ThemeProvider 
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+            enableColorScheme
+          >
+            <div className="relative flex flex-col min-h-svh">
+              {children}
+            </div>
+            {/* <TailwindIndicator/> */}
+          </ThemeProvider>
+        </CSPostHogProvider>
       </body>
     </html>
   );
