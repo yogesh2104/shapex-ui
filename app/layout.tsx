@@ -80,15 +80,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-7CB2CK12LQ"></Script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-YT9RBMY143"></Script>
       <Script id="google-analytics">
         {
           `
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
+          function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-  
-          gtag('config', 'G-7CB2CK12LQ');
+
+          gtag('config', 'G-YT9RBMY143');
           `
         }
       </Script>
