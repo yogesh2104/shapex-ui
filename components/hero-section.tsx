@@ -79,7 +79,7 @@ export default async function HeroSection() {
 
                       </Magnetic>
                     <Link
-                        href="/why-shapex-ui"
+                        href="/blocks/why-shapex-ui"
                         className={cn(
                         buttonVariants({
                             size: "lg",
