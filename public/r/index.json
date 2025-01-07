@@ -184,6 +184,23 @@
     ]
   },
   {
+    "name": "chart",
+    "type": "registry:ui",
+    "dependencies": [
+      "recharts",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "card"
+    ],
+    "files": [
+      {
+        "path": "ui/chart.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
     "name": "dialog",
     "type": "registry:ui",
     "dependencies": [
@@ -408,6 +425,16 @@
     "files": [
       {
         "path": "ui/switch.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "table",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/table.tsx",
         "type": "registry:ui"
       }
     ]

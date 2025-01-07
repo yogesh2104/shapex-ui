@@ -185,6 +185,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "chart": {
+      name: "chart",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["card"],
+      files: [{
+        path: "registry/default/ui/chart.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/ui/chart.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "dialog": {
       name: "dialog",
       description: "",
@@ -392,6 +407,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/ui/switch.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "table": {
+      name: "table",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/ui/table.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/ui/table.tsx")),
       source: "",
       meta: undefined,
     },
@@ -1577,6 +1607,45 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/default/blocks/testimonial-03/page.tsx")),
       source: "__registry__/default/blocks/testimonial-03/page.tsx",
       meta: {"iframeHeight":"560px"},
+    },
+    "analytics": {
+      name: "analytics",
+      description: "Analytics dashboard",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/analytics/page.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/analytics/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/analytics/components/nav-main.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/analytics/components/nav-user.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/analytics/components/analytics-chart.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/analytics/components/customer-table.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/analytics/components/info-card.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["analytics"],
+      component: React.lazy(() => import("@/registry/default/blocks/analytics/page.tsx")),
+      source: "__registry__/default/blocks/analytics/page.tsx",
+      meta: {"iframeHeight":"820px"},
     },
     "utils": {
       name: "utils",

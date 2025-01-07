@@ -96,7 +96,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} min-h-svh bg-background font-sans antialiased`}
       >
-        <CSPostHogProvider>
           <ThemeProvider 
             attribute="class"
             defaultTheme="dark"
@@ -109,7 +108,8 @@ export default function RootLayout({
             </div>
             {/* <TailwindIndicator/> */}
           </ThemeProvider>
-        </CSPostHogProvider>
+        {/* <CSPostHogProvider>
+        </CSPostHogProvider> */}
       </body>
     </html>
   );

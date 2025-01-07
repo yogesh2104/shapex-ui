@@ -85,7 +85,7 @@ function BlockViewerProvider({
       <div
         id={item.name}
         data-view={view}
-        className="group/block-view-wrapper flex min-w-0 flex-col items-stretch gap-2 mb-4"
+        className="group/block-view-wrapper flex min-w-0 flex-col items-stretch gap-2 mb-4 mt-2"
         style={
           {
             "--height": item.meta?.iframeHeight ?? "800px",

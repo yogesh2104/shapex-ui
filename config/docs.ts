@@ -170,16 +170,16 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: "Analytics",
-          href: "#",
-          disabled: true,
+          href: "blocks/analytics",
+          disabled: false,
           items: [],
         },
-        {
-          title: "Admin Panel",
-          href: "#",
-          disabled: true,
-          items: [],
-        },
+        // {
+        //   title: "Admin Panel",
+        //   href: "#",
+        //   disabled: true,
+        //   items: [],
+        // },
         {
           title: "E-Commerce",
           href: "#",

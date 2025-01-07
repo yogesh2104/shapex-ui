@@ -1224,4 +1224,47 @@ export const blocks: Registry = [
       iframeHeight:"560px"
     }
   },
+
+  // here full-featured blocks
+
+  {
+    name: "analytics",
+    description: "Analytics dashboard",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/analytics/page.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/analytics/components/app-sidebar.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/analytics/components/nav-main.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/analytics/components/nav-user.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/analytics/components/analytics-chart.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/analytics/components/customer-table.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/analytics/components/info-card.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["analytics"],
+    meta:{
+      iframeHeight:"820px"
+    } 
+  }
 ];

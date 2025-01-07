@@ -155,6 +155,18 @@ export const ui: Registry = [
     ],
   },
   {
+    name: "chart",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/chart.tsx",
+        type: "registry:ui",
+      },
+    ],
+    registryDependencies: ["card"],
+    dependencies: ["recharts", "lucide-react"],
+  },
+  {
     name: "dialog",
     type: "registry:ui",
     dependencies: ["@radix-ui/react-dialog"],
@@ -357,6 +369,16 @@ export const ui: Registry = [
     files: [
       {
         path: "ui/switch.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
+    name: "table",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/table.tsx",
         type: "registry:ui",
       },
     ],
