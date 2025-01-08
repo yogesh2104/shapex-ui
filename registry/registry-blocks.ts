@@ -1268,7 +1268,7 @@ export const blocks: Registry = [
     } 
   },
   {
-    name: "e-commerce",
+    name: "file-management",
     description: "e-commerce page",
     type: "registry:block",
     registryDependencies: [],
@@ -1297,6 +1297,38 @@ export const blocks: Registry = [
     categories: ["e-commerce"],
     meta:{
       iframeHeight:"1100px"
+    } 
+  },
+  {
+    name: "file-management",
+    description: "file-management page",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/file-management/page.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/file-management/components/file-manager.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/file-management/components/file-table.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/file-management/hook/useFileManager.ts",
+        type: "registry:hook",
+      },
+      {
+        path: "blocks/file-management/types/types.ts",
+        type: "registry:lib",
+      }
+    ],
+    categories: ["file-manager"],
+    meta:{
+      iframeHeight:"700px"
     } 
   }
 ];

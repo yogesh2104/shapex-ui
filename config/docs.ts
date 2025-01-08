@@ -180,28 +180,16 @@ export const docsConfig: DocsConfig = {
         //   disabled: true,
         //   items: [],
         // },
-        {
-          title: "E-Commerce",
-          href: "/blocks/e-commerce",
-          disabled: false,
-          items: [],
-        },
-        {
-          title: "Blog Page",
-          href: "#",
-          disabled: true,
-          items: [],
-        },
-        {
-          title: "Blog Details",
-          href: "#",
-          disabled: true,
-          items: [],
-        },
+        // {
+        //   title: "E-Commerce",
+        //   href: "/blocks/e-commerce",
+        //   disabled: false,
+        //   items: [],
+        // },
         {
           title: "File Management",
-          href: "#",
-          disabled: true,
+          href: "/blocks/file-manager",
+          disabled: false,
           items: [],
         },
         {

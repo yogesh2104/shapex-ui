@@ -109,4 +109,10 @@ export const registryCategories = [
     slug: "e-commerce",
     hidden: false,
   },
+  {
+    name: "File Management",
+    slug: "file-manager",
+    hidden: false,
+  },
+
 ];

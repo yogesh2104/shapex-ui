@@ -1647,8 +1647,8 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/analytics/page.tsx",
       meta: {"iframeHeight":"820px"},
     },
-    "e-commerce": {
-      name: "e-commerce",
+    "file-management": {
+      name: "file-management",
       description: "e-commerce page",
       type: "registry:block",
       registryDependencies: [],
@@ -1677,6 +1677,37 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/default/blocks/e-commerce/page.tsx")),
       source: "__registry__/default/blocks/e-commerce/page.tsx",
       meta: {"iframeHeight":"1100px"},
+    },
+    "file-management": {
+      name: "file-management",
+      description: "file-management page",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/file-management/page.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/file-management/components/file-manager.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/file-management/components/file-table.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/file-management/hook/useFileManager.ts",
+        type: "registry:hook",
+        target: ""
+      },{
+        path: "registry/default/blocks/file-management/types/types.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: ["file-manager"],
+      component: React.lazy(() => import("@/registry/default/blocks/file-management/page.tsx")),
+      source: "__registry__/default/blocks/file-management/page.tsx",
+      meta: {"iframeHeight":"700px"},
     },
     "utils": {
       name: "utils",
