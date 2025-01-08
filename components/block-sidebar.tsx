@@ -1,12 +1,12 @@
 "use client"
 
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname, useSearchParams } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { motion, AnimatePresence } from "framer-motion"
 import { SidebarNavItem } from "@/config/docs"
 import { ChevronDown } from 'lucide-react'
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export interface BlockSideBarProps {
   items: SidebarNavItem[]
@@ -14,6 +14,19 @@ export interface BlockSideBarProps {
 
 export function BlockSideBar({ items }: BlockSideBarProps) {
   const pathname = usePathname()
+  const searchParams = useSearchParams()
+  const [openStates,setOpenState] = useState<Record<string, boolean>>({})
+
+  useEffect(()=>{
+    const isFeatured = searchParams.get("isFeatured")
+    const newOpenState = items.reduce((acc,item)=>({
+      ...acc,
+      [item.title] : isFeatured ? item.title=="Featured Blocks" : true
+    }),{})
+    setOpenState(newOpenState)
+
+  },[searchParams, items])
+
 
   return items.length ? (
     <motion.div 
@@ -23,15 +36,29 @@ export function BlockSideBar({ items }: BlockSideBarProps) {
       className="pt-5 flex flex-col gap-2 mb-5"
     >
       {items.map((item, index) => (
-        <SidebarGroup key={index} item={item} pathname={pathname} />
+        <SidebarGroup 
+          key={index} 
+          isOpen={openStates[item.title] ?? true}
+          setIsOpen={(open)=> setOpenState(pre=> ({...pre, [item.title]:open}))}
+          item={item} 
+          pathname={pathname} 
+        />
       ))}
     </motion.div>
   ) : null
 }
 
-function SidebarGroup({ item, pathname }: { item: SidebarNavItem; pathname: string | null }) {
-  const [isOpen, setIsOpen] = useState(true)
-
+function SidebarGroup({ 
+  item, 
+  pathname, 
+  isOpen,
+  setIsOpen 
+}: { 
+  item: SidebarNavItem
+  pathname: string | null
+  isOpen: boolean
+  setIsOpen: (open: boolean) => void
+}) {
   return (
     <div className="flex flex-col gap-1">
       <motion.button
@@ -104,14 +131,14 @@ function BlockSideBarItems({
                 }}
               />
             )}
-            <span className="relative z-10 shrink-0 text-sm">
+            <p className="relative z-10 shrink-0 text-sm">
               {item.title}
               {item.disabled && (
               <span className="ml-2 rounded-md bg-muted px-1.5 py-0.5 text-xs leading-none text-muted-foreground no-underline group-hover:no-underline">
                 coming soon
               </span>
             )}
-            </span>
+            </p>
           </Link>
         ) : (
           <span

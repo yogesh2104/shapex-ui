@@ -171,7 +171,7 @@ function CategoryCarousel(){
             >
                 <CarouselContent className="py-8">
                     {slides.map((slide, index) => (
-                        <CarouselItem key={index} className="sm:basis-1/2 md:basis-1/3 lg:basis-1/6">
+                        <CarouselItem key={index} className="basis-2/3 md:basis-1/3 lg:basis-1/6">
                             <div className="group cursor-pointer">
                                 <div className="relative mx-2 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6">
                                     <div className="flex flex-col items-center space-y-4">

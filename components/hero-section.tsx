@@ -48,54 +48,41 @@ export default async function HeroSection() {
                 </p>
 
                 <div className="mx-0 flex w-full max-w-full flex-col gap-4 py-4 md:max-w-md sm:flex-row md:mx-auto">
-                    <div className="flex w-full flex-col gap-2 sm:flex-row sm:gap-4">
-                      <Magnetic
-                        intensity={0.2}
-                        springOptions={springOptions}
-                        actionArea='global'
-                        range={200}
-                      >
-                        <Link
-                          href="/blocks"  
-                          className={cn(
-                          buttonVariants({
-                              variant: "default",
-                              size: "lg",
-                          }),
-                          "gap-2 whitespace-pre md:flex",
-                          "group relative w-full gap-1 rounded-full text-sm font-semibold tracking-tighter",
-                          )}>
-                          <Magnetic
-                            intensity={0.1}
-                            springOptions={springOptions}
-                            actionArea='global'
-                            range={300}
-                          >
-                            <span>Browse Blocks</span>
-                          </Magnetic>
-                          
-                          <ChevronRight className="ml-1  size-4 shrink-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
-                        </Link>
+                  <div className="flex w-full flex-col gap-2 sm:flex-row sm:gap-4">
+                    
+                  <Link
+                    href="/blocks"  
+                    className={cn(
+                    buttonVariants({
+                        variant: "default",
+                        size: "lg",
+                    }),
+                    "gap-2 whitespace-pre md:flex",
+                    "group relative w-full gap-1 rounded-full text-sm font-semibold tracking-tighter",
+                    )}>
+                    <span>Browse Blocks</span>
+                    
+                    <ChevronRight className="ml-1  size-4 shrink-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
+                  </Link>
 
-                      </Magnetic>
-                    <Link
-                        href="/blocks/why-shapex-ui"
-                        className={cn(
-                        buttonVariants({
-                            size: "lg",
-                            variant: "outline",
-                        }),
-                        "gap-2 whitespace-pre md:flex",
-                        "group relative w-full gap-1 overflow-hidden rounded-full text-sm font-semibold tracking-tighter",
-                        )}
-                    >
-                        Why Shapex-UI
-                        <ChevronRight className="ml-1 size-4 shrink-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
-                    </Link>
-                    </div>
-
+                  <Link
+                      href="/blocks/why-shapex-ui"
+                      className={cn(
+                      buttonVariants({
+                          size: "lg",
+                          variant: "outline",
+                      }),
+                      "gap-2 whitespace-pre md:flex",
+                      "group relative w-full gap-1 overflow-hidden rounded-full text-sm font-semibold tracking-tighter",
+                      )}
+                  >
+                      Why Shapex-UI
+                      <ChevronRight className="ml-1 size-4 shrink-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
+                  </Link>
+                  
+                  </div>
                 </div>
-                    <a href="https://www.producthunt.com/posts/shapex-ui?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-shapex&#0045;ui" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=755489&theme=light" alt="Shapex&#0032;UI - Boost&#0032;Your&#0032;Workflow&#0032;with&#0032;Tailored&#0032;UI&#0032;Blocks&#0046; | Product Hunt" style={{width: "250px", height: "54px"}} width="250" height="54" /></a>
+                <a href="https://www.producthunt.com/posts/shapex-ui?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-shapex&#0045;ui" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=755489&theme=light" alt="Shapex&#0032;UI - Boost&#0032;Your&#0032;Workflow&#0032;with&#0032;Tailored&#0032;UI&#0032;Blocks&#0046; | Product Hunt" style={{width: "250px", height: "54px"}} width="250" height="54" /></a>
                 <div className="flex items-center flex-wrap gap-3 justify-center max-w-5xl mt-10">
                   {docsConfig.sidebarNav.map((items) => (
                     items?.title =="Blocks" && items?.items.slice(1,13).map((item)=>(

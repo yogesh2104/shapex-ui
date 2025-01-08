@@ -1268,7 +1268,7 @@ export const blocks: Registry = [
     } 
   },
   {
-    name: "file-management",
+    name: "e-commerce",
     description: "e-commerce page",
     type: "registry:block",
     registryDependencies: [],
@@ -1279,6 +1279,10 @@ export const blocks: Registry = [
       },
       {
         path: "blocks/e-commerce/components/category-carousel.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/e-commerce/components/Ecommerce.tsx",
         type: "registry:component",
       },
       {

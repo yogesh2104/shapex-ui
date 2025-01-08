@@ -166,7 +166,7 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
-      title: "Full Featured",
+      title: "Featured Blocks",
       items: [
         {
           title: "Analytics",
@@ -180,12 +180,12 @@ export const docsConfig: DocsConfig = {
         //   disabled: true,
         //   items: [],
         // },
-        // {
-        //   title: "E-Commerce",
-        //   href: "/blocks/e-commerce",
-        //   disabled: false,
-        //   items: [],
-        // },
+        {
+          title: "E-Commerce",
+          href: "/blocks/e-commerce",
+          disabled: false,
+          items: [],
+        },
         {
           title: "File Management",
           href: "/blocks/file-manager",

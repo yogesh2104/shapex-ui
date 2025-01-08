@@ -66,7 +66,7 @@ export function MobileNav() {
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
           <div className="flex flex-col space-y-2">
             {docsConfig.sidebarNav.map((item, index) => (
-              <div key={index} className="flex flex-col space-y-3 pt-6">
+              <div key={item.title} className="flex flex-col space-y-3 pt-6">
                 <h4 className="font-medium">{item.title}</h4>
                 {item.items?.map((item) =>
                   !item.disabled && item.href ? (
@@ -81,15 +81,19 @@ export function MobileNav() {
                       {item.title}
                     </MobileLink>
                   ) : (
-                    <span
-                      key={index}
+                    <p
                       className={cn(
                         "text-muted-foreground",
                         item.disabled && "cursor-not-allowed opacity-60",
                       )}
                     >
                       {item.title}
-                    </span>
+                      {item.disabled && (
+                        <span className="ml-2 rounded-md bg-muted px-1.5 py-0.5 text-xs leading-none text-muted-foreground no-underline group-hover:no-underline">
+                          coming soon
+                        </span>
+                      )}
+                    </p>
                   ),
                 )}
               </div>

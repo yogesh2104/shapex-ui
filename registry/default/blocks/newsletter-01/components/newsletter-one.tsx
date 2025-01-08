@@ -87,7 +87,7 @@ const NewsletterOne = () => {
           advanced, yet easy-to-use marketing platform.
         </p>
 
-        <div className="text-center mx-auto mb-12 max-w-lg">
+        <div className="text-center mx-auto mb-12 max-w-lg px-4">
           <div className="relative ">
             <Input
               type="email"

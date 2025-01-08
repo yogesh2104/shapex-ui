@@ -1647,8 +1647,8 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/analytics/page.tsx",
       meta: {"iframeHeight":"820px"},
     },
-    "file-management": {
-      name: "file-management",
+    "e-commerce": {
+      name: "e-commerce",
       description: "e-commerce page",
       type: "registry:block",
       registryDependencies: [],
@@ -1658,6 +1658,10 @@ export const Index: Record<string, any> = {
         target: ""
       },{
         path: "registry/default/blocks/e-commerce/components/category-carousel.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/e-commerce/components/Ecommerce.tsx",
         type: "registry:component",
         target: ""
       },{
