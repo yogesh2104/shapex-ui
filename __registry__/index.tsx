@@ -1647,6 +1647,37 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/analytics/page.tsx",
       meta: {"iframeHeight":"820px"},
     },
+    "e-commerce": {
+      name: "e-commerce",
+      description: "e-commerce page",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/e-commerce/page.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/e-commerce/components/category-carousel.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/e-commerce/components/hero-carousel.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/e-commerce/components/popular-product-card.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/e-commerce/components/product-card.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["e-commerce"],
+      component: React.lazy(() => import("@/registry/default/blocks/e-commerce/page.tsx")),
+      source: "__registry__/default/blocks/e-commerce/page.tsx",
+      meta: {"iframeHeight":"1100px"},
+    },
     "utils": {
       name: "utils",
       description: "",

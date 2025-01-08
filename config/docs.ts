@@ -170,7 +170,7 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: "Analytics",
-          href: "blocks/analytics",
+          href: "/blocks/analytics",
           disabled: false,
           items: [],
         },
@@ -182,8 +182,8 @@ export const docsConfig: DocsConfig = {
         // },
         {
           title: "E-Commerce",
-          href: "#",
-          disabled: true,
+          href: "/blocks/e-commerce",
+          disabled: false,
           items: [],
         },
         {

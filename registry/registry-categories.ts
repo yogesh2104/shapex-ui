@@ -104,4 +104,9 @@ export const registryCategories = [
     slug: "analytics",
     hidden: false,
   },
+  {
+    name: "E-Commerce",
+    slug: "e-commerce",
+    hidden: false,
+  },
 ];

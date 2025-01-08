@@ -1266,5 +1266,37 @@ export const blocks: Registry = [
     meta:{
       iframeHeight:"820px"
     } 
+  },
+  {
+    name: "e-commerce",
+    description: "e-commerce page",
+    type: "registry:block",
+    registryDependencies: [],
+    files: [
+      {
+        path: "blocks/e-commerce/page.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/e-commerce/components/category-carousel.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/e-commerce/components/hero-carousel.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/e-commerce/components/popular-product-card.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/e-commerce/components/product-card.tsx",
+        type: "registry:component",
+      }
+    ],
+    categories: ["e-commerce"],
+    meta:{
+      iframeHeight:"1100px"
+    } 
   }
 ];
