@@ -114,5 +114,10 @@ export const registryCategories = [
     slug: "file-manager",
     hidden: false,
   },
+  {
+    name:"Kanban",
+    slug:"kanban",
+    hidden:false
+  }
 
 ];

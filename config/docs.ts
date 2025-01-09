@@ -192,12 +192,12 @@ export const docsConfig: DocsConfig = {
           disabled: false,
           items: [],
         },
-        {
-          title: "Kanban",
-          href: "#",
-          disabled: true,
-          items: [],
-        },
+        // {
+        //   title: "Kanban",
+        //   href: "#",
+        //   disabled: true,
+        //   items: [],
+        // },
         {
           title: "Messaging",
           href: "#",
