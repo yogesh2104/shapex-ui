@@ -34,8 +34,8 @@ export const docsConfig: DocsConfig = {
         },
         {
           title: "Templates",
-          href: "#",
-          disabled: true,
+          href: "/blocks/templates",
+          disabled: false,
           items: [],
         },
       ],

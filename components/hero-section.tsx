@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 import { Badge } from "./ui/badge";
 import { docsConfig } from "@/config/docs";
 import { TextEffect } from "./text-effect";
-import { Magnetic } from "./magnetic.button";
 import { Spotlight } from "./Spotlight";
 
 export default async function HeroSection() {
@@ -82,7 +81,6 @@ export default async function HeroSection() {
                   
                   </div>
                 </div>
-                <a href="https://www.producthunt.com/posts/shapex-ui?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-shapex&#0045;ui" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=755489&theme=light" alt="Shapex&#0032;UI - Boost&#0032;Your&#0032;Workflow&#0032;with&#0032;Tailored&#0032;UI&#0032;Blocks&#0046; | Product Hunt" style={{width: "250px", height: "54px"}} width="250" height="54" /></a>
                 <div className="flex items-center flex-wrap gap-3 justify-center max-w-5xl mt-10">
                   {docsConfig.sidebarNav.map((items) => (
                     items?.title =="Blocks" && items?.items.slice(1,13).map((item)=>(
