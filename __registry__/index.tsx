@@ -10,7 +10,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-accordion"],
       files: [{
         path: "registry/default/ui/accordion.tsx",
         type: "registry:ui",
@@ -26,7 +25,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: undefined,
       files: [{
         path: "registry/default/ui/alert.tsx",
         type: "registry:ui",
@@ -42,7 +40,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      dependencies: ["@radix-ui/react-alert-dialog"],
       files: [{
         path: "registry/default/ui/alert-dialog.tsx",
         type: "registry:ui",
@@ -58,7 +55,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-avatar"],
       files: [{
         path: "registry/default/ui/avatar.tsx",
         type: "registry:ui",
@@ -74,7 +70,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: undefined,
       files: [{
         path: "registry/default/ui/badge.tsx",
         type: "registry:ui",
@@ -90,7 +85,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-slot"],
       files: [{
         path: "registry/default/ui/button.tsx",
         type: "registry:ui",
@@ -106,7 +100,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      dependencies: ["react-day-picker@8.10.1","date-fns"],
       files: [{
         path: "registry/default/ui/calendar.tsx",
         type: "registry:ui",
@@ -122,7 +115,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: undefined,
       files: [{
         path: "registry/default/ui/card.tsx",
         type: "registry:ui",
@@ -138,7 +130,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: undefined,
       files: [{
         path: "registry/default/ui/carousel.tsx",
         type: "registry:ui",
@@ -154,7 +145,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-checkbox"],
       files: [{
         path: "registry/default/ui/checkbox.tsx",
         type: "registry:ui",
@@ -170,7 +160,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-collapsible"],
       files: [{
         path: "registry/default/ui/collapsible.tsx",
         type: "registry:ui",
@@ -186,7 +175,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["dialog"],
-      dependencies: ["cmdk@1.0.0"],
       files: [{
         path: "registry/default/ui/command.tsx",
         type: "registry:ui",
@@ -202,7 +190,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["card"],
-      dependencies: ["recharts","lucide-react"],
       files: [{
         path: "registry/default/ui/chart.tsx",
         type: "registry:ui",
@@ -218,7 +205,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-dialog"],
       files: [{
         path: "registry/default/ui/dialog.tsx",
         type: "registry:ui",
@@ -234,7 +220,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-dropdown-menu"],
       files: [{
         path: "registry/default/ui/dropdown-menu.tsx",
         type: "registry:ui",
@@ -250,7 +235,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-hover-card"],
       files: [{
         path: "registry/default/ui/hover-card.tsx",
         type: "registry:ui",
@@ -266,7 +250,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: undefined,
       files: [{
         path: "registry/default/ui/input.tsx",
         type: "registry:ui",
@@ -282,7 +265,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-label"],
       files: [{
         path: "registry/default/ui/label.tsx",
         type: "registry:ui",
@@ -298,7 +280,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-menubar"],
       files: [{
         path: "registry/default/ui/menubar.tsx",
         type: "registry:ui",
@@ -314,7 +295,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-navigation-menu"],
       files: [{
         path: "registry/default/ui/navigation-menu.tsx",
         type: "registry:ui",
@@ -330,7 +310,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-progress"],
       files: [{
         path: "registry/default/ui/progress.tsx",
         type: "registry:ui",
@@ -346,7 +325,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-scroll-area"],
       files: [{
         path: "registry/default/ui/scroll-area.tsx",
         type: "registry:ui",
@@ -362,7 +340,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-select"],
       files: [{
         path: "registry/default/ui/select.tsx",
         type: "registry:ui",
@@ -378,7 +355,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-dialog"],
       files: [{
         path: "registry/default/ui/sheet.tsx",
         type: "registry:ui",
@@ -394,7 +370,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button","separator","sheet","tooltip","input","use-mobile","skeleton"],
-      dependencies: ["@radix-ui/react-slot","class-variance-authority","lucide-react"],
       files: [{
         path: "registry/default/ui/sidebar.tsx",
         type: "registry:ui",
@@ -410,7 +385,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: undefined,
       files: [{
         path: "registry/default/ui/skeleton.tsx",
         type: "registry:ui",
@@ -426,7 +400,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-switch"],
       files: [{
         path: "registry/default/ui/switch.tsx",
         type: "registry:ui",
@@ -442,7 +415,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: undefined,
       files: [{
         path: "registry/default/ui/table.tsx",
         type: "registry:ui",
@@ -458,7 +430,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-tabs"],
       files: [{
         path: "registry/default/ui/tabs.tsx",
         type: "registry:ui",
@@ -474,7 +445,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: undefined,
       files: [{
         path: "registry/default/ui/textarea.tsx",
         type: "registry:ui",
@@ -490,7 +460,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      dependencies: ["@radix-ui/react-toggle"],
       files: [{
         path: "registry/default/ui/toggle.tsx",
         type: "registry:ui",
@@ -506,7 +475,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["toggle"],
-      dependencies: ["@radix-ui/react-toggle-group"],
       files: [{
         path: "registry/default/ui/toggle-group.tsx",
         type: "registry:ui",
@@ -522,91 +490,67 @@ export const Index: Record<string, any> = {
       description: "The Article Two Section for content presentation.",
       type: "registry:block",
       registryDependencies: ["card","badge","separator","scroll-area"],
-      dependencies: ["framer-motion"],
       files: [{
-        path: "registry/default/blocks/article-02/page.tsx",
-        type: "registry:page",
-        target: "shapexui/article-02.tsx"
-      },{
-        path: "registry/default/blocks/article-02/components/article-two.tsx",
+        path: "registry/default/blocks/article/article-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/article-two.tsx"
       }],
       categories: ["article"],
-      component: React.lazy(() => import("@/registry/default/blocks/article-02/page.tsx")),
-      source: "__registry__/default/blocks/article-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/article/article-two.tsx")),
+      source: "__registry__/default/blocks/article/article-two.tsx",
       meta: undefined,
     },
     "blog-01": {
       name: "blog-01",
       description: "Blog Grid View",
       type: "registry:block",
-      registryDependencies: ["card","button","badge"],
-      dependencies: undefined,
+      registryDependencies: ["button","badge","input","select"],
       files: [{
-        path: "registry/default/blocks/blog-01/page.tsx",
-        type: "registry:page",
-        target: "app/blog/page.tsx"
-      },{
-        path: "registry/default/blocks/blog-01/components/blog-one.tsx",
+        path: "registry/default/blocks/blog/blog-01/blog-one.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/blog.tsx"
       },{
-        path: "registry/default/blocks/blog-01/components/blog-header.tsx",
+        path: "registry/default/blocks/blog/blog-01/blog-header.tsx",
         type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/blog-01/hook/use-outside-click.ts",
-        type: "registry:hook",
-        target: ""
+        target: "components/shapexui/blog-header.tsx"
       }],
       categories: ["blog"],
-      component: React.lazy(() => import("@/registry/default/blocks/blog-01/page.tsx")),
-      source: "__registry__/default/blocks/blog-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/blog/blog-01/blog-one.tsx")),
+      source: "__registry__/default/blocks/blog/blog-01/blog-one.tsx",
       meta: undefined,
     },
     "blog-02": {
       name: "blog-02",
       description: "Simple Blog List",
       type: "registry:block",
-      registryDependencies: ["card","badge","separator","scroll-area"],
-      dependencies: undefined,
+      registryDependencies: ["card","badge","separator","input","button"],
       files: [{
-        path: "registry/default/blocks/blog-02/page.tsx",
-        type: "registry:page",
-        target: "app/blog/page.tsx"
-      },{
-        path: "registry/default/blocks/blog-02/components/blog-two.tsx",
+        path: "registry/default/blocks/blog/blog-02/blog-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/blog.tsx"
       },{
-        path: "registry/default/blocks/blog-02/components/blog-header.tsx",
+        path: "registry/default/blocks/blog/blog-02/blog-header.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/blog-header.tsx"
       }],
       categories: ["blog"],
-      component: React.lazy(() => import("@/registry/default/blocks/blog-02/page.tsx")),
-      source: "__registry__/default/blocks/blog-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/blog/blog-02/blog-two.tsx")),
+      source: "__registry__/default/blocks/blog/blog-02/blog-two.tsx",
       meta: undefined,
     },
     "contact-01": {
       name: "contact-01",
       description: "A simple Contact Form.",
       type: "registry:block",
-      registryDependencies: ["button","textarea","input","label"],
-      dependencies: undefined,
+      registryDependencies: ["card","button","textarea","input"],
       files: [{
-        path: "registry/default/blocks/contact-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/contact.tsx"
-      },{
-        path: "registry/default/blocks/contact-01/components/contact-one.tsx",
+        path: "registry/default/blocks/contact/contact-one.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/contact.tsx"
       }],
       categories: ["contact"],
-      component: React.lazy(() => import("@/registry/default/blocks/contact-01/page.tsx")),
-      source: "__registry__/default/blocks/contact-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/contact/contact-one.tsx")),
+      source: "__registry__/default/blocks/contact/contact-one.tsx",
       meta: undefined,
     },
     "contact-02": {
@@ -614,107 +558,63 @@ export const Index: Record<string, any> = {
       description: "A simple Contact Form.",
       type: "registry:block",
       registryDependencies: ["button","textarea","input","label"],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/contact-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/contact.tsx"
-      },{
-        path: "registry/default/blocks/contact-02/components/contact-two.tsx",
+        path: "registry/default/blocks/contact/contact-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/contact.tsx"
       }],
       categories: ["contact"],
-      component: React.lazy(() => import("@/registry/default/blocks/contact-02/page.tsx")),
-      source: "__registry__/default/blocks/contact-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/contact/contact-two.tsx")),
+      source: "__registry__/default/blocks/contact/contact-two.tsx",
       meta: undefined,
     },
     "cta-01": {
       name: "cta-01",
       description: "Call To Action.",
       type: "registry:block",
-      registryDependencies: ["button"],
-      dependencies: undefined,
+      registryDependencies: ["button","card"],
       files: [{
-        path: "registry/default/blocks/cta-01/page.tsx",
-        type: "registry:page",
-        target: "app/login/page.tsx"
-      },{
-        path: "registry/default/blocks/cta-01/components/cta-one.tsx",
+        path: "registry/default/blocks/cta/cta-one.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/cta.tsx"
       }],
       categories: ["cta"],
-      component: React.lazy(() => import("@/registry/default/blocks/cta-01/page.tsx")),
-      source: "__registry__/default/blocks/cta-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/cta/cta-one.tsx")),
+      source: "__registry__/default/blocks/cta/cta-one.tsx",
       meta: {"iframeHeight":"410px"},
-    },
-    "cta-02": {
-      name: "cta-02",
-      description: "A simple Contact Form.",
-      type: "registry:block",
-      registryDependencies: ["button"],
-      dependencies: undefined,
-      files: [{
-        path: "registry/default/blocks/cta-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/cta.tsx"
-      },{
-        path: "registry/default/blocks/cta-02/components/cta-two.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/cta-02/components/user-image.tsx",
-        type: "registry:component",
-        target: ""
-      }],
-      categories: ["cta"],
-      component: React.lazy(() => import("@/registry/default/blocks/cta-02/page.tsx")),
-      source: "__registry__/default/blocks/cta-02/page.tsx",
-      meta: {"iframeHeight":"480px"},
     },
     "cta-03": {
       name: "cta-03",
       description: "A simple CTA.",
       type: "registry:block",
       registryDependencies: ["button"],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/cta-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/cta.tsx"
-      },{
-        path: "registry/default/blocks/cta-03/components/cta-three.tsx",
+        path: "registry/default/blocks/cta/cta-three.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/cta.tsx"
       }],
       categories: ["cta"],
-      component: React.lazy(() => import("@/registry/default/blocks/cta-03/page.tsx")),
-      source: "__registry__/default/blocks/cta-03/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/cta/cta-three.tsx")),
+      source: "__registry__/default/blocks/cta/cta-three.tsx",
       meta: {"iframeHeight":"629px"},
     },
     "faq-01": {
       name: "faq-01",
       description: "A FQAs block",
       type: "registry:block",
-      registryDependencies: ["tabs","accordion","badge"],
-      dependencies: undefined,
+      registryDependencies: ["accordion","badge"],
       files: [{
-        path: "registry/default/blocks/faq-01/page.tsx",
-        type: "registry:page",
-        target: "app/faq/page.tsx"
-      },{
-        path: "registry/default/blocks/faq-01/components/faq-one.tsx",
+        path: "registry/default/blocks/faq/faq-01/faq-one.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/faq.tsx"
       },{
-        path: "registry/default/blocks/faq-01/components/tabs.tsx",
+        path: "registry/default/blocks/faq/faq-01/tabs.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/tabs.tsx"
       }],
       categories: ["faq"],
-      component: React.lazy(() => import("@/registry/default/blocks/faq-01/page.tsx")),
-      source: "__registry__/default/blocks/faq-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/faq/faq-01/faq-one.tsx")),
+      source: "__registry__/default/blocks/faq/faq-01/faq-one.tsx",
       meta: {"iframeHeight":"600px"},
     },
     "faq-02": {
@@ -722,51 +622,37 @@ export const Index: Record<string, any> = {
       description: "A FAQs.",
       type: "registry:block",
       registryDependencies: ["badge","input"],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/faq-02/page.tsx",
-        type: "registry:page",
-        target: "app/faq/page.tsx"
-      },{
-        path: "registry/default/blocks/faq-02/components/faq-two.tsx",
+        path: "registry/default/blocks/faq/faq-02/faq-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/faq.tsx"
       },{
-        path: "registry/default/blocks/faq-02/components/accordion.tsx",
+        path: "registry/default/blocks/faq/faq-02/accordion.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/accordion.tsx"
       }],
       categories: ["faq"],
-      component: React.lazy(() => import("@/registry/default/blocks/faq-02/page.tsx")),
-      source: "__registry__/default/blocks/faq-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/faq/faq-02/faq-two.tsx")),
+      source: "__registry__/default/blocks/faq/faq-02/faq-two.tsx",
       meta: {"iframeHeight":"700px"},
     },
     "faq-03": {
       name: "faq-03",
       description: "A FAQs.",
       type: "registry:block",
-      registryDependencies: ["card"],
-      dependencies: undefined,
+      registryDependencies: ["card","accordion","label","input","button","textarea"],
       files: [{
-        path: "registry/default/blocks/faq-03/page.tsx",
-        type: "registry:page",
-        target: "app/faq/page.tsx"
-      },{
-        path: "registry/default/blocks/faq-03/components/faq-three.tsx",
+        path: "registry/default/blocks/faq/faq-03/faq-three.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/faq.tsx"
       },{
-        path: "registry/default/blocks/faq-03/components/open-contact-form.tsx",
+        path: "registry/default/blocks/faq/faq-03/open-contact-form.tsx",
         type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/faq-03/hook/use-outside-click.ts",
-        type: "registry:hook",
-        target: ""
+        target: "components/shapexui/open-contact-form.tsx"
       }],
       categories: ["faq"],
-      component: React.lazy(() => import("@/registry/default/blocks/faq-03/page.tsx")),
-      source: "__registry__/default/blocks/faq-03/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/faq/faq-03/faq-three.tsx")),
+      source: "__registry__/default/blocks/faq/faq-03/faq-three.tsx",
       meta: {"iframeHeight":"750px"},
     },
     "feature-01": {
@@ -774,91 +660,52 @@ export const Index: Record<string, any> = {
       description: "A Feature Block.",
       type: "registry:block",
       registryDependencies: ["card","accordion"],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/feature-01/page.tsx",
-        type: "registry:page",
-        target: "app/feature/page.tsx"
-      },{
-        path: "registry/default/blocks/feature-01/components/feature-one.tsx",
+        path: "registry/default/blocks/feature/feature-01/feature-one.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/feature.tsx"
       }],
       categories: ["feature"],
-      component: React.lazy(() => import("@/registry/default/blocks/feature-01/page.tsx")),
-      source: "__registry__/default/blocks/feature-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/feature/feature-01/feature-one.tsx")),
+      source: "__registry__/default/blocks/feature/feature-01/feature-one.tsx",
       meta: {"iframeHeight":"500px"},
     },
     "feature-02": {
       name: "feature-02",
       description: "A Feature block.",
       type: "registry:block",
-      registryDependencies: ["card","accordion"],
-      dependencies: undefined,
+      registryDependencies: [],
       files: [{
-        path: "registry/default/blocks/feature-02/page.tsx",
-        type: "registry:page",
-        target: "app/feature/page.tsx"
-      },{
-        path: "registry/default/blocks/feature-02/components/feature-two.tsx",
+        path: "registry/default/blocks/feature/feature-02/feature-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/feature.tsx"
       },{
-        path: "registry/default/blocks/feature-02/components/video-dialog.tsx",
+        path: "registry/default/blocks/feature/feature-02/video-dialog.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/video-dialog.tsx"
       }],
       categories: ["feature"],
-      component: React.lazy(() => import("@/registry/default/blocks/feature-02/page.tsx")),
-      source: "__registry__/default/blocks/feature-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/feature/feature-02/feature-two.tsx")),
+      source: "__registry__/default/blocks/feature/feature-02/feature-two.tsx",
       meta: {"iframeHeight":"797px"},
-    },
-    "feature-03": {
-      name: "feature-03",
-      description: "A Feature block.",
-      type: "registry:block",
-      registryDependencies: ["card"],
-      dependencies: undefined,
-      files: [{
-        path: "registry/default/blocks/feature-03/page.tsx",
-        type: "registry:page",
-        target: "app/feature/page.tsx"
-      },{
-        path: "registry/default/blocks/feature-03/components/feature-three.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/feature-03/components/video-dialog.tsx",
-        type: "registry:component",
-        target: ""
-      }],
-      categories: ["feature"],
-      component: React.lazy(() => import("@/registry/default/blocks/feature-03/page.tsx")),
-      source: "__registry__/default/blocks/feature-03/page.tsx",
-      meta: {"iframeHeight":"600px"},
     },
     "footer-01": {
       name: "footer-01",
       description: "A Footer block.",
       type: "registry:block",
       registryDependencies: ["button"],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/footer-01/page.tsx",
-        type: "registry:page",
-        target: "app/footer/page.tsx"
-      },{
-        path: "registry/default/blocks/footer-01/components/footer-one.tsx",
+        path: "registry/default/blocks/footer/footer-01/footer-one.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/footer.tsx"
       },{
-        path: "registry/default/blocks/footer-01/components/animation-container.tsx",
+        path: "registry/default/blocks/footer/footer-01/animation-container.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/animation-container.tsx"
       }],
       categories: ["footer"],
-      component: React.lazy(() => import("@/registry/default/blocks/footer-01/page.tsx")),
-      source: "__registry__/default/blocks/footer-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/footer/footer-01/footer-one.tsx")),
+      source: "__registry__/default/blocks/footer/footer-01/footer-one.tsx",
       meta: {"iframeHeight":"250px"},
     },
     "footer-02": {
@@ -866,19 +713,14 @@ export const Index: Record<string, any> = {
       description: "A Footer block.",
       type: "registry:block",
       registryDependencies: [],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/footer-02/page.tsx",
-        type: "registry:page",
-        target: "app/footer/page.tsx"
-      },{
-        path: "registry/default/blocks/footer-02/components/footer-two.tsx",
+        path: "registry/default/blocks/footer/footer-02/footer-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/footer.tsx"
       }],
       categories: ["footer"],
-      component: React.lazy(() => import("@/registry/default/blocks/footer-02/page.tsx")),
-      source: "__registry__/default/blocks/footer-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/footer/footer-02/footer-two.tsx")),
+      source: "__registry__/default/blocks/footer/footer-02/footer-two.tsx",
       meta: {"iframeHeight":"462px"},
     },
     "footer-03": {
@@ -886,19 +728,14 @@ export const Index: Record<string, any> = {
       description: "A Footer block.",
       type: "registry:block",
       registryDependencies: [],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/footer-03/page.tsx",
-        type: "registry:page",
-        target: "app/footer/page.tsx"
-      },{
-        path: "registry/default/blocks/footer-03/components/footer-three.tsx",
+        path: "registry/default/blocks/footer/footer-03/footer-three.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/footer.tsx"
       }],
       categories: ["footer"],
-      component: React.lazy(() => import("@/registry/default/blocks/footer-03/page.tsx")),
-      source: "__registry__/default/blocks/footer-03/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/footer/footer-03/footer-three.tsx")),
+      source: "__registry__/default/blocks/footer/footer-03/footer-three.tsx",
       meta: {"iframeHeight":"460px"},
     },
     "header-01": {
@@ -906,27 +743,22 @@ export const Index: Record<string, any> = {
       description: "header block",
       type: "registry:block",
       registryDependencies: ["sheet","button"],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/header-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/header.tsx"
-      },{
-        path: "registry/default/blocks/header-01/components/header-one.tsx",
+        path: "registry/default/blocks/header/header-01/header-one.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/header.tsx"
       },{
-        path: "registry/default/blocks/header-01/components/animation-container.tsx",
+        path: "registry/default/blocks/header/header-01/animation-container.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/animation-container.tsx"
       },{
-        path: "registry/default/blocks/header-01/components/mobile-navbar.tsx",
+        path: "registry/default/blocks/header/header-01/mobile-navbar.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/mobile-navbar.tsx"
       }],
       categories: ["header"],
-      component: React.lazy(() => import("@/registry/default/blocks/header-01/page.tsx")),
-      source: "__registry__/default/blocks/header-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/header/header-01/header-one.tsx")),
+      source: "__registry__/default/blocks/header/header-01/header-one.tsx",
       meta: {"iframeHeight":"300px"},
     },
     "header-02": {
@@ -934,19 +766,14 @@ export const Index: Record<string, any> = {
       description: "header block",
       type: "registry:block",
       registryDependencies: [],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/header-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/header.tsx"
-      },{
-        path: "registry/default/blocks/header-02/components/header-two.tsx",
+        path: "registry/default/blocks/header/header-02/header-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/header.tsx"
       }],
       categories: ["header"],
-      component: React.lazy(() => import("@/registry/default/blocks/header-02/page.tsx")),
-      source: "__registry__/default/blocks/header-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/header/header-02/header-two.tsx")),
+      source: "__registry__/default/blocks/header/header-02/header-two.tsx",
       meta: {"iframeHeight":"300px"},
     },
     "header-03": {
@@ -954,207 +781,143 @@ export const Index: Record<string, any> = {
       description: "header block",
       type: "registry:block",
       registryDependencies: ["button","sheet","navigation-menu"],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/header-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/header.tsx"
-      },{
-        path: "registry/default/blocks/header-03/components/header-three.tsx",
+        path: "registry/default/blocks/header/header-03/header-three.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/header.tsx"
       }],
       categories: ["header"],
-      component: React.lazy(() => import("@/registry/default/blocks/header-03/page.tsx")),
-      source: "__registry__/default/blocks/header-03/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/header/header-03/header-three.tsx")),
+      source: "__registry__/default/blocks/header/header-03/header-three.tsx",
       meta: {"iframeHeight":"300px"},
     },
     "header-04": {
       name: "header-04",
       description: "header block",
       type: "registry:block",
-      registryDependencies: ["button","sheet"],
-      dependencies: undefined,
+      registryDependencies: ["button","label","input","select","sheet"],
       files: [{
-        path: "registry/default/blocks/header-04/page.tsx",
-        type: "registry:page",
-        target: "@/components/header.tsx"
-      },{
-        path: "registry/default/blocks/header-04/components/header-four.tsx",
+        path: "registry/default/blocks/header/header-04/header-four.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/header.tsx"
       },{
-        path: "registry/default/blocks/header-04/components/contact-form.tsx",
+        path: "registry/default/blocks/header/header-04/contact-form.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/contact-form.tsx"
       }],
       categories: ["header"],
-      component: React.lazy(() => import("@/registry/default/blocks/header-04/page.tsx")),
-      source: "__registry__/default/blocks/header-04/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/header/header-04/header-four.tsx")),
+      source: "__registry__/default/blocks/header/header-04/header-four.tsx",
       meta: {"iframeHeight":"400px"},
-    },
-    "logo-01": {
-      name: "logo-01",
-      description: "logo-cloud block",
-      type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
-      files: [{
-        path: "registry/default/blocks/logo-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/logo.tsx"
-      },{
-        path: "registry/default/blocks/logo-01/components/logo-one.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/logo-01/components/marquee.tsx",
-        type: "registry:component",
-        target: ""
-      }],
-      categories: ["company-logo"],
-      component: React.lazy(() => import("@/registry/default/blocks/logo-01/page.tsx")),
-      source: "__registry__/default/blocks/logo-01/page.tsx",
-      meta: {"iframeHeight":"230px"},
-    },
-    "logo-02": {
-      name: "logo-02",
-      description: "logo-cloud block",
-      type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
-      files: [{
-        path: "registry/default/blocks/logo-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/logo.tsx"
-      },{
-        path: "registry/default/blocks/logo-02/components/logo-two.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/logo-02/components/marquee.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/logo-02/components/tailwind.config.ts",
-        type: "registry:lib",
-        target: ""
-      }],
-      categories: ["company-logo"],
-      component: React.lazy(() => import("@/registry/default/blocks/logo-02/page.tsx")),
-      source: "__registry__/default/blocks/logo-02/page.tsx",
-      meta: {"iframeHeight":"460px"},
-    },
-    "logo-03": {
-      name: "logo-03",
-      description: "logo-cloud block",
-      type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
-      files: [{
-        path: "registry/default/blocks/logo-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/logo.tsx"
-      },{
-        path: "registry/default/blocks/logo-03/components/logo-three.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/logo-03/components/logo-slider.tsx",
-        type: "registry:component",
-        target: ""
-      }],
-      categories: ["company-logo"],
-      component: React.lazy(() => import("@/registry/default/blocks/logo-03/page.tsx")),
-      source: "__registry__/default/blocks/logo-03/page.tsx",
-      meta: {"iframeHeight":"495px"},
     },
     "login-01": {
       name: "login-01",
       description: "A simple login form.",
       type: "registry:block",
       registryDependencies: ["button","card","input","label"],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/login-01/page.tsx",
-        type: "registry:page",
-        target: "app/login/page.tsx"
-      },{
-        path: "registry/default/blocks/login-01/components/login-form.tsx",
+        path: "registry/default/blocks/login/login-01/login-form.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/login.tsx"
       }],
       categories: ["login"],
-      component: React.lazy(() => import("@/registry/default/blocks/login-01/page.tsx")),
-      source: "__registry__/default/blocks/login-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/login/login-01/login-form.tsx")),
+      source: "__registry__/default/blocks/login/login-01/login-form.tsx",
       meta: {"iframeHeight":"530px"},
     },
     "login-02": {
       name: "login-02",
       description: "A simple login form.",
       type: "registry:block",
-      registryDependencies: ["button","card","input","label"],
-      dependencies: undefined,
+      registryDependencies: ["button","card","input","label","separator"],
       files: [{
-        path: "registry/default/blocks/login-02/page.tsx",
-        type: "registry:page",
-        target: "app/login/page.tsx"
-      },{
-        path: "registry/default/blocks/login-02/components/login-form-two.tsx",
+        path: "registry/default/blocks/login/login-02/login-form-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/login.tsx"
       },{
-        path: "registry/default/blocks/login-02/components/google-logo.tsx",
+        path: "registry/default/blocks/login/login-02/google-logo.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/google-logo.tsx"
       }],
       categories: ["login"],
-      component: React.lazy(() => import("@/registry/default/blocks/login-02/page.tsx")),
-      source: "__registry__/default/blocks/login-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/login/login-02/login-form-two.tsx")),
+      source: "__registry__/default/blocks/login/login-02/login-form-two.tsx",
       meta: {"iframeHeight":"625px"},
+    },
+    "logo-01": {
+      name: "logo-01",
+      description: "logo-cloud block",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/logo/logo-01/logo-one.tsx",
+        type: "registry:component",
+        target: "components/shapexui/logo.tsx"
+      },{
+        path: "registry/default/blocks/logo-01/components/marquee.tsx",
+        type: "registry:component",
+        target: "components/shapexui/marquee.tsx"
+      }],
+      categories: ["company-logo"],
+      component: React.lazy(() => import("@/registry/default/blocks/logo/logo-01/logo-one.tsx")),
+      source: "__registry__/default/blocks/logo/logo-01/logo-one.tsx",
+      meta: {"iframeHeight":"230px"},
+    },
+    "logo-02": {
+      name: "logo-02",
+      description: "logo-cloud block",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/blocks/logo/logo-02/logo-two.tsx",
+        type: "registry:component",
+        target: "components/shapexui/logo.tsx"
+      },{
+        path: "registry/default/blocks/logo-02/components/marquee.tsx",
+        type: "registry:component",
+        target: "components/shapexui/marquee.tsx"
+      },{
+        path: "registry/default/blocks/logo-02/components/tailwind.config.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: ["company-logo"],
+      component: React.lazy(() => import("@/registry/default/blocks/logo/logo-02/logo-two.tsx")),
+      source: "__registry__/default/blocks/logo/logo-02/logo-two.tsx",
+      meta: {"iframeHeight":"460px"},
     },
     "newsletter-01": {
       name: "newsletter-01",
       description: "newsletter block 1",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["input","button"],
       files: [{
-        path: "registry/default/blocks/newsletter-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/newsletter.tsx"
-      },{
-        path: "registry/default/blocks/newsletter-01/components/newsletter-one.tsx",
+        path: "registry/default/blocks/newsletter/newsletter-01/newsletter-one.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/newsletter.tsx"
       }],
       categories: ["newsletter"],
-      component: React.lazy(() => import("@/registry/default/blocks/newsletter-01/page.tsx")),
-      source: "__registry__/default/blocks/newsletter-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/newsletter/newsletter-01/newsletter-one.tsx")),
+      source: "__registry__/default/blocks/newsletter/newsletter-01/newsletter-one.tsx",
       meta: {"iframeHeight":"442px"},
     },
     "newsletter-02": {
       name: "newsletter-02",
       description: "newsletter block 2",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["badge"],
       files: [{
-        path: "registry/default/blocks/newsletter-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/newsletter.tsx"
-      },{
-        path: "registry/default/blocks/newsletter-02/components/newsletter-two.tsx",
+        path: "registry/default/blocks/newsletter/newsletter-02/newsletter-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/newsletter.tsx"
       },{
-        path: "registry/default/blocks/newsletter-02/components/user-image.tsx",
+        path: "registry/default/blocks/newsletter/newsletter-02/user-image.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/user-image.tsx"
       }],
       categories: ["newsletter"],
-      component: React.lazy(() => import("@/registry/default/blocks/newsletter-02/page.tsx")),
-      source: "__registry__/default/blocks/newsletter-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/newsletter/newsletter-02/newsletter-two.tsx")),
+      source: "__registry__/default/blocks/newsletter/newsletter-02/newsletter-two.tsx",
       meta: {"iframeHeight":"570px"},
     },
     "newsletter-03": {
@@ -1162,103 +925,78 @@ export const Index: Record<string, any> = {
       description: "newsletter block 3",
       type: "registry:block",
       registryDependencies: [],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/newsletter-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/newsletter.tsx"
-      },{
-        path: "registry/default/blocks/newsletter-03/components/newsletter-three.tsx",
+        path: "registry/default/blocks/newsletter/newsletter-03/newsletter-three.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/newsletter.tsx"
       }],
       categories: ["newsletter"],
-      component: React.lazy(() => import("@/registry/default/blocks/newsletter-03/page.tsx")),
-      source: "__registry__/default/blocks/newsletter-03/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/newsletter/newsletter-03/newsletter-three.tsx")),
+      source: "__registry__/default/blocks/newsletter/newsletter-03/newsletter-three.tsx",
       meta: {"iframeHeight":"368px"},
     },
     "pricing-01": {
       name: "pricing-01",
       description: "pricing block 1",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["card","button","switch"],
       files: [{
-        path: "registry/default/blocks/pricing-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/pricing.tsx"
-      },{
-        path: "registry/default/blocks/pricing-01/components/pricing-one.tsx",
+        path: "registry/default/blocks/pricing/pricing-01/pricing-one.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/pricing.tsx"
       },{
-        path: "registry/default/blocks/pricing-01/components/price-slider.tsx",
+        path: "registry/default/blocks/pricing/pricing-01/price-slider.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/price-slider.tsx"
       }],
       categories: ["pricing"],
-      component: React.lazy(() => import("@/registry/default/blocks/pricing-01/page.tsx")),
-      source: "__registry__/default/blocks/pricing-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/pricing/pricing-01/pricing-one.tsx")),
+      source: "__registry__/default/blocks/pricing/pricing-01/pricing-one.tsx",
       meta: undefined,
     },
     "pricing-02": {
       name: "pricing-02",
       description: "pricing block 2",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["button","card"],
       files: [{
-        path: "registry/default/blocks/pricing-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/pricing.tsx"
-      },{
-        path: "registry/default/blocks/pricing-02/components/pricing-two.tsx",
+        path: "registry/default/blocks/pricing/pricing-02/pricing-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/pricing.tsx"
       }],
       categories: ["pricing"],
-      component: React.lazy(() => import("@/registry/default/blocks/pricing-02/page.tsx")),
-      source: "__registry__/default/blocks/pricing-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/pricing/pricing-02/pricing-two.tsx")),
+      source: "__registry__/default/blocks/pricing/pricing-02/pricing-two.tsx",
       meta: undefined,
     },
     "pricing-03": {
       name: "pricing-03",
       description: "pricing block 3",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["card","badge","button"],
       files: [{
-        path: "registry/default/blocks/pricing-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/pricing.tsx"
-      },{
-        path: "registry/default/blocks/pricing-03/components/pricing-three.tsx",
+        path: "registry/default/blocks/pricing/pricing-03/pricing-three.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/pricing.tsx"
       }],
       categories: ["pricing"],
-      component: React.lazy(() => import("@/registry/default/blocks/pricing-03/page.tsx")),
-      source: "__registry__/default/blocks/pricing-03/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/pricing/pricing-03/pricing-three.tsx")),
+      source: "__registry__/default/blocks/pricing/pricing-03/pricing-three.tsx",
       meta: {"iframeHeight":"670px"},
     },
     "pricing-04": {
       name: "pricing-04",
       description: "pricing block 4",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["button","card"],
       files: [{
-        path: "registry/default/blocks/pricing-04/page.tsx",
-        type: "registry:page",
-        target: "@/components/pricing.tsx"
-      },{
-        path: "registry/default/blocks/pricing-04/components/pricing-four.tsx",
+        path: "registry/default/blocks/pricing/pricing-04/pricing-four.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/pricing.tsx"
       }],
       categories: ["pricing"],
-      component: React.lazy(() => import("@/registry/default/blocks/pricing-04/page.tsx")),
-      source: "__registry__/default/blocks/pricing-04/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/pricing/pricing-04/pricing-four.tsx")),
+      source: "__registry__/default/blocks/pricing/pricing-04/pricing-four.tsx",
       meta: {"iframeHeight":"740px"},
     },
     "rating-01": {
@@ -1266,235 +1004,172 @@ export const Index: Record<string, any> = {
       description: "rating block 1",
       type: "registry:block",
       registryDependencies: [],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/rating-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/rating.tsx"
-      },{
-        path: "registry/default/blocks/rating-01/components/rating-one.tsx",
+        path: "registry/default/blocks/rating/rating-01/rating-one.tsx",
         type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/rating-01/hooks/useClickOutside.tsx",
-        type: "registry:component",
-        target: ""
+        target: "components/shapexui/rating.tsx"
       }],
       categories: ["rating"],
-      component: React.lazy(() => import("@/registry/default/blocks/rating-01/page.tsx")),
-      source: "__registry__/default/blocks/rating-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/rating/rating-01/rating-one.tsx")),
+      source: "__registry__/default/blocks/rating/rating-01/rating-one.tsx",
       meta: {"iframeHeight":"300px"},
     },
     "rating-02": {
       name: "rating-02",
       description: "rating block 2",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["input","card","label","button"],
       files: [{
-        path: "registry/default/blocks/rating-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/rating.tsx"
-      },{
-        path: "registry/default/blocks/rating-02/components/rating-two.tsx",
+        path: "registry/default/blocks/rating/rating-02/rating-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/rating.tsx"
       }],
       categories: ["rating"],
-      component: React.lazy(() => import("@/registry/default/blocks/rating-02/page.tsx")),
-      source: "__registry__/default/blocks/rating-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/rating/rating-02/rating-two.tsx")),
+      source: "__registry__/default/blocks/rating/rating-02/rating-two.tsx",
       meta: {"iframeHeight":"550px"},
     },
     "rating-03": {
       name: "rating-03",
       description: "rating block 3",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["avatar","button","progress","card","select","checkbox","textarea","label","input"],
       files: [{
-        path: "registry/default/blocks/rating-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/rating.tsx"
-      },{
-        path: "registry/default/blocks/rating-03/components/rating-three.tsx",
+        path: "registry/default/blocks/rating/rating-03/rating-three.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/rating.tsx"
       },{
-        path: "registry/default/blocks/rating-03/components/dialog-box.tsx",
+        path: "registry/default/blocks/rating/rating-03/dialog-box.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/dialog-box.tsx"
       },{
-        path: "registry/default/blocks/rating-03/components/write-review.tsx",
+        path: "registry/default/blocks/rating/rating-03/write-review.tsx",
         type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/rating-03/hooks/useClickOutside.tsx",
-        type: "registry:component",
-        target: ""
+        target: "components/shapexui/write-review.tsx"
       }],
       categories: ["rating"],
-      component: React.lazy(() => import("@/registry/default/blocks/rating-03/page.tsx")),
-      source: "__registry__/default/blocks/rating-03/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/rating/rating-03/rating-three.tsx")),
+      source: "__registry__/default/blocks/rating/rating-03/rating-three.tsx",
       meta: {"iframeHeight":"610px"},
     },
     "roadmap-01": {
       name: "roadmap-01",
       description: "roadmap block 1",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["badge","card","progress"],
       files: [{
-        path: "registry/default/blocks/roadmap-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/roadmap.tsx"
-      },{
-        path: "registry/default/blocks/roadmap-01/components/roadmap-one.tsx",
+        path: "registry/default/blocks/roadmap/roadmap-01/roadmap-one.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/roadmap.tsx"
       }],
       categories: ["roadmap"],
-      component: React.lazy(() => import("@/registry/default/blocks/roadmap-01/page.tsx")),
-      source: "__registry__/default/blocks/roadmap-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/roadmap/roadmap-01/roadmap-one.tsx")),
+      source: "__registry__/default/blocks/roadmap/roadmap-01/roadmap-one.tsx",
       meta: {"iframeHeight":"650px"},
     },
     "roadmap-02": {
       name: "roadmap-02",
       description: "roadmap block 2",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["badge","progress","card"],
       files: [{
-        path: "registry/default/blocks/roadmap-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/roadmap.tsx"
-      },{
-        path: "registry/default/blocks/roadmap-02/components/roadmap-two.tsx",
+        path: "registry/default/blocks/roadmap/roadmap-02/roadmap-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/roadmap.tsx"
       }],
       categories: ["roadmap"],
-      component: React.lazy(() => import("@/registry/default/blocks/roadmap-02/page.tsx")),
-      source: "__registry__/default/blocks/roadmap-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/roadmap/roadmap-02/roadmap-two.tsx")),
+      source: "__registry__/default/blocks/roadmap/roadmap-02/roadmap-two.tsx",
       meta: undefined,
     },
     "roadmap-03": {
       name: "roadmap-03",
       description: "roadmap block 3",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["checkbox"],
       files: [{
-        path: "registry/default/blocks/roadmap-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/roadmap.tsx"
-      },{
-        path: "registry/default/blocks/roadmap-03/components/roadmap-three.tsx",
+        path: "registry/default/blocks/roadmap/roadmap-03/roadmap-three.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/roadmap.tsx"
       }],
       categories: ["roadmap"],
-      component: React.lazy(() => import("@/registry/default/blocks/roadmap-03/page.tsx")),
-      source: "__registry__/default/blocks/roadmap-03/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/roadmap/roadmap-03/roadmap-three.tsx")),
+      source: "__registry__/default/blocks/roadmap/roadmap-03/roadmap-three.tsx",
       meta: {"iframeHeight":"550px"},
     },
     "stats-01": {
       name: "stats-01",
       description: "stats block 3",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["card"],
       files: [{
-        path: "registry/default/blocks/stats-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/stats.tsx"
-      },{
-        path: "registry/default/blocks/stats-01/components/stats-one.tsx",
+        path: "registry/default/blocks/stats/stats-01/stats-one.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/stats.tsx"
       }],
       categories: ["stats"],
-      component: React.lazy(() => import("@/registry/default/blocks/stats-01/page.tsx")),
-      source: "__registry__/default/blocks/stats-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/stats/stats-01/stats-one.tsx")),
+      source: "__registry__/default/blocks/stats/stats-01/stats-one.tsx",
       meta: {"iframeHeight":"467px"},
     },
     "stats-02": {
       name: "stats-02",
       description: "stats block 2",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["card","button"],
       files: [{
-        path: "registry/default/blocks/stats-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/stats.tsx"
-      },{
-        path: "registry/default/blocks/stats-02/components/stats-two.tsx",
+        path: "registry/default/blocks/stats/stats-02/stats-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/stats.tsx"
       }],
       categories: ["stats"],
-      component: React.lazy(() => import("@/registry/default/blocks/stats-02/page.tsx")),
-      source: "__registry__/default/blocks/stats-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/stats/stats-02/stats-two.tsx")),
+      source: "__registry__/default/blocks/stats/stats-02/stats-two.tsx",
       meta: {"iframeHeight":"345px"},
     },
     "stats-03": {
       name: "stats-03",
       description: "stats block 3",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["button","card"],
       files: [{
-        path: "registry/default/blocks/stats-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/stats.tsx"
-      },{
-        path: "registry/default/blocks/stats-03/components/stats-three.tsx",
+        path: "registry/default/blocks/stats/stats-03/stats-three.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/stats.tsx"
       }],
       categories: ["stats"],
-      component: React.lazy(() => import("@/registry/default/blocks/stats-03/page.tsx")),
-      source: "__registry__/default/blocks/stats-03/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/stats/stats-03/stats-three.tsx")),
+      source: "__registry__/default/blocks/stats/stats-03/stats-three.tsx",
       meta: {"iframeHeight":"420px"},
     },
     "steps-01": {
       name: "steps-01",
       description: "steps block 1",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["button","card","switch"],
       files: [{
-        path: "registry/default/blocks/steps-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/steps.tsx"
-      },{
-        path: "registry/default/blocks/steps-01/components/steps-one.tsx",
+        path: "registry/default/blocks/steps/steps-01/steps-one.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/steps.tsx"
       }],
       categories: ["steps"],
-      component: React.lazy(() => import("@/registry/default/blocks/steps-01/page.tsx")),
-      source: "__registry__/default/blocks/steps-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/steps/steps-01/steps-one.tsx")),
+      source: "__registry__/default/blocks/steps/steps-01/steps-one.tsx",
       meta: undefined,
     },
     "steps-02": {
       name: "steps-02",
       description: "steps block 2",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["button","card","input","select","label","textarea"],
       files: [{
-        path: "registry/default/blocks/steps-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/steps.tsx"
-      },{
-        path: "registry/default/blocks/steps-02/components/steps-two.tsx",
+        path: "registry/default/blocks/steps/steps-02/steps-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/steps.tsx"
       }],
       categories: ["steps"],
-      component: React.lazy(() => import("@/registry/default/blocks/steps-02/page.tsx")),
-      source: "__registry__/default/blocks/steps-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/steps/steps-02/steps-two.tsx")),
+      source: "__registry__/default/blocks/steps/steps-02/steps-two.tsx",
       meta: undefined,
     },
     "signup-01": {
@@ -1502,19 +1177,14 @@ export const Index: Record<string, any> = {
       description: "A simple Signup form.",
       type: "registry:block",
       registryDependencies: ["button","card","input","label"],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/signup-01/page.tsx",
-        type: "registry:page",
-        target: "app/signup/page.tsx"
-      },{
-        path: "registry/default/blocks/signup-01/components/signup-one.tsx",
+        path: "registry/default/blocks/signup/signup-01/signup-one.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/signup.tsx"
       }],
       categories: ["signup"],
-      component: React.lazy(() => import("@/registry/default/blocks/signup-01/page.tsx")),
-      source: "__registry__/default/blocks/signup-01/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/signup/signup-01/signup-one.tsx")),
+      source: "__registry__/default/blocks/signup/signup-01/signup-one.tsx",
       meta: undefined,
     },
     "signup-02": {
@@ -1522,19 +1192,14 @@ export const Index: Record<string, any> = {
       description: "A Signup form with Password Validation.",
       type: "registry:block",
       registryDependencies: ["button","card","input","label","hover-card"],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/signup-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/signup.tsx"
-      },{
-        path: "registry/default/blocks/signup-02/components/signup-two.tsx",
+        path: "registry/default/blocks/signup/signup-02/signup-two.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/signup.tsx"
       }],
       categories: ["signup"],
-      component: React.lazy(() => import("@/registry/default/blocks/signup-02/page.tsx")),
-      source: "__registry__/default/blocks/signup-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/signup/signup-02/signup-two.tsx")),
+      source: "__registry__/default/blocks/signup/signup-02/signup-two.tsx",
       meta: {"iframeHeight":"750px"},
     },
     "signup-03": {
@@ -1542,19 +1207,14 @@ export const Index: Record<string, any> = {
       description: "A Signup form with Step",
       type: "registry:block",
       registryDependencies: ["button","input","label"],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/signup-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/signup.tsx"
-      },{
-        path: "registry/default/blocks/signup-03/components/signup-three.tsx",
+        path: "registry/default/blocks/signup/signup-03/signup-three.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/signup.tsx"
       }],
       categories: ["signup"],
-      component: React.lazy(() => import("@/registry/default/blocks/signup-03/page.tsx")),
-      source: "__registry__/default/blocks/signup-03/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/signup/signup-03/signup-three.tsx")),
+      source: "__registry__/default/blocks/signup/signup-03/signup-three.tsx",
       meta: {"iframeHeight":"650px"},
     },
     "signup-04": {
@@ -1562,63 +1222,14 @@ export const Index: Record<string, any> = {
       description: "A Signup form",
       type: "registry:block",
       registryDependencies: ["button","card","input","label","checkbox"],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/signup-04/page.tsx",
-        type: "registry:page",
-        target: "@/components/signup.tsx"
-      },{
-        path: "registry/default/blocks/signup-04/components/signup-four.tsx",
+        path: "registry/default/blocks/signup/signup-04/signup-four.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/signup.tsx"
       }],
       categories: ["signup"],
-      component: React.lazy(() => import("@/registry/default/blocks/signup-04/page.tsx")),
-      source: "__registry__/default/blocks/signup-04/page.tsx",
-      meta: undefined,
-    },
-    "team-01": {
-      name: "team-01",
-      description: "team block 1",
-      type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
-      files: [{
-        path: "registry/default/blocks/team-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/team.tsx"
-      },{
-        path: "registry/default/blocks/team-01/components/team-one.tsx",
-        type: "registry:component",
-        target: ""
-      }],
-      categories: ["teams"],
-      component: React.lazy(() => import("@/registry/default/blocks/team-01/page.tsx")),
-      source: "__registry__/default/blocks/team-01/page.tsx",
-      meta: undefined,
-    },
-    "team-02": {
-      name: "team-02",
-      description: "team block 2",
-      type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
-      files: [{
-        path: "registry/default/blocks/team-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/team.tsx"
-      },{
-        path: "registry/default/blocks/team-02/components/team-two.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/team-02/components/team-card.tsx",
-        type: "registry:component",
-        target: ""
-      }],
-      categories: ["teams"],
-      component: React.lazy(() => import("@/registry/default/blocks/team-02/page.tsx")),
-      source: "__registry__/default/blocks/team-02/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/signup/signup-04/signup-four.tsx")),
+      source: "__registry__/default/blocks/signup/signup-04/signup-four.tsx",
       meta: undefined,
     },
     "team-03": {
@@ -1626,71 +1237,37 @@ export const Index: Record<string, any> = {
       description: "team block 3",
       type: "registry:block",
       registryDependencies: [],
-      dependencies: undefined,
       files: [{
-        path: "registry/default/blocks/team-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/team.tsx"
-      },{
-        path: "registry/default/blocks/team-03/components/team-three.tsx",
+        path: "registry/default/blocks/team/team-03/team-three.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/team.tsx"
       },{
-        path: "registry/default/blocks/team-03/components/marquee.tsx",
+        path: "registry/default/blocks/team/team-03/marquee.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/marquee.tsx"
       },{
-        path: "registry/default/blocks/team-03/components/tailwind.config.ts",
+        path: "registry/default/blocks/team/team-03/tailwind.config.ts",
         type: "registry:component",
         target: ""
       }],
       categories: ["teams"],
-      component: React.lazy(() => import("@/registry/default/blocks/team-03/page.tsx")),
-      source: "__registry__/default/blocks/team-03/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/team/team-03/team-three.tsx")),
+      source: "__registry__/default/blocks/team/team-03/team-three.tsx",
       meta: {"iframeHeight":"640px"},
-    },
-    "testimonial-02": {
-      name: "testimonial-02",
-      description: "testimonial block 1",
-      type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
-      files: [{
-        path: "registry/default/blocks/testimonial-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/testimonial.tsx"
-      },{
-        path: "registry/default/blocks/testimonial-02/components/testimonial-two.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/testimonial-02/components/testimonial-card.tsx",
-        type: "registry:component",
-        target: ""
-      }],
-      categories: ["testimonial"],
-      component: React.lazy(() => import("@/registry/default/blocks/testimonial-02/page.tsx")),
-      source: "__registry__/default/blocks/testimonial-02/page.tsx",
-      meta: {"iframeHeight":"560px"},
     },
     "testimonial-03": {
       name: "testimonial-03",
-      description: "testimonial block 2",
+      description: "testimonial block 3",
       type: "registry:block",
-      registryDependencies: [],
-      dependencies: undefined,
+      registryDependencies: ["avatar","button","card"],
       files: [{
-        path: "registry/default/blocks/testimonial-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/testimonial.tsx"
-      },{
-        path: "registry/default/blocks/testimonial-03/components/testimonial-three.tsx",
+        path: "registry/default/blocks/testimonial/testimonial-03/testimonial-three.tsx",
         type: "registry:component",
-        target: ""
+        target: "components/shapexui/testimonial.tsx"
       }],
       categories: ["testimonial"],
-      component: React.lazy(() => import("@/registry/default/blocks/testimonial-03/page.tsx")),
-      source: "__registry__/default/blocks/testimonial-03/page.tsx",
+      component: React.lazy(() => import("@/registry/default/blocks/testimonial/testimonial-03/testimonial-three.tsx")),
+      source: "__registry__/default/blocks/testimonial/testimonial-03/testimonial-three.tsx",
       meta: {"iframeHeight":"560px"},
     },
     "analytics": {
@@ -1698,7 +1275,6 @@ export const Index: Record<string, any> = {
       description: "Analytics dashboard",
       type: "registry:block",
       registryDependencies: [],
-      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/analytics/page.tsx",
         type: "registry:component",
@@ -1738,7 +1314,6 @@ export const Index: Record<string, any> = {
       description: "e-commerce page",
       type: "registry:block",
       registryDependencies: [],
-      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/e-commerce/page.tsx",
         type: "registry:component",
@@ -1774,7 +1349,6 @@ export const Index: Record<string, any> = {
       description: "file-management page",
       type: "registry:block",
       registryDependencies: [],
-      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/file-management/page.tsx",
         type: "registry:component",
@@ -1806,7 +1380,6 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:lib",
       registryDependencies: undefined,
-      dependencies: ["clsx","tailwind-merge"],
       files: [{
         path: "registry/default/lib/utils.ts",
         type: "registry:lib",

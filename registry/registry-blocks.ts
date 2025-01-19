@@ -27,13 +27,9 @@ export const blocks: Registry = [
     dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/article-02/page.tsx",
-        target: "shapexui/article-02.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/article-02/components/article-two.tsx",
+        path: "blocks/article/article-two.tsx",
         type: "registry:component",
+        target:"components/shapexui/article-two.tsx"
       },
     ],
     categories: ["article"],
@@ -42,24 +38,18 @@ export const blocks: Registry = [
     name: "blog-01",
     description: "Blog Grid View",
     type: "registry:block",
-    registryDependencies: ["card", "button", "badge"],
+    registryDependencies: ["button", "badge","input","select",],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/blog-01/page.tsx",
-        target: "app/blog/page.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/blog-01/components/blog-one.tsx",
+        path: "blocks/blog/blog-01/blog-one.tsx",
         type: "registry:component",
+        target:"components/shapexui/blog.tsx"
       },
       {
-        path: "blocks/blog-01/components/blog-header.tsx",
+        path: "blocks/blog/blog-01/blog-header.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/blog-01/hook/use-outside-click.ts",
-        type: "registry:hook",
+        target:"components/shapexui/blog-header.tsx"
       },
     ],
     categories: ["blog"],
@@ -68,20 +58,18 @@ export const blocks: Registry = [
     name: "blog-02",
     description: "Simple Blog List",
     type: "registry:block",
-    registryDependencies: ["card", "badge", "separator", "scroll-area"],
+    registryDependencies: ["card", "badge", "separator", "input","button"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/blog-02/page.tsx",
-        target: "app/blog/page.tsx",
-        type: "registry:page",
+        path: "blocks/blog/blog-02/blog-two.tsx",
+        type: "registry:component",
+        target:"components/shapexui/blog.tsx"
       },
       {
-        path: "blocks/blog-02/components/blog-two.tsx",
+        path: "blocks/blog/blog-02/blog-header.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/blog-02/components/blog-header.tsx",
-        type: "registry:component",
+        target:"components/shapexui/blog-header.tsx"
       },
     ],
     categories: ["blog"],
@@ -90,16 +78,13 @@ export const blocks: Registry = [
     name: "contact-01",
     description: "A simple Contact Form.",
     type: "registry:block",
-    registryDependencies: ["button", "textarea", "input", "label"],
+    registryDependencies: ["card","button", "textarea", "input"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/contact-01/page.tsx",
-        target: "@/components/contact.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/contact-01/components/contact-one.tsx",
+        path: "blocks/contact/contact-one.tsx",
         type: "registry:component",
+        target: "components/shapexui/contact.tsx"
       },
     ],
     categories: ["contact"],
@@ -109,15 +94,12 @@ export const blocks: Registry = [
     description: "A simple Contact Form.",
     type: "registry:block",
     registryDependencies: ["button", "textarea", "input", "label"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/contact-02/page.tsx",
-        target: "@/components/contact.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/contact-02/components/contact-two.tsx",
+        path: "blocks/contact/contact-two.tsx",
         type: "registry:component",
+        target: "components/shapexui/contact.tsx"
       },
     ],
     categories: ["contact"],
@@ -126,16 +108,13 @@ export const blocks: Registry = [
     name: "cta-01",
     description: "Call To Action.",
     type: "registry:block",
-    registryDependencies: ["button"],
+    registryDependencies: ["button","card"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/cta-01/page.tsx",
-        target: "app/login/page.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/cta-01/components/cta-one.tsx",
+        path: "blocks/cta/cta-one.tsx",
         type: "registry:component",
+        target:"components/shapexui/cta.tsx"
       },
     ],
     categories: ["cta"],
@@ -148,19 +127,17 @@ export const blocks: Registry = [
     description: "A simple Contact Form.",
     type: "registry:block",
     registryDependencies: ["button"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/cta-02/page.tsx",
-        target: "@/components/cta.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/cta-02/components/cta-two.tsx",
+        path: "blocks/cta/cta-02/components/cta-two.tsx",
         type: "registry:component",
+        target:"components/shapexui/cta.tsx"
       },
       {
         path: "blocks/cta-02/components/user-image.tsx",
         type: "registry:component",
+        target:"components/shapexui/user-image.tsx"
       },
     ],
     categories: ["cta"],
@@ -175,13 +152,9 @@ export const blocks: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "blocks/cta-03/page.tsx",
-        target: "@/components/cta.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/cta-03/components/cta-three.tsx",
+        path: "blocks/cta/cta-three.tsx",
         type: "registry:component",
+        target:"components/shapexui/cta.tsx"
       },
     ],
     categories: ["cta"],
@@ -193,20 +166,18 @@ export const blocks: Registry = [
     name: "faq-01",
     description: "A FQAs block",
     type: "registry:block",
-    registryDependencies: ["tabs", "accordion", "badge"],
+    registryDependencies: ["accordion","badge"],
+    dependencies:["@radix-ui/react-tabs"],
     files: [
       {
-        path: "blocks/faq-01/page.tsx",
-        target: "app/faq/page.tsx",
-        type: "registry:page",
+        path: "blocks/faq/faq-01/faq-one.tsx",
+        type: "registry:component",
+        target:'components/shapexui/faq.tsx'
       },
       {
-        path: "blocks/faq-01/components/faq-one.tsx",
+        path: "blocks/faq/faq-01/tabs.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/faq-01/components/tabs.tsx",
-        type: "registry:component",
+        target:'components/shapexui/tabs.tsx'
       },
     ],
     categories: ["faq"],
@@ -219,19 +190,17 @@ export const blocks: Registry = [
     description: "A FAQs.",
     type: "registry:block",
     registryDependencies: ["badge", "input"],
+    dependencies:["@radix-ui/react-accordion"],
     files: [
       {
-        path: "blocks/faq-02/page.tsx",
-        target: "app/faq/page.tsx",
-        type: "registry:page",
+        path: "blocks/faq/faq-02/faq-two.tsx",
+        type: "registry:component",
+        target:'components/shapexui/faq.tsx'
       },
       {
-        path: "blocks/faq-02/components/faq-two.tsx",
+        path: "blocks/faq/faq-02/accordion.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/faq-02/components/accordion.tsx",
-        type: "registry:component",
+        target:'components/shapexui/accordion.tsx'
       },
     ],
     categories: ["faq"],
@@ -243,24 +212,18 @@ export const blocks: Registry = [
     name: "faq-03",
     description: "A FAQs.",
     type: "registry:block",
-    registryDependencies: ["card"],
+    registryDependencies: ["card","accordion","label","input","button","textarea",],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/faq-03/page.tsx",
-        target: "app/faq/page.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/faq-03/components/faq-three.tsx",
+        path: "blocks/faq/faq-03/faq-three.tsx",
         type: "registry:component",
+        target:'components/shapexui/faq.tsx'
       },
       {
-        path: "blocks/faq-03/components/open-contact-form.tsx",
+        path: "blocks/faq/faq-03/open-contact-form.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/faq-03/hook/use-outside-click.ts",
-        type: "registry:hook",
+        target:'components/shapexui/open-contact-form.tsx'
       },
     ],
     categories: ["faq"],
@@ -273,15 +236,12 @@ export const blocks: Registry = [
     description: "A Feature Block.",
     type: "registry:block",
     registryDependencies: ["card", "accordion"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/feature-01/page.tsx",
-        target: "app/feature/page.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/feature-01/components/feature-one.tsx",
+        path: "blocks/feature/feature-01/feature-one.tsx",
         type: "registry:component",
+        target:'components/shapexui/feature.tsx'
       },
     ],
     categories: ["feature"],
@@ -293,20 +253,18 @@ export const blocks: Registry = [
     name: "feature-02",
     description: "A Feature block.",
     type: "registry:block",
-    registryDependencies: ["card", "accordion"],
+    registryDependencies: [],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/feature-02/page.tsx",
-        target: "app/feature/page.tsx",
-        type: "registry:page",
+        path: "blocks/feature/feature-02/feature-two.tsx",
+        type: "registry:component",
+        target:'components/shapexui/feature.tsx'
       },
       {
-        path: "blocks/feature-02/components/feature-two.tsx",
+        path: "blocks/feature/feature-02/video-dialog.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/feature-02/components/video-dialog.tsx",
-        type: "registry:component",
+        target:'components/shapexui/video-dialog.tsx'
       },
     ],
     categories: ["feature"],
@@ -319,19 +277,17 @@ export const blocks: Registry = [
     description: "A Feature block.",
     type: "registry:block",
     registryDependencies: ["card"],
+    dependencies:["framer-motion"],
     files: [
-      {
-        path: "blocks/feature-03/page.tsx",
-        target: "app/feature/page.tsx",
-        type: "registry:page",
-      },
       {
         path: "blocks/feature-03/components/feature-three.tsx",
         type: "registry:component",
+        target:'components/shapexui/feature.tsx'
       },
       {
         path: "blocks/feature-03/components/video-dialog.tsx",
         type: "registry:component",
+        target:'components/shapexui/video-dialog.tsx'
       },
     ],
     categories: ["feature"],
@@ -346,23 +302,21 @@ export const blocks: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "blocks/footer-01/page.tsx",
-        target: "app/footer/page.tsx",
-        type: "registry:page",
+        path: "blocks/footer/footer-01/footer-one.tsx",
+        type: "registry:component",
+        target:'components/shapexui/footer.tsx'
       },
       {
-        path: "blocks/footer-01/components/footer-one.tsx",
+        path: "blocks/footer/footer-01/animation-container.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/footer-01/components/animation-container.tsx",
-        type: "registry:component",
+        target:'components/shapexui/animation-container.tsx'
       },
     ],
     categories: ["footer"],
     meta:{
       iframeHeight:"250px"
-    }
+    },
+    
   },
   {
     name: "footer-02",
@@ -370,14 +324,11 @@ export const blocks: Registry = [
     type: "registry:block",
     registryDependencies: [],
     files: [
+
       {
-        path: "blocks/footer-02/page.tsx",
-        target: "app/footer/page.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/footer-02/components/footer-two.tsx",
+        path: "blocks/footer/footer-02/footer-two.tsx",
         type: "registry:component",
+        target:'components/shapexui/footer.tsx'
       },
     ],
     categories: ["footer"],
@@ -392,13 +343,9 @@ export const blocks: Registry = [
     registryDependencies: [],
     files: [
       {
-        path: "blocks/footer-03/page.tsx",
-        target: "app/footer/page.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/footer-03/components/footer-three.tsx",
+        path: "blocks/footer/footer-03/footer-three.tsx",
         type: "registry:component",
+        target:'components/shapexui/footer.tsx'
       },
     ],
     categories: ["footer"],
@@ -411,23 +358,22 @@ export const blocks: Registry = [
     description: "header block",
     type: "registry:block",
     registryDependencies: ["sheet", "button"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/header-01/page.tsx",
-        target: "@/components/header.tsx",
-        type: "registry:page",
+        path: "blocks/header/header-01/header-one.tsx",
+        type: "registry:component",
+        target:'components/shapexui/header.tsx'
       },
       {
-        path: "blocks/header-01/components/header-one.tsx",
+        path: "blocks/header/header-01/animation-container.tsx",
         type: "registry:component",
+        target:'components/shapexui/animation-container.tsx'
       },
       {
-        path: "blocks/header-01/components/animation-container.tsx",
+        path: "blocks/header/header-01/mobile-navbar.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/header-01/components/mobile-navbar.tsx",
-        type: "registry:component",
+        target:'components/shapexui/mobile-navbar.tsx'
       },
     ],
     categories: ["header"],
@@ -442,13 +388,9 @@ export const blocks: Registry = [
     registryDependencies: [],
     files: [
       {
-        path: "blocks/header-02/page.tsx",
-        target: "@/components/header.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/header-02/components/header-two.tsx",
+        path: "blocks/header/header-02/header-two.tsx",
         type: "registry:component",
+        target:"components/shapexui/header.tsx"
       },
     ],
     categories: ["header"],
@@ -463,13 +405,9 @@ export const blocks: Registry = [
     registryDependencies: ["button", "sheet", "navigation-menu"],
     files: [
       {
-        path: "blocks/header-03/page.tsx",
-        target: "@/components/header.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/header-03/components/header-three.tsx",
+        path: "blocks/header/header-03/header-three.tsx",
         type: "registry:component",
+        target:"components/shapexui/header.tsx"
       },
     ],
     categories: ["header"],
@@ -481,104 +419,23 @@ export const blocks: Registry = [
     name: "header-04",
     description: "header block",
     type: "registry:block",
-    registryDependencies: ["button", "sheet"],
+    registryDependencies: ["button","label","input", "select","sheet"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/header-04/page.tsx",
-        target: "@/components/header.tsx",
-        type: "registry:page",
+        path: "blocks/header/header-04/header-four.tsx",
+        type: "registry:component",
+        target:"components/shapexui/header.tsx"
       },
       {
-        path: "blocks/header-04/components/header-four.tsx",
+        path: "blocks/header/header-04/contact-form.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/header-04/components/contact-form.tsx",
-        type: "registry:component",
+        target:"components/shapexui/contact-form.tsx"
       },
     ],
     categories: ["header"],
     meta:{
       iframeHeight:"400px"
-    }
-  },
-  {
-    name: "logo-01",
-    description: "logo-cloud block",
-    type: "registry:block",
-    registryDependencies: [],
-    files: [
-      {
-        path: "blocks/logo-01/page.tsx",
-        target: "@/components/logo.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/logo-01/components/logo-one.tsx",
-        type: "registry:component",
-      },
-      {
-        path: "blocks/logo-01/components/marquee.tsx",
-        type: "registry:component",
-      },
-    ],
-    categories: ["company-logo"],
-    meta:{
-      iframeHeight:"230px"
-    }
-  },
-  {
-    name: "logo-02",
-    description: "logo-cloud block",
-    type: "registry:block",
-    registryDependencies: [],
-    files: [
-      {
-        path: "blocks/logo-02/page.tsx",
-        target: "@/components/logo.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/logo-02/components/logo-two.tsx",
-        type: "registry:component",
-      },
-      {
-        path: "blocks/logo-02/components/marquee.tsx",
-        type: "registry:component",
-      },
-      {
-        path: "blocks/logo-02/components/tailwind.config.ts",
-        type: "registry:lib",
-      },
-    ],
-    categories: ["company-logo"],
-    meta:{
-      iframeHeight:"460px"
-    }
-  },
-  {
-    name: "logo-03",
-    description: "logo-cloud block",
-    type: "registry:block",
-    registryDependencies: [],
-    files: [
-      {
-        path: "blocks/logo-03/page.tsx",
-        target: "@/components/logo.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/logo-03/components/logo-three.tsx",
-        type: "registry:component",
-      },
-      {
-        path: "blocks/logo-03/components/logo-slider.tsx",
-        type: "registry:component",
-      },
-    ],
-    categories: ["company-logo"],
-    meta:{
-      iframeHeight:"495px"
     }
   },
   {
@@ -588,13 +445,9 @@ export const blocks: Registry = [
     registryDependencies: ["button", "card", "input", "label"],
     files: [
       {
-        path: "blocks/login-01/page.tsx",
-        target: "app/login/page.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/login-01/components/login-form.tsx",
+        path: "blocks/login/login-01/login-form.tsx",
         type: "registry:component",
+        target:"components/shapexui/login.tsx"
       },
     ],
     categories: ["login"],
@@ -606,20 +459,17 @@ export const blocks: Registry = [
     name: "login-02",
     description: "A simple login form.",
     type: "registry:block",
-    registryDependencies: ["button", "card", "input", "label"],
+    registryDependencies: ["button", "card", "input", "label","separator"],
     files: [
       {
-        path: "blocks/login-02/page.tsx",
-        target: "app/login/page.tsx",
-        type: "registry:page",
+        path: "blocks/login/login-02/login-form-two.tsx",
+        type: "registry:component",
+        target:"components/shapexui/login.tsx"
       },
       {
-        path: "blocks/login-02/components/login-form-two.tsx",
+        path: "blocks/login/login-02/google-logo.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/login-02/components/google-logo.tsx",
-        type: "registry:component",
+        target:"components/shapexui/google-logo.tsx"
       },
     ],
     categories: ["login"],
@@ -628,19 +478,110 @@ export const blocks: Registry = [
     }
   },
   {
-    name: "newsletter-01",
-    description: "newsletter block 1",
+    name: "logo-01",
+    description: "logo-cloud block",
     type: "registry:block",
     registryDependencies: [],
     files: [
       {
-        path: "blocks/newsletter-01/page.tsx",
-        target: "@/components/newsletter.tsx",
-        type: "registry:page",
+        path: "blocks/logo/logo-01/logo-one.tsx",
+        type: "registry:component",
+        target:"components/shapexui/logo.tsx"
       },
       {
-        path: "blocks/newsletter-01/components/newsletter-one.tsx",
+        path: "blocks/logo-01/components/marquee.tsx",
         type: "registry:component",
+        target:"components/shapexui/marquee.tsx"
+
+      },
+    ],
+    categories: ["company-logo"],
+    meta:{
+      iframeHeight:"230px"
+    }
+  },
+  {
+    name: "logo-02",
+    description: "logo-cloud block",
+    type: "registry:block",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "blocks/logo/logo-02/logo-two.tsx",
+        type: "registry:component",
+        target:"components/shapexui/logo.tsx"
+      },
+      {
+        path: "blocks/logo-02/components/marquee.tsx",
+        type: "registry:component",
+        target:"components/shapexui/marquee.tsx"
+      },
+      {
+        path: "blocks/logo-02/components/tailwind.config.ts",
+        type: "registry:lib",
+      },
+    ],
+    categories: ["company-logo"],
+    meta:{
+      iframeHeight:"460px"
+    },
+    tailwind: {
+      config: {
+        theme: {
+          extend: {
+            animation: {
+              marquee: "marquee var(--duration) linear infinite",
+              "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+            },
+            keyframes: {
+              marquee: {
+                from: { transform: "translateX(0)" },
+                to: { transform: "translateX(calc(-100% - var(--gap)))" },
+              },
+              "marquee-vertical": {
+                from: { transform: "translateY(0)" },
+                to: { transform: "translateY(calc(-100% - var(--gap)))" },
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+  {
+    name: "logo-03",
+    description: "logo-cloud block",
+    type: "registry:block",
+    registryDependencies: ["button"],
+    dependencies:["framer-motion"],
+    files: [
+      {
+        path: "blocks/logo-03/components/logo-three.tsx",
+        type: "registry:component",
+        target:"components/shapexui/logo.tsx"
+      },
+      {
+        path: "blocks/logo-03/components/logo-slider.tsx",
+        type: "registry:component",
+        target:"components/shapexui/logo-slider.tsx"
+      },
+    ],
+    categories: ["company-logo"],
+    meta:{
+      iframeHeight:"495px"
+    }
+  },
+  {
+    name: "newsletter-01",
+    description: "newsletter block 1",
+    type: "registry:block",
+    registryDependencies: ["input","button"],
+    dependencies:["framer-motion"],
+    files: [
+      {
+        path: "blocks/newsletter/newsletter-01/newsletter-one.tsx",
+        type: "registry:component",
+        target:"components/shapexui/newsletter.tsx"
       },
     ],
     categories: ["newsletter"],
@@ -652,20 +593,17 @@ export const blocks: Registry = [
     name: "newsletter-02",
     description: "newsletter block 2",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["badge"],
     files: [
       {
-        path: "blocks/newsletter-02/page.tsx",
-        target: "@/components/newsletter.tsx",
-        type: "registry:page",
+        path: "blocks/newsletter/newsletter-02/newsletter-two.tsx",
+        type: "registry:component",
+        target:"components/shapexui/newsletter.tsx"
       },
       {
-        path: "blocks/newsletter-02/components/newsletter-two.tsx",
+        path: "blocks/newsletter/newsletter-02/user-image.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/newsletter-02/components/user-image.tsx",
-        type: "registry:component",
+        target:"components/shapexui/user-image.tsx"
       },
     ],
     categories: ["newsletter"],
@@ -680,13 +618,9 @@ export const blocks: Registry = [
     registryDependencies: [],
     files: [
       {
-        path: "blocks/newsletter-03/page.tsx",
-        target: "@/components/newsletter.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/newsletter-03/components/newsletter-three.tsx",
+        path: "blocks/newsletter/newsletter-03/newsletter-three.tsx",
         type: "registry:component",
+        target:"components/shapexui/newsletter.tsx"
       },
     ],
     categories: ["newsletter"],
@@ -698,20 +632,18 @@ export const blocks: Registry = [
     name: "pricing-01",
     description: "pricing block 1",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["card","button","switch"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/pricing-01/page.tsx",
-        target: "@/components/pricing.tsx",
-        type: "registry:page",
+        path: "blocks/pricing/pricing-01/pricing-one.tsx",
+        type: "registry:component",
+        target:"components/shapexui/pricing.tsx"
       },
       {
-        path: "blocks/pricing-01/components/pricing-one.tsx",
+        path: "blocks/pricing/pricing-01/price-slider.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/pricing-01/components/price-slider.tsx",
-        type: "registry:component",
+        target:"components/shapexui/price-slider.tsx"
       },
     ],
     categories: ["pricing"],
@@ -720,16 +652,12 @@ export const blocks: Registry = [
     name: "pricing-02",
     description: "pricing block 2",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["button","card"],
     files: [
       {
-        path: "blocks/pricing-02/page.tsx",
-        target: "@/components/pricing.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/pricing-02/components/pricing-two.tsx",
+        path: "blocks/pricing/pricing-02/pricing-two.tsx",
         type: "registry:component",
+        target:"components/shapexui/pricing.tsx"
       },
     ],
     categories: ["pricing"],
@@ -738,16 +666,12 @@ export const blocks: Registry = [
     name: "pricing-03",
     description: "pricing block 3",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["card","badge","button"],
     files: [
       {
-        path: "blocks/pricing-03/page.tsx",
-        target: "@/components/pricing.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/pricing-03/components/pricing-three.tsx",
+        path: "blocks/pricing/pricing-03/pricing-three.tsx",
         type: "registry:component",
+        target:"components/shapexui/pricing.tsx"
       },
     ],
     categories: ["pricing"],
@@ -759,16 +683,12 @@ export const blocks: Registry = [
     name: "pricing-04",
     description: "pricing block 4",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["button","card"],
     files: [
       {
-        path: "blocks/pricing-04/page.tsx",
-        target: "@/components/pricing.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/pricing-04/components/pricing-four.tsx",
+        path: "blocks/pricing/pricing-04/pricing-four.tsx",
         type: "registry:component",
+        target:"components/shapexui/pricing.tsx"
       },
     ],
     categories: ["pricing"],
@@ -781,19 +701,12 @@ export const blocks: Registry = [
     description: "rating block 1",
     type: "registry:block",
     registryDependencies: [],
+    dependencies:["motion"],
     files: [
       {
-        path: "blocks/rating-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/rating.tsx",
-      },
-      {
-        path: "blocks/rating-01/components/rating-one.tsx",
+        path: "blocks/rating/rating-01/rating-one.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/rating-01/hooks/useClickOutside.tsx",
-        type: "registry:component",
+        target:"components/shapexui/rating.tsx"
       },
     ],
     categories: ["rating"],
@@ -805,16 +718,13 @@ export const blocks: Registry = [
     name: "rating-02",
     description: "rating block 2",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["input","card","label","button"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/rating-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/rating.tsx",
-      },
-      {
-        path: "blocks/rating-02/components/rating-two.tsx",
+        path: "blocks/rating/rating-02/rating-two.tsx",
         type: "registry:component",
+        target:"components/shapexui/rating.tsx"
       },
     ],
     categories: ["rating"],
@@ -826,28 +736,23 @@ export const blocks: Registry = [
     name: "rating-03",
     description: "rating block 3",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["avatar","button","progress","card","select","checkbox","textarea","label","input"],
+    dependencies:["motion"],
     files: [
       {
-        path: "blocks/rating-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/rating.tsx",
+        path: "blocks/rating/rating-03/rating-three.tsx",
+        type: "registry:component",
+        target:"components/shapexui/rating.tsx"
       },
       {
-        path: "blocks/rating-03/components/rating-three.tsx",
+        path: "blocks/rating/rating-03/dialog-box.tsx",
         type: "registry:component",
+        target:"components/shapexui/dialog-box.tsx"
       },
       {
-        path: "blocks/rating-03/components/dialog-box.tsx",
+        path: "blocks/rating/rating-03/write-review.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/rating-03/components/write-review.tsx",
-        type: "registry:component",
-      },
-      {
-        path: "blocks/rating-03/hooks/useClickOutside.tsx",
-        type: "registry:component",
+        target:"components/shapexui/write-review.tsx"
       },
     ],
     categories: ["rating"],
@@ -859,16 +764,13 @@ export const blocks: Registry = [
     name: "roadmap-01",
     description: "roadmap block 1",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["badge","card","progress"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/roadmap-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/roadmap.tsx",
-      },
-      {
-        path: "blocks/roadmap-01/components/roadmap-one.tsx",
+        path: "blocks/roadmap/roadmap-01/roadmap-one.tsx",
         type: "registry:component",
+        target:"components/shapexui/roadmap.tsx"
       },
     ],
     categories: ["roadmap"],
@@ -880,16 +782,13 @@ export const blocks: Registry = [
     name: "roadmap-02",
     description: "roadmap block 2",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["badge","progress","card"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/roadmap-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/roadmap.tsx",
-      },
-      {
-        path: "blocks/roadmap-02/components/roadmap-two.tsx",
+        path: "blocks/roadmap/roadmap-02/roadmap-two.tsx",
         type: "registry:component",
+        target:"components/shapexui/roadmap.tsx"
       },
     ],
     categories: ["roadmap"],
@@ -898,16 +797,13 @@ export const blocks: Registry = [
     name: "roadmap-03",
     description: "roadmap block 3",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["checkbox"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/roadmap-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/roadmap.tsx",
-      },
-      {
-        path: "blocks/roadmap-03/components/roadmap-three.tsx",
+        path: "blocks/roadmap/roadmap-03/roadmap-three.tsx",
         type: "registry:component",
+        target:"components/shapexui/roadmap.tsx"
       },
     ],
     categories: ["roadmap"],
@@ -919,16 +815,13 @@ export const blocks: Registry = [
     name: "stats-01",
     description: "stats block 3",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["card"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/stats-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/stats.tsx",
-      },
-      {
-        path: "blocks/stats-01/components/stats-one.tsx",
+        path: "blocks/stats/stats-01/stats-one.tsx",
         type: "registry:component",
+        target:"components/shapexui/stats.tsx"
       },
     ],
     categories: ["stats"],
@@ -940,16 +833,12 @@ export const blocks: Registry = [
     name: "stats-02",
     description: "stats block 2",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["card","button"],
     files: [
       {
-        path: "blocks/stats-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/stats.tsx",
-      },
-      {
-        path: "blocks/stats-02/components/stats-two.tsx",
+        path: "blocks/stats/stats-02/stats-two.tsx",
         type: "registry:component",
+        target:"components/shapexui/stats.tsx"
       },
     ],
     categories: ["stats"],
@@ -961,16 +850,12 @@ export const blocks: Registry = [
     name: "stats-03",
     description: "stats block 3",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["button","card"],
     files: [
       {
-        path: "blocks/stats-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/stats.tsx",
-      },
-      {
-        path: "blocks/stats-03/components/stats-three.tsx",
+        path: "blocks/stats/stats-03/stats-three.tsx",
         type: "registry:component",
+        target:"components/shapexui/stats.tsx"
       },
     ],
     categories: ["stats"],
@@ -982,16 +867,12 @@ export const blocks: Registry = [
     name: "steps-01",
     description: "steps block 1",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["button","card","switch"],
     files: [
       {
-        path: "blocks/steps-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/steps.tsx",
-      },
-      {
-        path: "blocks/steps-01/components/steps-one.tsx",
+        path: "blocks/steps/steps-01/steps-one.tsx",
         type: "registry:component",
+        target:"components/shapexui/steps.tsx"
       },
     ],
     categories: ["steps"],
@@ -1000,16 +881,12 @@ export const blocks: Registry = [
     name: "steps-02",
     description: "steps block 2",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["button","card","input","select","label","textarea"],
     files: [
       {
-        path: "blocks/steps-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/steps.tsx",
-      },
-      {
-        path: "blocks/steps-02/components/steps-two.tsx",
+        path: "blocks/steps/steps-02/steps-two.tsx",
         type: "registry:component",
+        target:"components/shapexui/steps.tsx"
       },
     ],
     categories: ["steps"],
@@ -1018,16 +895,12 @@ export const blocks: Registry = [
     name: "signup-01",
     description: "A simple Signup form.",
     type: "registry:block",
-    registryDependencies: ["button", "card", "input", "label"],
+    registryDependencies: ["button","card","input","label"],
     files: [
       {
-        path: "blocks/signup-01/page.tsx",
-        target: "app/signup/page.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/signup-01/components/signup-one.tsx",
+        path: "blocks/signup/signup-01/signup-one.tsx",
         type: "registry:component",
+        target:"components/shapexui/signup.tsx"
       },
     ],
     categories: ["signup"],
@@ -1039,13 +912,9 @@ export const blocks: Registry = [
     registryDependencies: ["button", "card", "input", "label", "hover-card"],
     files: [
       {
-        path: "blocks/signup-02/page.tsx",
-        target: "@/components/signup.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/signup-02/components/signup-two.tsx",
+        path: "blocks/signup/signup-02/signup-two.tsx",
         type: "registry:component",
+        target:"components/shapexui/signup.tsx"
       },
     ],
     categories: ["signup"],
@@ -1060,13 +929,9 @@ export const blocks: Registry = [
     registryDependencies: ["button", "input", "label"],
     files: [
       {
-        path: "blocks/signup-03/page.tsx",
-        target: "@/components/signup.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/signup-03/components/signup-three.tsx",
+        path: "blocks/signup/signup-03/signup-three.tsx",
         type: "registry:component",
+        target:"components/shapexui/signup.tsx"
       },
     ],
     categories: ["signup"],
@@ -1081,13 +946,9 @@ export const blocks: Registry = [
     registryDependencies: ["button", "card", "input", "label", "checkbox"],
     files: [
       {
-        path: "blocks/signup-04/page.tsx",
-        target: "@/components/signup.tsx",
-        type: "registry:page",
-      },
-      {
-        path: "blocks/signup-04/components/signup-four.tsx",
+        path: "blocks/signup/signup-04/signup-four.tsx",
         type: "registry:component",
+        target:"components/shapexui/signup.tsx"
       },
     ],
     categories: ["signup"],
@@ -1114,16 +975,12 @@ export const blocks: Registry = [
     name: "team-01",
     description: "team block 1",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["button"],
     files: [
-      {
-        path: "blocks/team-01/page.tsx",
-        type: "registry:page",
-        target: "@/components/team.tsx",
-      },
       {
         path: "blocks/team-01/components/team-one.tsx",
         type: "registry:component",
+        target:"components/shapexui/team.tsx"
       },
     ],
     categories: ["teams"],
@@ -1135,17 +992,14 @@ export const blocks: Registry = [
     registryDependencies: [],
     files: [
       {
-        path: "blocks/team-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/team.tsx",
+        path: "blocks/team/team-02/team-two.tsx",
+        type: "registry:component",
+        target:"components/shapexui/team.tsx"
       },
       {
-        path: "blocks/team-02/components/team-two.tsx",
+        path: "blocks/team/team-02/team-card.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/team-02/components/team-card.tsx",
-        type: "registry:component",
+        target:"components/shapexui/team-card.tsx"
       },
     ],
     categories: ["teams"],
@@ -1157,46 +1011,63 @@ export const blocks: Registry = [
     registryDependencies: [],
     files: [
       {
-        path: "blocks/team-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/team.tsx",
-      },
-      {
-        path: "blocks/team-03/components/team-three.tsx",
+        path: "blocks/team/team-03/team-three.tsx",
         type: "registry:component",
+        target:"components/shapexui/team.tsx"
       },
       {
-        path: "blocks/team-03/components/marquee.tsx",
+        path: "blocks/team/team-03/marquee.tsx",
         type: "registry:component",
+        target:"components/shapexui/marquee.tsx"
       },
       {
-        path: "blocks/team-03/components/tailwind.config.ts",
+        path: "blocks/team/team-03/tailwind.config.ts",
         type: "registry:component",
       },
     ],
     categories: ["teams"],
     meta:{
       iframeHeight:"640px"
+    },
+    tailwind:{
+      config: {
+          theme: {
+            extend: {
+              animation: {
+                marquee: "marquee var(--duration) linear infinite",
+                "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+              },
+              keyframes: {
+                marquee: {
+                  from: { transform: "translateX(0)" },
+                  to: { transform: "translateX(calc(-100% - var(--gap)))" },
+                },
+                "marquee-vertical": {
+                  from: { transform: "translateY(0)" },
+                  to: { transform: "translateY(calc(-100% - var(--gap)))" },
+                },
+              },
+          },
+        }
+      }
     }
   },
   {
     name: "testimonial-02",
     description: "testimonial block 1",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["carousel"],
+    dependencies:["embla-carousel-autoplay"],
     files: [
       {
-        path: "blocks/testimonial-02/page.tsx",
-        type: "registry:page",
-        target: "@/components/testimonial.tsx",
+        path: "blocks/testimonial/testimonial-02/testimonial-two.tsx",
+        type: "registry:component",
+        target:"components/shapexui/testimonial.tsx"
       },
       {
-        path: "blocks/testimonial-02/components/testimonial-two.tsx",
+        path: "blocks/testimonial/testimonial-02/testimonial-card.tsx",
         type: "registry:component",
-      },
-      {
-        path: "blocks/testimonial-02/components/testimonial-card.tsx",
-        type: "registry:component",
+        target:"components/shapexui/testimonial-card.tsx"
       },
     ],
     categories: ["testimonial"],
@@ -1206,18 +1077,15 @@ export const blocks: Registry = [
   },
   {
     name: "testimonial-03",
-    description: "testimonial block 2",
+    description: "testimonial block 3",
     type: "registry:block",
-    registryDependencies: [],
+    registryDependencies: ["avatar","button","card"],
+    dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/testimonial-03/page.tsx",
-        type: "registry:page",
-        target: "@/components/testimonial.tsx",
-      },
-      {
-        path: "blocks/testimonial-03/components/testimonial-three.tsx",
+        path: "blocks/testimonial/testimonial-03/testimonial-three.tsx",
         type: "registry:component",
+        target:"components/shapexui/testimonial.tsx"
       },
     ],
     categories: ["testimonial"],

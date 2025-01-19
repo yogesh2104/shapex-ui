@@ -1,0 +1,28 @@
+{
+  "name": "footer-01",
+  "type": "registry:block",
+  "description": "A Footer block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "blocks/footer/footer-01/footer-one.tsx",
+      "content": "import Link from \"next/link\";\nimport AnimationContainer from \"./animation-container\";\nimport { Instagram, Youtube } from \"lucide-react\";\nimport { Button } from \"@/registry/default/ui/button\";\nimport Logo from \"@/components/logo\";\n\nconst footerLink = [\n  {\n    name: \"About\",\n    link: \"#\",\n  },\n  {\n    name: \"Contact\",\n    link: \"3\",\n  },\n  {\n    name: \"FAQ\",\n    link: \"#\",\n  },\n  {\n    name: \"Privacy Policy\",\n    link: \"#\",\n  },\n  {\n    name: \"Terms and Conditions\",\n    link: \"#\",\n  },\n];\n\nconst FooterOne = () => {\n  const currentYear = new Date().getFullYear();\n  return (\n    <footer className=\"relative border-t border-border pt-6 pb-8 px-4 sm:px-6 lg:px-8 w-full max-w-6xl mx-auto\">\n      <div className=\"absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-1.5 bg-foreground rounded-full\"></div>\n\n      <div className=\"flex flex-col items-center space-y-8 md:flex-row md:justify-between md:space-y-0\">\n        <AnimationContainer delay={0.2} className=\"mt-8 md:mt-0\">\n          <Link href=\"/\" className=\"flex items-center gap-2\">\n            <div className=\"flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground\">\n              <Logo />\n            </div>\n            <div className=\"grid flex-1 text-left text-sm leading-tight\">\n              <p\n                className=\"text-xl font-semibold  text-primary tracking-wide\"\n                style={{ fontVariationSettings: '\"opsz\" 32' }}\n              >\n                ShapeX UI\n              </p>\n            </div>\n          </Link>\n        </AnimationContainer>\n\n        <AnimationContainer className=\"w-full md:w-auto\">\n          <nav className=\"flex flex-wrap justify-center gap-4 text-center md:justify-end\">\n            {footerLink.map((item) => (\n              <Link\n                key={item.name}\n                href={item.link}\n                className=\"text-xs leading-5 text-muted-foreground hover:text-foreground transition-colors\"\n              >\n                {item.name}\n              </Link>\n            ))}\n          </nav>\n        </AnimationContainer>\n\n        <AnimationContainer\n          delay={0.1}\n          className=\"flex justify-center space-x-4\"\n        >\n          <Button variant=\"ghost\" size=\"icon\" asChild>\n            <Link\n              href=\"https://youtube.com/@zenityteam?si=3FIrYQTbgh0m3UKA\"\n              target=\"_blank\"\n              rel=\"noopener noreferrer\"\n            >\n              <span className=\"sr-only\">Youtube</span>\n              <Youtube className=\"h-5 w-5\" />\n            </Link>\n          </Button>\n          <Button variant=\"ghost\" size=\"icon\" asChild>\n            <Link\n              href=\"https://instagram.com\"\n              target=\"_blank\"\n              rel=\"noopener noreferrer\"\n            >\n              <span className=\"sr-only\">Instagram</span>\n              <Instagram className=\"h-5 w-5\" />\n            </Link>\n          </Button>\n        </AnimationContainer>\n      </div>\n\n      <AnimationContainer\n        delay={0.6}\n        className=\"mt-8 border-t border-border/40 pt-4 px-4 sm:px-6 lg:px-8\"\n      >\n        <div className=\"flex justify-center\">\n          <p className=\"text-xs leading-5 text-muted-foreground text-center\">\n            &copy; {currentYear} All rights reserved.\n          </p>\n        </div>\n      </AnimationContainer>\n    </footer>\n  );\n};\n\nexport default FooterOne;\n",
+      "type": "registry:component",
+      "target": "components/shapexui/footer.tsx"
+    },
+    {
+      "path": "blocks/footer/footer-01/animation-container.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport React from \"react\";\n\ninterface AnimationContainerProps {\n  children: React.ReactNode;\n  delay?: number;\n  reverse?: boolean;\n  className?: string;\n}\n\nconst AnimationContainer = ({\n  children,\n  className,\n  reverse,\n  delay,\n}: AnimationContainerProps) => {\n  return (\n    <motion.div\n      className={className}\n      initial={{ opacity: 0, y: reverse ? -20 : 20 }}\n      whileInView={{ opacity: 1, y: 0 }}\n      viewport={{ once: false }}\n      transition={{\n        duration: 0.2,\n        delay: delay,\n        ease: \"easeInOut\",\n        type: \"spring\",\n        stiffness: 260,\n        damping: 20,\n      }}\n    >\n      {children}\n    </motion.div>\n  );\n};\n\nexport default AnimationContainer;\n",
+      "type": "registry:component",
+      "target": "components/shapexui/animation-container.tsx"
+    }
+  ],
+  "meta": {
+    "iframeHeight": "250px"
+  },
+  "categories": [
+    "footer"
+  ]
+}

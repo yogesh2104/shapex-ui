@@ -165,71 +165,71 @@ export const docsConfig: DocsConfig = {
         },
       ],
     },
-    {
-      title: "Featured Blocks",
-      items: [
-        {
-          title: "Analytics",
-          href: "/blocks/analytics",
-          disabled: false,
-          items: [],
-        },
-        // {
-        //   title: "Admin Panel",
-        //   href: "#",
-        //   disabled: true,
-        //   items: [],
-        // },
-        {
-          title: "E-Commerce",
-          href: "/blocks/e-commerce",
-          disabled: false,
-          items: [],
-        },
-        {
-          title: "File Management",
-          href: "/blocks/file-manager",
-          disabled: false,
-          items: [],
-        },
-        // {
-        //   title: "Kanban",
-        //   href: "#",
-        //   disabled: true,
-        //   items: [],
-        // },
-        {
-          title: "Messaging",
-          href: "#",
-          disabled: true,
-          items: [],
-        },
-        {
-          title: "Settings",
-          href: "#",
-          disabled: true,
-          items: [],
-        },
-        {
-          title: "Socila Media",
-          href: "#",
-          disabled: true,
-          items: [],
-        },
-        {
-          title: "Settings",
-          href: "#",
-          disabled: true,
-          items: [],
-        },
-        {
-          title: "Video Streaming",
-          href: "#",
-          disabled: true,
-          items: [],
-        },
-      ],
-    },
+    // {
+    //   title: "Featured Blocks",
+    //   items: [
+    //     {
+    //       title: "Analytics",
+    //       href: "/blocks/analytics",
+    //       disabled: false,
+    //       items: [],
+    //     },
+    //     // {
+    //     //   title: "Admin Panel",
+    //     //   href: "#",
+    //     //   disabled: true,
+    //     //   items: [],
+    //     // },
+    //     {
+    //       title: "E-Commerce",
+    //       href: "/blocks/e-commerce",
+    //       disabled: false,
+    //       items: [],
+    //     },
+    //     {
+    //       title: "File Management",
+    //       href: "/blocks/file-manager",
+    //       disabled: false,
+    //       items: [],
+    //     },
+    //     // {
+    //     //   title: "Kanban",
+    //     //   href: "#",
+    //     //   disabled: true,
+    //     //   items: [],
+    //     // },
+    //     {
+    //       title: "Messaging",
+    //       href: "#",
+    //       disabled: true,
+    //       items: [],
+    //     },
+    //     {
+    //       title: "Settings",
+    //       href: "#",
+    //       disabled: true,
+    //       items: [],
+    //     },
+    //     {
+    //       title: "Socila Media",
+    //       href: "#",
+    //       disabled: true,
+    //       items: [],
+    //     },
+    //     {
+    //       title: "Settings",
+    //       href: "#",
+    //       disabled: true,
+    //       items: [],
+    //     },
+    //     {
+    //       title: "Video Streaming",
+    //       href: "#",
+    //       disabled: true,
+    //       items: [],
+    //     },
+    //   ],
+    // },
   ],
   mainNav: [
     {

@@ -76,13 +76,6 @@
 }
 
 
-.progressive-blur-mask, .progressive-blur-mask-features {
-  width: 100%;
-  -webkit-mask: linear-gradient(180deg, #000, #000 50%, #0000);
-  mask: linear-gradient(180deg, #000, #000 50%, #0000);
-}
-
-
 
 /* @layer base {
   :root {

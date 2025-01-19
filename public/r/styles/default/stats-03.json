@@ -1,0 +1,23 @@
+{
+  "name": "stats-03",
+  "type": "registry:block",
+  "description": "stats block 3",
+  "registryDependencies": [
+    "button",
+    "card"
+  ],
+  "files": [
+    {
+      "path": "blocks/stats/stats-03/stats-three.tsx",
+      "content": "import { Button } from \"@/registry/default/ui/button\";\r\nimport { Card } from \"@/registry/default/ui/card\";\r\nimport { Database, Eye, Gauge, Play, Users } from \"lucide-react\";\r\n\r\nconst StatsThree = () => {\r\n  return (\r\n    <div className=\"w-full space-y-8 py-6 px-2\">\r\n      <Card className=\"mx-auto max-w-6xl p-8 rounded-3xl\">\r\n        <div className=\"grid md:grid-cols-2 gap-8\">\r\n          <div className=\"space-y-4\">\r\n            <h2 className=\"text-3xl font-bold tracking-tight\">\r\n              Let&apos;s build something great.\r\n            </h2>\r\n            <p className=\"text-muted-foreground\">\r\n              Enim sed faucibus turpis in eu mi bibendum neque egestas. Mi\r\n              bibendum neque egestas congue quisque egestas diam in arcu. Elit\r\n              pellentesque habitant.\r\n            </p>\r\n          </div>\r\n          <div className=\"grid grid-cols-2 gap-8\">\r\n            <div className=\"space-y-2\">\r\n              <Database className=\"h-5 w-5 text-muted-foreground\" />\r\n              <div className=\"text-3xl font-bold\">420%</div>\r\n              <p className=\"text-sm text-muted-foreground\">Data Efficiency</p>\r\n            </div>\r\n            <div className=\"space-y-2\">\r\n              <Eye className=\"h-5 w-5 text-muted-foreground\" />\r\n              <div className=\"text-3xl font-bold\">708+</div>\r\n              <p className=\"text-sm text-muted-foreground\">Conversion Rate</p>\r\n            </div>\r\n            <div className=\"space-y-2\">\r\n              <Gauge className=\"h-5 w-5 text-muted-foreground\" />\r\n              <div className=\"text-3xl font-bold\">1.82M</div>\r\n              <p className=\"text-sm text-muted-foreground\">AI LLM Scale</p>\r\n            </div>\r\n            <div className=\"space-y-2\">\r\n              <Users className=\"h-5 w-5 text-muted-foreground\" />\r\n              <div className=\"text-3xl font-bold\">3.23K</div>\r\n              <p className=\"text-sm text-muted-foreground\">Total Users</p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n\r\n        <div className=\"grid mt-12\">\r\n          <div className=\"flex justify-center flex-col md:flex-row gap-6 md:gap-10\">\r\n            <Button variant=\"outline\" className=\"rounded-2xl px-10\">\r\n              <Play className=\"size-3\" />\r\n              Demo\r\n            </Button>\r\n            <Button className=\"rounded-2xl\">\r\n              Get Started<span className=\"ml-2\">→</span>{\" \"}\r\n            </Button>\r\n          </div>\r\n        </div>\r\n      </Card>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default StatsThree;\r\n",
+      "type": "registry:component",
+      "target": "components/shapexui/stats.tsx"
+    }
+  ],
+  "meta": {
+    "iframeHeight": "420px"
+  },
+  "categories": [
+    "stats"
+  ]
+}
