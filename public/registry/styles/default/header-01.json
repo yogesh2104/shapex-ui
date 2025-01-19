@@ -1,0 +1,41 @@
+{
+  "name": "header-01",
+  "type": "registry:block",
+  "description": "header block",
+  "registryDependencies": [
+    "sheet",
+    "button"
+  ],
+  "files": [
+    {
+      "path": "blocks/header-01/page.tsx",
+      "content": "import HeaderOne from \"@/registry/default/blocks/header-01/components/header-one\";\n\nexport default function Page() {\n  return (\n    <div className=\"container mx-auto h-[1200px]\">\n      <HeaderOne />\n    </div>\n  );\n}\n",
+      "type": "registry:page",
+      "target": "@/components/header.tsx"
+    },
+    {
+      "path": "blocks/header-01/components/header-one.tsx",
+      "content": "import React from \"react\";\nimport Link from \"next/link\";\nimport { Menu } from \"lucide-react\";\nimport Logo from \"@/components/logo\";\nimport { Button } from \"@/registry/default/ui/button\";\nimport {\n  Sheet,\n  SheetContent,\n  SheetTrigger,\n  SheetTitle,\n} from \"@/registry/default/ui/sheet\";\n\nconst HeaderOne = () => {\n  return (\n    <header className=\"border-b\">\n      <div className=\"flex items-center justify-between h-16 px-4 max-w-7xl mx-auto\">\n        <Logo />\n        <nav className=\"hidden md:flex items-center gap-6\">\n          <Link href=\"/\" className=\"text-sm font-medium hover:text-gray-600\">\n            Home\n          </Link>\n          <Link\n            href=\"/products\"\n            className=\"text-sm font-medium hover:text-gray-600\"\n          >\n            Products\n          </Link>\n          <Link\n            href=\"/resources\"\n            className=\"text-sm font-medium hover:text-gray-600\"\n          >\n            Resources\n          </Link>\n          <Link\n            href=\"/pricing\"\n            className=\"text-sm font-medium hover:text-gray-600\"\n          >\n            Pricing\n          </Link>\n          <Link\n            href=\"/blog\"\n            className=\"text-sm font-medium hover:text-gray-600\"\n          >\n            Blog\n          </Link>\n        </nav>\n\n        <div className=\"hidden md:flex items-center gap-4\">\n          <Button variant=\"ghost\">Log in</Button>\n          <Button>Sign up</Button>\n        </div>\n        <MobileMenu />\n      </div>\n    </header>\n  );\n};\n\nconst MobileMenu = () => {\n  return (\n    <Sheet>\n      <SheetTrigger asChild className=\"md:hidden\">\n        <Button variant=\"ghost\" size=\"icon\">\n          <Menu className=\"h-6 w-6\" />\n        </Button>\n      </SheetTrigger>\n      <SheetContent side=\"right\" className=\"w-[300px]\">\n        <SheetTitle>\n          <span className=\"sr-only\">Title</span>\n        </SheetTitle>\n        <div className=\"flex flex-col gap-4 mt-8\">\n          <Link href=\"/\" className=\"text-lg font-medium hover:text-gray-600\">\n            Home\n          </Link>\n          <Link\n            href=\"/products\"\n            className=\"text-lg font-medium hover:text-gray-600\"\n          >\n            Products\n          </Link>\n          <Link\n            href=\"/resources\"\n            className=\"text-lg font-medium hover:text-gray-600\"\n          >\n            Resources\n          </Link>\n          <Link\n            href=\"/pricing\"\n            className=\"text-lg font-medium hover:text-gray-600\"\n          >\n            Pricing\n          </Link>\n          <Link\n            href=\"/blog\"\n            className=\"text-lg font-medium hover:text-gray-600\"\n          >\n            Blog\n          </Link>\n          <div className=\"flex flex-col gap-2 mt-4\">\n            <Button variant=\"ghost\">Log in</Button>\n            <Button>Sign up</Button>\n          </div>\n        </div>\n      </SheetContent>\n    </Sheet>\n  );\n};\n\nexport default HeaderOne;\n",
+      "type": "registry:component",
+      "target": ""
+    },
+    {
+      "path": "blocks/header-01/components/animation-container.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"framer-motion\";\nimport React from \"react\";\n\ninterface AnimationContainerProps {\n  children: React.ReactNode;\n  delay?: number;\n  reverse?: boolean;\n  className?: string;\n}\n\nconst AnimationContainer = ({\n  children,\n  className,\n  reverse,\n  delay,\n}: AnimationContainerProps) => {\n  return (\n    <motion.div\n      className={className}\n      initial={{ opacity: 0, y: reverse ? -20 : 20 }}\n      whileInView={{ opacity: 1, y: 0 }}\n      viewport={{ once: false }}\n      transition={{\n        duration: 0.2,\n        delay: delay,\n        ease: \"easeInOut\",\n        type: \"spring\",\n        stiffness: 260,\n        damping: 20,\n      }}\n    >\n      {children}\n    </motion.div>\n  );\n};\n\nexport default AnimationContainer;\n",
+      "type": "registry:component",
+      "target": ""
+    },
+    {
+      "path": "blocks/header-01/components/mobile-navbar.tsx",
+      "content": "\"use client\";\n\nimport React, { useState } from \"react\";\nimport Link from \"next/link\";\nimport { cn } from \"@/lib/utils\";\nimport { LucideIcon, Menu, X } from \"lucide-react\";\nimport {\n  Sheet,\n  SheetClose,\n  SheetContent,\n  SheetTitle,\n  SheetTrigger,\n} from \"@/registry/default/ui/sheet\";\nimport { Button, buttonVariants } from \"@/registry/default/ui/button\";\n\nconst MobileNavbar = () => {\n  const [isOpen, setIsOpen] = useState<boolean>(false);\n\n  return (\n    <div className=\"flex lg:hidden items-center bg-black justify-end\">\n      <Sheet open={isOpen} onOpenChange={setIsOpen}>\n        <SheetTrigger asChild>\n          {!isOpen && (\n            <Button size=\"icon\" aria-label=\"menu-button\" variant=\"ghost\">\n              <Menu className=\"w-5 h-5\" />\n            </Button>\n          )}\n        </SheetTrigger>\n        <SheetContent className=\"w-screen bg-background\">\n          <SheetTitle>\n            <span className=\"sr-only\">Title</span>\n          </SheetTitle>\n          <SheetClose\n            asChild\n            className=\"absolute top-3 right-5 bg-background z-20 flex items-center justify-center\"\n          >\n            <Button\n              size=\"icon\"\n              variant=\"ghost\"\n              className=\"dark:text-white text-black mt-[-2px]\"\n            >\n              <X className=\"w-5 h-5\" />\n            </Button>\n          </SheetClose>\n\n          <div className=\"flex flex-col items-start w-full py-2 mt-10\">\n            <div className=\"flex items-center justify-evenly w-full space-x-2\">\n              <Link\n                href=\"#\"\n                className={buttonVariants({\n                  variant: \"outline\",\n                  className: \"w-full\",\n                })}\n              >\n                Sign In\n              </Link>\n              <Link\n                href=\"#\"\n                className={buttonVariants({ className: \"w-full\" })}\n              >\n                Sign Up\n              </Link>\n            </div>\n          </div>\n        </SheetContent>\n      </Sheet>\n    </div>\n  );\n};\n\nconst ListItem = React.forwardRef<\n  React.ElementRef<\"a\">,\n  React.ComponentPropsWithoutRef<\"a\"> & { title: string; icon: LucideIcon }\n>(({ className, title, href, icon: Icon, children, ...props }, ref) => {\n  return (\n    <li>\n      <Link\n        href={href!}\n        ref={ref}\n        className={cn(\n          \"block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground\",\n          className,\n        )}\n        {...props}\n      >\n        <div className=\"flex items-center space-x-2 text-foreground\">\n          <Icon className=\"h-4 w-4\" />\n          <h6 className=\"text-sm !leading-none\">{title}</h6>\n        </div>\n        <p\n          title={children! as string}\n          className=\"line-clamp-1 text-sm leading-snug text-muted-foreground\"\n        >\n          {children}\n        </p>\n      </Link>\n    </li>\n  );\n});\nListItem.displayName = \"ListItem\";\n\nexport default MobileNavbar;\n",
+      "type": "registry:component",
+      "target": ""
+    }
+  ],
+  "meta": {
+    "iframeHeight": "300px"
+  },
+  "categories": [
+    "header"
+  ]
+}

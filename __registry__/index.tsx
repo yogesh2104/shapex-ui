@@ -10,6 +10,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-accordion"],
       files: [{
         path: "registry/default/ui/accordion.tsx",
         type: "registry:ui",
@@ -25,6 +26,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: undefined,
       files: [{
         path: "registry/default/ui/alert.tsx",
         type: "registry:ui",
@@ -40,6 +42,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
+      dependencies: ["@radix-ui/react-alert-dialog"],
       files: [{
         path: "registry/default/ui/alert-dialog.tsx",
         type: "registry:ui",
@@ -55,6 +58,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-avatar"],
       files: [{
         path: "registry/default/ui/avatar.tsx",
         type: "registry:ui",
@@ -70,6 +74,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: undefined,
       files: [{
         path: "registry/default/ui/badge.tsx",
         type: "registry:ui",
@@ -85,6 +90,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-slot"],
       files: [{
         path: "registry/default/ui/button.tsx",
         type: "registry:ui",
@@ -100,6 +106,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
+      dependencies: ["react-day-picker@8.10.1","date-fns"],
       files: [{
         path: "registry/default/ui/calendar.tsx",
         type: "registry:ui",
@@ -115,6 +122,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: undefined,
       files: [{
         path: "registry/default/ui/card.tsx",
         type: "registry:ui",
@@ -130,6 +138,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: undefined,
       files: [{
         path: "registry/default/ui/carousel.tsx",
         type: "registry:ui",
@@ -145,6 +154,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-checkbox"],
       files: [{
         path: "registry/default/ui/checkbox.tsx",
         type: "registry:ui",
@@ -160,6 +170,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-collapsible"],
       files: [{
         path: "registry/default/ui/collapsible.tsx",
         type: "registry:ui",
@@ -175,6 +186,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["dialog"],
+      dependencies: ["cmdk@1.0.0"],
       files: [{
         path: "registry/default/ui/command.tsx",
         type: "registry:ui",
@@ -190,6 +202,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["card"],
+      dependencies: ["recharts","lucide-react"],
       files: [{
         path: "registry/default/ui/chart.tsx",
         type: "registry:ui",
@@ -205,6 +218,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-dialog"],
       files: [{
         path: "registry/default/ui/dialog.tsx",
         type: "registry:ui",
@@ -220,6 +234,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-dropdown-menu"],
       files: [{
         path: "registry/default/ui/dropdown-menu.tsx",
         type: "registry:ui",
@@ -235,6 +250,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-hover-card"],
       files: [{
         path: "registry/default/ui/hover-card.tsx",
         type: "registry:ui",
@@ -250,6 +266,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: undefined,
       files: [{
         path: "registry/default/ui/input.tsx",
         type: "registry:ui",
@@ -265,6 +282,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-label"],
       files: [{
         path: "registry/default/ui/label.tsx",
         type: "registry:ui",
@@ -280,6 +298,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-menubar"],
       files: [{
         path: "registry/default/ui/menubar.tsx",
         type: "registry:ui",
@@ -295,6 +314,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-navigation-menu"],
       files: [{
         path: "registry/default/ui/navigation-menu.tsx",
         type: "registry:ui",
@@ -310,6 +330,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-progress"],
       files: [{
         path: "registry/default/ui/progress.tsx",
         type: "registry:ui",
@@ -325,6 +346,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-scroll-area"],
       files: [{
         path: "registry/default/ui/scroll-area.tsx",
         type: "registry:ui",
@@ -340,6 +362,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-select"],
       files: [{
         path: "registry/default/ui/select.tsx",
         type: "registry:ui",
@@ -355,6 +378,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-dialog"],
       files: [{
         path: "registry/default/ui/sheet.tsx",
         type: "registry:ui",
@@ -370,6 +394,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button","separator","sheet","tooltip","input","use-mobile","skeleton"],
+      dependencies: ["@radix-ui/react-slot","class-variance-authority","lucide-react"],
       files: [{
         path: "registry/default/ui/sidebar.tsx",
         type: "registry:ui",
@@ -385,6 +410,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: undefined,
       files: [{
         path: "registry/default/ui/skeleton.tsx",
         type: "registry:ui",
@@ -400,6 +426,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-switch"],
       files: [{
         path: "registry/default/ui/switch.tsx",
         type: "registry:ui",
@@ -415,6 +442,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: undefined,
       files: [{
         path: "registry/default/ui/table.tsx",
         type: "registry:ui",
@@ -430,6 +458,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-tabs"],
       files: [{
         path: "registry/default/ui/tabs.tsx",
         type: "registry:ui",
@@ -445,6 +474,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: undefined,
       files: [{
         path: "registry/default/ui/textarea.tsx",
         type: "registry:ui",
@@ -460,6 +490,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
+      dependencies: ["@radix-ui/react-toggle"],
       files: [{
         path: "registry/default/ui/toggle.tsx",
         type: "registry:ui",
@@ -475,6 +506,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["toggle"],
+      dependencies: ["@radix-ui/react-toggle-group"],
       files: [{
         path: "registry/default/ui/toggle-group.tsx",
         type: "registry:ui",
@@ -490,10 +522,11 @@ export const Index: Record<string, any> = {
       description: "The Article Two Section for content presentation.",
       type: "registry:block",
       registryDependencies: ["card","badge","separator","scroll-area"],
+      dependencies: ["framer-motion"],
       files: [{
         path: "registry/default/blocks/article-02/page.tsx",
         type: "registry:page",
-        target: "app/article/page.tsx"
+        target: "shapexui/article-02.tsx"
       },{
         path: "registry/default/blocks/article-02/components/article-two.tsx",
         type: "registry:component",
@@ -509,6 +542,7 @@ export const Index: Record<string, any> = {
       description: "Blog Grid View",
       type: "registry:block",
       registryDependencies: ["card","button","badge"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/blog-01/page.tsx",
         type: "registry:page",
@@ -536,6 +570,7 @@ export const Index: Record<string, any> = {
       description: "Simple Blog List",
       type: "registry:block",
       registryDependencies: ["card","badge","separator","scroll-area"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/blog-02/page.tsx",
         type: "registry:page",
@@ -559,6 +594,7 @@ export const Index: Record<string, any> = {
       description: "A simple Contact Form.",
       type: "registry:block",
       registryDependencies: ["button","textarea","input","label"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/contact-01/page.tsx",
         type: "registry:page",
@@ -578,6 +614,7 @@ export const Index: Record<string, any> = {
       description: "A simple Contact Form.",
       type: "registry:block",
       registryDependencies: ["button","textarea","input","label"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/contact-02/page.tsx",
         type: "registry:page",
@@ -597,6 +634,7 @@ export const Index: Record<string, any> = {
       description: "Call To Action.",
       type: "registry:block",
       registryDependencies: ["button"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/cta-01/page.tsx",
         type: "registry:page",
@@ -616,6 +654,7 @@ export const Index: Record<string, any> = {
       description: "A simple Contact Form.",
       type: "registry:block",
       registryDependencies: ["button"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/cta-02/page.tsx",
         type: "registry:page",
@@ -639,6 +678,7 @@ export const Index: Record<string, any> = {
       description: "A simple CTA.",
       type: "registry:block",
       registryDependencies: ["button"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/cta-03/page.tsx",
         type: "registry:page",
@@ -658,6 +698,7 @@ export const Index: Record<string, any> = {
       description: "A FQAs block",
       type: "registry:block",
       registryDependencies: ["tabs","accordion","badge"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/faq-01/page.tsx",
         type: "registry:page",
@@ -681,6 +722,7 @@ export const Index: Record<string, any> = {
       description: "A FAQs.",
       type: "registry:block",
       registryDependencies: ["badge","input"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/faq-02/page.tsx",
         type: "registry:page",
@@ -704,6 +746,7 @@ export const Index: Record<string, any> = {
       description: "A FAQs.",
       type: "registry:block",
       registryDependencies: ["card"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/faq-03/page.tsx",
         type: "registry:page",
@@ -731,6 +774,7 @@ export const Index: Record<string, any> = {
       description: "A Feature Block.",
       type: "registry:block",
       registryDependencies: ["card","accordion"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/feature-01/page.tsx",
         type: "registry:page",
@@ -750,6 +794,7 @@ export const Index: Record<string, any> = {
       description: "A Feature block.",
       type: "registry:block",
       registryDependencies: ["card","accordion"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/feature-02/page.tsx",
         type: "registry:page",
@@ -773,6 +818,7 @@ export const Index: Record<string, any> = {
       description: "A Feature block.",
       type: "registry:block",
       registryDependencies: ["card"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/feature-03/page.tsx",
         type: "registry:page",
@@ -796,6 +842,7 @@ export const Index: Record<string, any> = {
       description: "A Footer block.",
       type: "registry:block",
       registryDependencies: ["button"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/footer-01/page.tsx",
         type: "registry:page",
@@ -819,6 +866,7 @@ export const Index: Record<string, any> = {
       description: "A Footer block.",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/footer-02/page.tsx",
         type: "registry:page",
@@ -838,6 +886,7 @@ export const Index: Record<string, any> = {
       description: "A Footer block.",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/footer-03/page.tsx",
         type: "registry:page",
@@ -857,6 +906,7 @@ export const Index: Record<string, any> = {
       description: "header block",
       type: "registry:block",
       registryDependencies: ["sheet","button"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/header-01/page.tsx",
         type: "registry:page",
@@ -884,6 +934,7 @@ export const Index: Record<string, any> = {
       description: "header block",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/header-02/page.tsx",
         type: "registry:page",
@@ -903,6 +954,7 @@ export const Index: Record<string, any> = {
       description: "header block",
       type: "registry:block",
       registryDependencies: ["button","sheet","navigation-menu"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/header-03/page.tsx",
         type: "registry:page",
@@ -922,6 +974,7 @@ export const Index: Record<string, any> = {
       description: "header block",
       type: "registry:block",
       registryDependencies: ["button","sheet"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/header-04/page.tsx",
         type: "registry:page",
@@ -945,6 +998,7 @@ export const Index: Record<string, any> = {
       description: "logo-cloud block",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/logo-01/page.tsx",
         type: "registry:page",
@@ -968,6 +1022,7 @@ export const Index: Record<string, any> = {
       description: "logo-cloud block",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/logo-02/page.tsx",
         type: "registry:page",
@@ -995,6 +1050,7 @@ export const Index: Record<string, any> = {
       description: "logo-cloud block",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/logo-03/page.tsx",
         type: "registry:page",
@@ -1018,6 +1074,7 @@ export const Index: Record<string, any> = {
       description: "A simple login form.",
       type: "registry:block",
       registryDependencies: ["button","card","input","label"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/login-01/page.tsx",
         type: "registry:page",
@@ -1037,6 +1094,7 @@ export const Index: Record<string, any> = {
       description: "A simple login form.",
       type: "registry:block",
       registryDependencies: ["button","card","input","label"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/login-02/page.tsx",
         type: "registry:page",
@@ -1060,6 +1118,7 @@ export const Index: Record<string, any> = {
       description: "newsletter block 1",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/newsletter-01/page.tsx",
         type: "registry:page",
@@ -1079,6 +1138,7 @@ export const Index: Record<string, any> = {
       description: "newsletter block 2",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/newsletter-02/page.tsx",
         type: "registry:page",
@@ -1102,6 +1162,7 @@ export const Index: Record<string, any> = {
       description: "newsletter block 3",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/newsletter-03/page.tsx",
         type: "registry:page",
@@ -1121,6 +1182,7 @@ export const Index: Record<string, any> = {
       description: "pricing block 1",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/pricing-01/page.tsx",
         type: "registry:page",
@@ -1144,6 +1206,7 @@ export const Index: Record<string, any> = {
       description: "pricing block 2",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/pricing-02/page.tsx",
         type: "registry:page",
@@ -1163,6 +1226,7 @@ export const Index: Record<string, any> = {
       description: "pricing block 3",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/pricing-03/page.tsx",
         type: "registry:page",
@@ -1182,6 +1246,7 @@ export const Index: Record<string, any> = {
       description: "pricing block 4",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/pricing-04/page.tsx",
         type: "registry:page",
@@ -1201,6 +1266,7 @@ export const Index: Record<string, any> = {
       description: "rating block 1",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/rating-01/page.tsx",
         type: "registry:page",
@@ -1224,6 +1290,7 @@ export const Index: Record<string, any> = {
       description: "rating block 2",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/rating-02/page.tsx",
         type: "registry:page",
@@ -1243,6 +1310,7 @@ export const Index: Record<string, any> = {
       description: "rating block 3",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/rating-03/page.tsx",
         type: "registry:page",
@@ -1274,6 +1342,7 @@ export const Index: Record<string, any> = {
       description: "roadmap block 1",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/roadmap-01/page.tsx",
         type: "registry:page",
@@ -1293,6 +1362,7 @@ export const Index: Record<string, any> = {
       description: "roadmap block 2",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/roadmap-02/page.tsx",
         type: "registry:page",
@@ -1312,6 +1382,7 @@ export const Index: Record<string, any> = {
       description: "roadmap block 3",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/roadmap-03/page.tsx",
         type: "registry:page",
@@ -1331,6 +1402,7 @@ export const Index: Record<string, any> = {
       description: "stats block 3",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/stats-01/page.tsx",
         type: "registry:page",
@@ -1350,6 +1422,7 @@ export const Index: Record<string, any> = {
       description: "stats block 2",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/stats-02/page.tsx",
         type: "registry:page",
@@ -1369,6 +1442,7 @@ export const Index: Record<string, any> = {
       description: "stats block 3",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/stats-03/page.tsx",
         type: "registry:page",
@@ -1388,6 +1462,7 @@ export const Index: Record<string, any> = {
       description: "steps block 1",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/steps-01/page.tsx",
         type: "registry:page",
@@ -1407,6 +1482,7 @@ export const Index: Record<string, any> = {
       description: "steps block 2",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/steps-02/page.tsx",
         type: "registry:page",
@@ -1426,6 +1502,7 @@ export const Index: Record<string, any> = {
       description: "A simple Signup form.",
       type: "registry:block",
       registryDependencies: ["button","card","input","label"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/signup-01/page.tsx",
         type: "registry:page",
@@ -1445,6 +1522,7 @@ export const Index: Record<string, any> = {
       description: "A Signup form with Password Validation.",
       type: "registry:block",
       registryDependencies: ["button","card","input","label","hover-card"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/signup-02/page.tsx",
         type: "registry:page",
@@ -1464,6 +1542,7 @@ export const Index: Record<string, any> = {
       description: "A Signup form with Step",
       type: "registry:block",
       registryDependencies: ["button","input","label"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/signup-03/page.tsx",
         type: "registry:page",
@@ -1483,6 +1562,7 @@ export const Index: Record<string, any> = {
       description: "A Signup form",
       type: "registry:block",
       registryDependencies: ["button","card","input","label","checkbox"],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/signup-04/page.tsx",
         type: "registry:page",
@@ -1502,6 +1582,7 @@ export const Index: Record<string, any> = {
       description: "team block 1",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/team-01/page.tsx",
         type: "registry:page",
@@ -1521,6 +1602,7 @@ export const Index: Record<string, any> = {
       description: "team block 2",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/team-02/page.tsx",
         type: "registry:page",
@@ -1544,6 +1626,7 @@ export const Index: Record<string, any> = {
       description: "team block 3",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/team-03/page.tsx",
         type: "registry:page",
@@ -1571,6 +1654,7 @@ export const Index: Record<string, any> = {
       description: "testimonial block 1",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/testimonial-02/page.tsx",
         type: "registry:page",
@@ -1594,6 +1678,7 @@ export const Index: Record<string, any> = {
       description: "testimonial block 2",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/testimonial-03/page.tsx",
         type: "registry:page",
@@ -1613,6 +1698,7 @@ export const Index: Record<string, any> = {
       description: "Analytics dashboard",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/analytics/page.tsx",
         type: "registry:component",
@@ -1652,6 +1738,7 @@ export const Index: Record<string, any> = {
       description: "e-commerce page",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/e-commerce/page.tsx",
         type: "registry:component",
@@ -1687,6 +1774,7 @@ export const Index: Record<string, any> = {
       description: "file-management page",
       type: "registry:block",
       registryDependencies: [],
+      dependencies: undefined,
       files: [{
         path: "registry/default/blocks/file-management/page.tsx",
         type: "registry:component",
@@ -1718,6 +1806,7 @@ export const Index: Record<string, any> = {
       description: "",
       type: "registry:lib",
       registryDependencies: undefined,
+      dependencies: ["clsx","tailwind-merge"],
       files: [{
         path: "registry/default/lib/utils.ts",
         type: "registry:lib",

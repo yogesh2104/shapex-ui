@@ -1,0 +1,26 @@
+{
+  "name": "pricing-04",
+  "type": "registry:block",
+  "description": "pricing block 4",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "blocks/pricing-04/page.tsx",
+      "content": "import PricingFour from \"@/registry/default/blocks/pricing-04/components/pricing-four\";\n\nexport default function Page() {\n  return <PricingFour />;\n}\n",
+      "type": "registry:page",
+      "target": "@/components/pricing.tsx"
+    },
+    {
+      "path": "blocks/pricing-04/components/pricing-four.tsx",
+      "content": "import { Check, X } from \"lucide-react\";\nimport { Button } from \"@/registry/default/ui/button\";\nimport {\n  Card,\n  CardContent,\n  CardHeader,\n  CardTitle,\n} from \"@/registry/default/ui/card\";\n\ninterface Feature {\n  name: string;\n  included: boolean;\n}\n\ninterface PricingTier {\n  name: string;\n  description: string;\n  price: number;\n  features: Feature[];\n}\n\nconst pricingData: PricingTier[] = [\n  {\n    name: \"Starter\",\n    description: \"Lorem ipsum dolor sit amet consectetur adipisicing elit.\",\n    price: 20,\n    features: [\n      { name: \"10 users\", included: true },\n      { name: \"2GB of storage\", included: true },\n      { name: \"Email support\", included: true },\n      { name: \"Help center access\", included: false },\n      { name: \"Phone support\", included: false },\n      { name: \"Community access\", included: false },\n    ],\n  },\n  {\n    name: \"Pro\",\n    description: \"Lorem ipsum dolor sit amet consectetur adipisicing elit.\",\n    price: 30,\n    features: [\n      { name: \"20 users\", included: true },\n      { name: \"5GB of storage\", included: true },\n      { name: \"Email support\", included: true },\n      { name: \"Help center access\", included: true },\n      { name: \"Phone support\", included: false },\n      { name: \"Community access\", included: false },\n    ],\n  },\n  {\n    name: \"Enterprise\",\n    description: \"Lorem ipsum dolor sit amet consectetur adipisicing elit.\",\n    price: 100,\n    features: [\n      { name: \"50 users\", included: true },\n      { name: \"20GB of storage\", included: true },\n      { name: \"Email support\", included: true },\n      { name: \"Help center access\", included: true },\n      { name: \"Phone support\", included: true },\n      { name: \"Community access\", included: true },\n    ],\n  },\n];\n\nconst PricingCard = ({ tier }: { tier: PricingTier }) => {\n  return (\n    <Card className=\"flex flex-col\">\n      <CardHeader>\n        <CardTitle className=\"flex flex-col gap-2\">\n          <span className=\"text-lg\">{tier.name}</span>\n          <span className=\"text-sm text-muted-foreground\">\n            {tier.description}\n          </span>\n          <div className=\"mt-2\">\n            <span className=\"text-4xl font-bold\">${tier.price}</span>\n            <span className=\"text-sm text-muted-foreground\">/month</span>\n          </div>\n        </CardTitle>\n        <Button className=\"w-full\">Get Started</Button>\n      </CardHeader>\n      <CardContent>\n        <p className=\"font-medium text-lg mb-4\">What's included:</p>\n        <ul className=\"space-y-2\">\n          {tier.features.map((feature, index) => (\n            <li key={index} className=\"flex items-center gap-2\">\n              {feature.included ? (\n                <Check className=\"h-5 w-5 text-primary\" />\n              ) : (\n                <X className=\"h-5 w-5 text-destructive\" />\n              )}\n              <span className=\"text-muted-foreground\">{feature.name}</span>\n            </li>\n          ))}\n        </ul>\n      </CardContent>\n    </Card>\n  );\n};\n\nexport const PricingFour = () => {\n  return (\n    <div className=\"container py-12\">\n      <div className=\"flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-2xl mx-auto\">\n        <h2 className=\"text-center lg:text-center text-3xl md:text-4xl font-medium font-heading text-foreground \">\n          Choose the Plan That&apos;s Right for You\n        </h2>\n        <p className=\"mt-4 text-center text-sm text-muted-foreground max-w-lg\">\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam\n          maiores, facere inventore\n        </p>\n      </div>\n      <div className=\"grid gap-8 md:grid-cols-2 lg:grid-cols-3\">\n        {pricingData.map((tier, index) => (\n          <PricingCard key={index} tier={tier} />\n        ))}\n      </div>\n    </div>\n  );\n};\n\nexport default PricingFour;\n",
+      "type": "registry:component",
+      "target": ""
+    }
+  ],
+  "meta": {
+    "iframeHeight": "740px"
+  },
+  "categories": [
+    "pricing"
+  ]
+}

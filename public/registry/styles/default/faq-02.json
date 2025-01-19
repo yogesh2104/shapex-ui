@@ -1,0 +1,35 @@
+{
+  "name": "faq-02",
+  "type": "registry:block",
+  "description": "A FAQs.",
+  "registryDependencies": [
+    "badge",
+    "input"
+  ],
+  "files": [
+    {
+      "path": "blocks/faq-02/page.tsx",
+      "content": "import FAQTwo from \"@/registry/default/blocks/faq-02/components/faq-two\";\n\nexport default function Page() {\n  return (\n    <div className=\"md:container mx-auto\">\n      <FAQTwo />\n    </div>\n  );\n}\n",
+      "type": "registry:page",
+      "target": "app/faq/page.tsx"
+    },
+    {
+      "path": "blocks/faq-02/components/faq-two.tsx",
+      "content": "import { Badge } from \"@/registry/default/ui/badge\";\nimport { Input } from \"@/registry/default/ui/input\";\nimport { Search } from \"lucide-react\";\nimport { FAQ_SECTIONS } from \"./data\";\nimport {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/registry/default/blocks/faq-02/components/accordion\";\n\nconst FAQTwo = () => {\n  return (\n    <div className=\"w-full mx-auto p-6\">\n      <div className=\" rounded-lg border p-6 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]\">\n        <div className=\"mb-4\">\n          <Badge\n            variant={\"outline\"}\n            className=\"inline-flex items-center rounded-full border px-4 py-1 text-sm font-medium\"\n          >\n            FAQs\n          </Badge>\n        </div>\n\n        <h1 className=\"text-4xl font-mono font-medium mb-6\">\n          What can we help you find?\n        </h1>\n\n        <div className=\"relative max-w-md\">\n          <Input\n            type=\"text\"\n            className=\"w-full px-10 py-2 border rounded-md\"\n            placeholder=\"Search\"\n          />\n          <Search className=\"absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5\" />\n        </div>\n      </div>\n\n      <div className=\"grid md:grid-cols-2 gap-8 mt-8\">\n        {FAQ_SECTIONS?.map((faq) => (\n          <Accordion key={faq?.id} type=\"multiple\" defaultValue={[faq.id]}>\n            <AccordionItem key={faq.id} value={faq.id}>\n              <AccordionTrigger className=\"text-left hover:no-underline\">\n                {faq.question}\n              </AccordionTrigger>\n              <AccordionContent>{faq.answer}</AccordionContent>\n            </AccordionItem>\n          </Accordion>\n        ))}\n      </div>\n    </div>\n  );\n};\n\nexport default FAQTwo;\n",
+      "type": "registry:component",
+      "target": ""
+    },
+    {
+      "path": "blocks/faq-02/components/accordion.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport * as AccordionPrimitive from \"@radix-ui/react-accordion\";\nimport { ChevronDown, Minus } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst Accordion = AccordionPrimitive.Root;\n\nconst AccordionItem = React.forwardRef<\n  React.ElementRef<typeof AccordionPrimitive.Item>,\n  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>\n>(({ className, ...props }, ref) => (\n  <AccordionPrimitive.Item\n    ref={ref}\n    className={cn(\"border-b\", className)}\n    {...props}\n  />\n));\nAccordionItem.displayName = \"AccordionItem\";\n\nconst AccordionTrigger = React.forwardRef<\n  React.ElementRef<typeof AccordionPrimitive.Trigger>,\n  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>\n>(({ className, children, ...props }, ref) => (\n  <AccordionPrimitive.Header className=\"flex\">\n    <AccordionPrimitive.Trigger\n      ref={ref}\n      className={cn(\n        \"flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=closed]>svg]:hidden\",\n        className,\n      )}\n      {...props}\n    >\n      {children}\n      <Minus className=\"h-4 w-4 shrink-0 transition-transform duration-200\" />\n    </AccordionPrimitive.Trigger>\n  </AccordionPrimitive.Header>\n));\nAccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;\n\nconst AccordionContent = React.forwardRef<\n  React.ElementRef<typeof AccordionPrimitive.Content>,\n  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>\n>(({ className, children, ...props }, ref) => (\n  <AccordionPrimitive.Content\n    ref={ref}\n    className=\"overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down\"\n    {...props}\n  >\n    <div className={cn(\"pb-4 pt-0\", className)}>{children}</div>\n  </AccordionPrimitive.Content>\n));\n\nAccordionContent.displayName = AccordionPrimitive.Content.displayName;\n\nexport { Accordion, AccordionItem, AccordionTrigger, AccordionContent };\n",
+      "type": "registry:component",
+      "target": ""
+    }
+  ],
+  "meta": {
+    "iframeHeight": "700px"
+  },
+  "categories": [
+    "faq"
+  ]
+}

@@ -70,6 +70,7 @@ module.exports = {
 			marquee: "marquee var(--duration) linear infinite",
         	"marquee-vertical": "marquee-vertical var(--duration) linear infinite",
 			spotlight: "spotlight 2s ease .75s 1 forwards",
+			'shake': 'shake 0.82s cubic-bezier(.36,.07,.19,.97) both',
 		},
 		keyframes: {
 			spin: {
@@ -94,6 +95,20 @@ module.exports = {
 				  transform: "translate(-50%,-40%) scale(1)",
 				},
 			},
+			'shake' : {
+				'10%, 90%': {
+					transform: 'translate3d(-1px, 0, 0)'
+				},
+				'20%, 80%' : {
+					transform: 'translate3d(2px, 0, 0)'
+				},
+				'30%, 50%, 70%': {
+					transform: 'translate3d(-4px, 0, 0)'
+				},
+				'40%, 60%': {
+					transform: 'translate3d(4px, 0, 0)'
+				}
+            }
 		},
   	}
   },

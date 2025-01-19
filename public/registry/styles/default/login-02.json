@@ -1,0 +1,37 @@
+{
+  "name": "login-02",
+  "type": "registry:block",
+  "description": "A simple login form.",
+  "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "blocks/login-02/page.tsx",
+      "content": "import { LoginFormTwo } from \"@/registry/default/blocks/login-02/components/login-form-two\";\r\n\r\nexport default function Page() {\r\n  return (\r\n    <div className=\"flex w-full items-center justify-center p-3\">\r\n      <div className=\"w-full max-w-md\">\r\n        <LoginFormTwo />\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:page",
+      "target": "app/login/page.tsx"
+    },
+    {
+      "path": "blocks/login-02/components/login-form-two.tsx",
+      "content": "import Link from \"next/link\";\nimport Logo from \"@/components/logo\";\nimport GoogleLogo from \"./google-logo\";\nimport { Input } from \"@/registry/default/ui/input\"; // npx shadcn@latest add input\nimport { Button } from \"@/registry/default/ui/button\"; // npx shadcn@latest add button\nimport { Label } from \"@/registry/default/ui/label\"; // npx shadcn@latest add label\nimport { Separator } from \"@/registry/default/ui/separator\"; // npx shadcn@latest add separator\nimport { Card, CardContent } from \"@/registry/default/ui/card\"; // npx shadcn@latest add card\n\nexport function LoginFormTwo({\n  className,\n}: React.ComponentPropsWithoutRef<\"div\">) {\n  return (\n    <div\n      className={`flex justify-center items-center min-h-[calc(100vh-3rem)] ${className}`}\n    >\n      <Card className=\"w-full max-w-md rounded-lg shadow-lg\">\n        <CardContent className=\"p-8\">\n          <div className=\"flex flex-col items-center\">\n            <Logo />\n            <p className=\"mt-4 text-2xl font-semibold \">Welcome Back</p>\n            <p className=\"mt-2 text-sm \">Login to continue to your account</p>\n          </div>\n          <form className=\"mt-6 space-y-5\">\n            <div>\n              <Label htmlFor=\"email\" className=\"\">\n                Email Address\n              </Label>\n              <Input\n                id=\"email\"\n                type=\"email\"\n                placeholder=\"Enter your email\"\n                className=\"mt-1 w-full\"\n              />\n            </div>\n            <div>\n              <Label htmlFor=\"password\" className=\"\">\n                Password\n              </Label>\n              <Input\n                id=\"password\"\n                type=\"password\"\n                placeholder=\"Enter your password\"\n                className=\"mt-1 w-full\"\n              />\n            </div>\n            <Button\n              type=\"submit\"\n              className=\"w-full bg-primary hover:bg-primary-dark focus:ring-2 focus:ring-primary focus:ring-offset-2\"\n            >\n              Continue with Email\n            </Button>\n            <div className=\"my-7 w-full flex items-center justify-center overflow-hidden\">\n              <Separator />\n              <span className=\"text-sm px-2\">OR</span>\n              <Separator />\n            </div>\n            <Button className=\"w-full flex items-center justify-center gap-2 border border-gray-300 text-black  bg-white  hover:bg-gray-100 focus:ring-2 focus:ring-gray-300 focus:ring-offset-2\">\n              <GoogleLogo />\n              Continue with Google\n            </Button>\n          </form>\n          <div className=\"mt-6 text-center\">\n            <Link\n              href=\"#\"\n              className=\"text-sm text-primary underline hover:text-primary-dark\"\n            >\n              Forgot your password?\n            </Link>\n            <p className=\"mt-2 text-sm \">\n              Don&apos;t have an account?{\" \"}\n              <Link\n                href=\"#\"\n                className=\"font-medium text-primary underline hover:text-primary-dark\"\n              >\n                Create one\n              </Link>\n            </p>\n          </div>\n        </CardContent>\n      </Card>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": ""
+    },
+    {
+      "path": "blocks/login-02/components/google-logo.tsx",
+      "content": "export default function GoogleLogo() {\n  return (\n    <svg\n      width=\"1.2em\"\n      height=\"1.2em\"\n      id=\"icon-google\"\n      viewBox=\"0 0 16 16\"\n      fill=\"none\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      className=\"inline-block shrink-0 align-sub text-[inherit] size-lg\"\n    >\n      <g clipPath=\"url(#clip0)\">\n        <path\n          d=\"M15.6823 8.18368C15.6823 7.63986 15.6382 7.0931 15.5442 6.55811H7.99829V9.63876H12.3194C12.1401 10.6323 11.564 11.5113 10.7203 12.0698V14.0687H13.2983C14.8122 12.6753 15.6823 10.6176 15.6823 8.18368Z\"\n          fill=\"#4285F4\"\n        ></path>\n        <path\n          d=\"M7.99812 16C10.1558 16 11.9753 15.2915 13.3011 14.0687L10.7231 12.0698C10.0058 12.5578 9.07988 12.8341 8.00106 12.8341C5.91398 12.8341 4.14436 11.426 3.50942 9.53296H0.849121V11.5936C2.2072 14.295 4.97332 16 7.99812 16Z\"\n          fill=\"#34A853\"\n        ></path>\n        <path\n          d=\"M3.50665 9.53295C3.17154 8.53938 3.17154 7.4635 3.50665 6.46993V4.4093H0.849292C-0.285376 6.66982 -0.285376 9.33306 0.849292 11.5936L3.50665 9.53295Z\"\n          fill=\"#FBBC04\"\n        ></path>\n        <path\n          d=\"M7.99812 3.16589C9.13867 3.14825 10.241 3.57743 11.067 4.36523L13.3511 2.0812C11.9048 0.723121 9.98526 -0.0235266 7.99812 -1.02057e-05C4.97332 -1.02057e-05 2.2072 1.70493 0.849121 4.40932L3.50648 6.46995C4.13848 4.57394 5.91104 3.16589 7.99812 3.16589Z\"\n          fill=\"#EA4335\"\n        ></path>\n      </g>\n      <defs>\n        <clipPath id=\"clip0\">\n          <rect width=\"15.6825\" height=\"16\" fill=\"white\"></rect>\n        </clipPath>\n      </defs>\n    </svg>\n  );\n}\n",
+      "type": "registry:component",
+      "target": ""
+    }
+  ],
+  "meta": {
+    "iframeHeight": "625px"
+  },
+  "categories": [
+    "login"
+  ]
+}

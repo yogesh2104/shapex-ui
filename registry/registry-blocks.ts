@@ -24,10 +24,11 @@ export const blocks: Registry = [
     description: "The Article Two Section for content presentation.",
     type: "registry:block",
     registryDependencies: ["card", "badge", "separator", "scroll-area"],
+    dependencies:["framer-motion"],
     files: [
       {
         path: "blocks/article-02/page.tsx",
-        target: "app/article/page.tsx",
+        target: "shapexui/article-02.tsx",
         type: "registry:page",
       },
       {

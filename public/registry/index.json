@@ -69,6 +69,19 @@
     ]
   },
   {
+    "name": "avatar",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-avatar"
+    ],
+    "files": [
+      {
+        "path": "ui/avatar.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
     "name": "badge",
     "type": "registry:ui",
     "files": [
@@ -119,6 +132,16 @@
     ]
   },
   {
+    "name": "carousel",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/carousel.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
     "name": "checkbox",
     "type": "registry:ui",
     "dependencies": [
@@ -161,6 +184,23 @@
     ]
   },
   {
+    "name": "chart",
+    "type": "registry:ui",
+    "dependencies": [
+      "recharts",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "card"
+    ],
+    "files": [
+      {
+        "path": "ui/chart.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
     "name": "dialog",
     "type": "registry:ui",
     "dependencies": [
@@ -182,6 +222,19 @@
     "files": [
       {
         "path": "ui/dropdown-menu.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "hover-card",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-hover-card"
+    ],
+    "files": [
+      {
+        "path": "ui/hover-card.tsx",
         "type": "registry:ui"
       }
     ]
@@ -231,6 +284,19 @@
     "files": [
       {
         "path": "ui/navigation-menu.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "progress",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-progress"
+    ],
+    "files": [
+      {
+        "path": "ui/progress.tsx",
         "type": "registry:ui"
       }
     ]
@@ -359,6 +425,16 @@
     "files": [
       {
         "path": "ui/switch.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "table",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/table.tsx",
         "type": "registry:ui"
       }
     ]
