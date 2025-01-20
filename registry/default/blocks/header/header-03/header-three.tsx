@@ -123,7 +123,7 @@ const DesktopNav = () => (
   </NavigationMenu>
 );
 
-const HeaderThree = () => {
+const Header = () => {
   const [scroll, setScroll] = useState(false);
 
   const handleScroll = () => {
@@ -163,5 +163,16 @@ const HeaderThree = () => {
     </header>
   );
 };
+
+
+// this is only for show on shapexui you can remove as you need
+const HeaderThree=()=>{
+  return(
+    <div className="container mx-auto my-2"> 
+      <Header/>
+    </div>
+  )
+}
+
 
 export default HeaderThree;

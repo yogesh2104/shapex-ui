@@ -7,7 +7,7 @@ import { Label } from "@/registry/default/ui/label";
 import { Separator } from "@/registry/default/ui/separator";
 import { Card, CardContent } from "@/registry/default/ui/card";
 
-export function LoginFormTwo({
+function Login({
   className,
 }: React.ComponentPropsWithoutRef<"div">) {
   return (
@@ -82,3 +82,17 @@ export function LoginFormTwo({
     </div>
   );
 }
+
+
+// this is only for show on shapexui you can remove as you need
+const LoginForm=()=>{
+  return(
+    <div className="flex w-full items-center justify-center mt-4">
+      <div className="w-full max-w-sm">
+        <Login />
+      </div>
+  </div>
+  )
+}
+
+export default LoginForm

@@ -489,7 +489,7 @@ export const blocks: Registry = [
         target:"components/shapexui/logo.tsx"
       },
       {
-        path: "blocks/logo-01/components/marquee.tsx",
+        path: "blocks/logo/logo-01/marquee.tsx",
         type: "registry:component",
         target:"components/shapexui/marquee.tsx"
 
@@ -512,12 +512,12 @@ export const blocks: Registry = [
         target:"components/shapexui/logo.tsx"
       },
       {
-        path: "blocks/logo-02/components/marquee.tsx",
+        path: "blocks/logo/logo-02/marquee.tsx",
         type: "registry:component",
         target:"components/shapexui/marquee.tsx"
       },
       {
-        path: "blocks/logo-02/components/tailwind.config.ts",
+        path: "blocks/logo/logo-02/tailwind.config.ts",
         type: "registry:lib",
       },
     ],
@@ -556,12 +556,12 @@ export const blocks: Registry = [
     dependencies:["framer-motion"],
     files: [
       {
-        path: "blocks/logo-03/components/logo-three.tsx",
+        path: "blocks/logo/logo-03/logo-three.tsx",
         type: "registry:component",
         target:"components/shapexui/logo.tsx"
       },
       {
-        path: "blocks/logo-03/components/logo-slider.tsx",
+        path: "blocks/logo/logo-03/logo-slider.tsx",
         type: "registry:component",
         target:"components/shapexui/logo-slider.tsx"
       },
@@ -978,7 +978,7 @@ export const blocks: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "blocks/team-01/components/team-one.tsx",
+        path: "blocks/team/team-01/team-one.tsx",
         type: "registry:component",
         target:"components/shapexui/team.tsx"
       },

@@ -1,0 +1,64 @@
+{
+  "name": "logo-02",
+  "type": "registry:block",
+  "description": "logo-cloud block",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "blocks/logo/logo-02/logo-two.tsx",
+      "content": "import React from \"react\";\nimport { Button } from \"@/components/ui/button\";\nimport { ChevronRight } from \"lucide-react\";\nimport Marquee from \"./marquee\";\n\nconst LogoTwo = () => {\n  return (\n    <section className=\"py-16 rounded-xl bg-gradient-to-b from-gray-900 via-gray-800 to-black\">\n      <div className=\"container mx-auto px-6 lg:px-12\">\n        <div className=\"flex flex-col items-center text-center lg:text-left lg:items-start lg:flex-row\">\n          <div className=\"lg:w-1/3\">\n            <h2 className=\"text-white text-4xl font-semibold leading-tight\">\n              Trusted by companies <br />\n              <span className=\"p-2 italic text-4xl font-sans font-bold bg-gradient-to-r from-pink-500 via-pink-400 to-pink-300 bg-clip-text text-transparent\">\n                all over the world\n              </span>\n            </h2>\n            <Button\n              variant=\"outline\"\n              className=\"mt-8 flex items-center space-x-2\"\n            >\n              <span>Learn More</span>\n              <ChevronRight className=\"h-5 w-5\" />\n            </Button>\n          </div>\n\n          <div className=\"lg:w-2/3 mt-12 lg:mt-0\">\n            <div className=\"grid gap-6\">\n              <Marquee\n                pauseOnHover\n                className=\"border rounded-lg shadow-lg bg-gray-50 p-4\"\n              >\n                {[1, 2, 3, 4, 5].map((num, index) => (\n                  <div\n                    key={index}\n                    className=\"flex items-center justify-center gap-10 [&_svg]:mr-10\"\n                  >\n                    <img\n                      src={`/logo/logo-${num}.svg`}\n                      alt={`Logo ${index + 1}`}\n                      className=\"h-12 w-auto opacity-80 hover:opacity-100 transition duration-200\"\n                    />\n                  </div>\n                ))}\n              </Marquee>\n              <Marquee\n                pauseOnHover\n                reverse\n                speed={20}\n                className=\"border rounded-lg shadow-lg bg-gray-50 p-4\"\n              >\n                {[6, 7, 8, 9, 10].map((num, index) => (\n                  <div\n                    key={index}\n                    className=\"flex items-center justify-center gap-10\"\n                  >\n                    <img\n                      src={`/logo/logo-${num}.svg`}\n                      alt={`Logo ${index + 1}`}\n                      className=\"h-12 w-auto opacity-80 hover:opacity-100 transition duration-200\"\n                    />\n                  </div>\n                ))}\n              </Marquee>\n              <Marquee\n                pauseOnHover\n                speed={10}\n                className=\"border rounded-lg shadow-lg bg-gray-50 p-4\"\n              >\n                {[11, 12, 13, 14].map((num, index) => (\n                  <div key={index} className=\"flex items-center justify-center\">\n                    <img\n                      src={`/logo/logo-${num}.svg`}\n                      alt={`Logo ${index + 1}`}\n                      className=\"h-12 w-auto opacity-80 hover:opacity-100 transition duration-200\"\n                    />\n                  </div>\n                ))}\n              </Marquee>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport default LogoTwo;\n",
+      "type": "registry:component",
+      "target": "components/shapexui/logo.tsx"
+    },
+    {
+      "path": "blocks/logo/logo-02/marquee.tsx",
+      "content": "import { cn } from \"@/registry/default/lib/utils\";\nimport { ComponentProps, CSSProperties } from \"react\";\n\ninterface MarqueeProps extends ComponentProps<\"div\"> {\n  className?: string;\n  reverse?: boolean;\n  pauseOnHover?: boolean;\n  children?: React.ReactNode;\n  vertical?: boolean;\n  repeat?: number;\n  speed?: number;\n  gap?: string;\n}\n\nexport default function Marquee({\n  className,\n  reverse,\n  pauseOnHover = false,\n  children,\n  vertical = false,\n  repeat = 4,\n  speed = 40,\n  gap = \"1rem\",\n  ...props\n}: MarqueeProps) {\n  return (\n    <div\n      {...props}\n      className={cn(\n        \"group flex overflow-hidden p-2\",\n        {\n          \"flex-row\": !vertical,\n          \"flex-col\": vertical,\n        },\n        className,\n      )}\n      style={\n        {\n          \"--duration\": `${speed}s`,\n          \"--gap\": gap,\n        } as React.CSSProperties\n      }\n    >\n      {Array(repeat)\n        .fill(0)\n        .map((_, i) => (\n          <div\n            key={i}\n            className={cn(\"flex shrink-0 justify-around\", {\n              \"animate-marquee flex-row\": !vertical,\n              \"animate-marquee-vertical flex-col\": vertical,\n              \"group-hover:[animation-play-state:paused]\": pauseOnHover,\n              \"[animation-direction:reverse]\": reverse,\n            })}\n            style={{ gap }}\n          >\n            {children}\n          </div>\n        ))}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/shapexui/marquee.tsx"
+    },
+    {
+      "path": "blocks/logo/logo-02/tailwind.config.ts",
+      "content": "module.exports = {\n  theme: {\n    extend: {\n      animation: {\n        marquee: \"marquee var(--duration) linear infinite\",\n        \"marquee-vertical\": \"marquee-vertical var(--duration) linear infinite\",\n      },\n      keyframes: {\n        marquee: {\n          from: { transform: \"translateX(0)\" },\n          to: { transform: \"translateX(calc(-100% - var(--gap)))\" },\n        },\n        \"marquee-vertical\": {\n          from: { transform: \"translateY(0)\" },\n          to: { transform: \"translateY(calc(-100% - var(--gap)))\" },\n        },\n      },\n    },\n  },\n};\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {
+          "animation": {
+            "marquee": "marquee var(--duration) linear infinite",
+            "marquee-vertical": "marquee-vertical var(--duration) linear infinite"
+          },
+          "keyframes": {
+            "marquee": {
+              "from": {
+                "transform": "translateX(0)"
+              },
+              "to": {
+                "transform": "translateX(calc(-100% - var(--gap)))"
+              }
+            },
+            "marquee-vertical": {
+              "from": {
+                "transform": "translateY(0)"
+              },
+              "to": {
+                "transform": "translateY(calc(-100% - var(--gap)))"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "iframeHeight": "460px"
+  },
+  "categories": [
+    "company-logo"
+  ]
+}

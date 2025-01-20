@@ -10,7 +10,7 @@ import {
 import { Input } from "@/registry/default/ui/input";
 import { Label } from "@/registry/default/ui/label";
 
-export function LoginForm({
+function Login({
   className,
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
@@ -66,3 +66,16 @@ export function LoginForm({
     </div>
   );
 }
+
+// this is only for show on shapexui you can remove as you need
+const LoginForm=()=>{
+  return(
+    <div className="flex w-full items-center justify-center p-6 md:p-10">
+      <div className="w-full max-w-sm">
+        <Login />
+      </div>
+  </div>
+  )
+}
+
+export default LoginForm

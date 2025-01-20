@@ -88,7 +88,7 @@ const itemVariants = {
 
 const RoadmapThree = () => {
   return (
-    <div className="max-w-7xl p-2">
+    <div className="container mx-auto p-2 my-10 text-center">
       <div className="text-center mb-16">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
@@ -114,7 +114,7 @@ const RoadmapThree = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:grid-8 gap-4 gap-y-10 place-items-center"
       >
         {roadmapData.map((phase, phaseIndex) => (
           <motion.div

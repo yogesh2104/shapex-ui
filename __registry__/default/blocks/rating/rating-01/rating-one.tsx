@@ -205,19 +205,24 @@ const StarRating: React.FC<StarRatingProps> = ({
 
 const RatingOne = () => {
   return (
-    <div className="relative">
-      <div className="w-full space-x-5 space-y-5">
-        <h1 className="text-2xl font-bold text-center">
-          Share Your Experience
-        </h1>
-        <p className="text-center text-gray-500">
-          How was your search experience with our services?
-        </p>
-        <StarRating
-          onChange={(rating) => console.log("Star rating:", rating)}
-        />
+    <div className="mt-10 flex items-center justify-center">
+      <div className="relative w-full max-w-2xl mx-auto">
+        <div className="relative">
+          <div className="w-full space-x-5 space-y-5">
+            <h1 className="text-2xl font-bold text-center">
+              Share Your Experience
+            </h1>
+            <p className="text-center text-gray-500">
+              How was your search experience with our services?
+            </p>
+            <StarRating
+              onChange={(rating) => console.log("Star rating:", rating)}
+            />
+          </div>
+        </div>
       </div>
     </div>
+    
   );
 };
 

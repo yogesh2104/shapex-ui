@@ -42,7 +42,7 @@ const listItemVariants = {
   opened: { x: 0, opacity: 1 },
 };
 
-const HeaderFour: React.FC = () => {
+const Header: React.FC = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -164,5 +164,15 @@ const HeaderFour: React.FC = () => {
     </header>
   );
 };
+
+
+// this is only for show on shapexui you can remove as you need
+const HeaderFour=()=>{
+  return(
+    <div className="container mx-auto my-2"> 
+      <Header/>
+    </div>
+  )
+}
 
 export default HeaderFour;

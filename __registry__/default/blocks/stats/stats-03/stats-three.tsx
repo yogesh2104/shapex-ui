@@ -1,8 +1,44 @@
 import { Button } from "@/registry/default/ui/button";
 import { Card } from "@/registry/default/ui/card";
 import { Database, Eye, Gauge, Play, Users } from "lucide-react";
+import { ReactNode } from "react";
+
+interface Stat {
+  value: string;
+  title: string;
+  icon: ReactNode;
+}
+
+interface StatsGridProps {
+  stats: Stat[];
+}
+
+const StatisticCard: React.FC<Stat> = ({ value, title, icon }) => (
+  <div className="space-y-2">
+    {icon}
+    <div className="text-3xl font-bold">{value}</div>
+    <p className="text-sm text-muted-foreground">{title}</p>
+  </div>
+);
+
+const StatsGrid: React.FC<StatsGridProps> = ({ stats }) => (
+  <div className="grid grid-cols-2 gap-8 place-items-center">
+    {stats.map((stat, index) => (
+      <StatisticCard key={index} {...stat} />
+    ))}
+  </div>
+);
+
 
 const StatsThree = () => {
+
+  const statsData: Stat[] = [
+    { value: "200%",title: "More Speed",icon: <Database className="h-5 w-5 text-muted-foreground" />},
+    { value: "21.2K", title: "Total Ratings", icon: <Eye className="h-5 w-5 text-muted-foreground" />},
+    { value: "10X", title: "Efficiency Level", icon: <Gauge className="h-5 w-5 text-muted-foreground" /> },
+    { value: "1M", title: "Total Users", icon: <Users className="h-5 w-5 text-muted-foreground" /> },
+  ];
+
   return (
     <div className="w-full space-y-8 py-6 px-2">
       <Card className="mx-auto max-w-6xl p-8 rounded-3xl">
@@ -17,28 +53,7 @@ const StatsThree = () => {
               pellentesque habitant.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-8">
-            <div className="space-y-2">
-              <Database className="h-5 w-5 text-muted-foreground" />
-              <div className="text-3xl font-bold">420%</div>
-              <p className="text-sm text-muted-foreground">Data Efficiency</p>
-            </div>
-            <div className="space-y-2">
-              <Eye className="h-5 w-5 text-muted-foreground" />
-              <div className="text-3xl font-bold">708+</div>
-              <p className="text-sm text-muted-foreground">Conversion Rate</p>
-            </div>
-            <div className="space-y-2">
-              <Gauge className="h-5 w-5 text-muted-foreground" />
-              <div className="text-3xl font-bold">1.82M</div>
-              <p className="text-sm text-muted-foreground">AI LLM Scale</p>
-            </div>
-            <div className="space-y-2">
-              <Users className="h-5 w-5 text-muted-foreground" />
-              <div className="text-3xl font-bold">3.23K</div>
-              <p className="text-sm text-muted-foreground">Total Users</p>
-            </div>
-          </div>
+          <StatsGrid stats={statsData}/>
         </div>
 
         <div className="grid mt-12">

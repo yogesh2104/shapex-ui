@@ -121,82 +121,84 @@ const StepsOne = () => {
   const totalSteps = steps.length;
 
   return (
-    <Card className="w-full max-w-3xl mx-auto">
-      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-7">
-        <div className="space-y-2">
-          <CardTitle className="text-2xl font-bold">Onboarding Guide</CardTitle>
-          <p className="text-muted-foreground">
-            Complete the steps to start collecting & display reviews effectively
-          </p>
-        </div>
-        <Switch
-          checked={enabled}
-          onCheckedChange={setEnabled}
-          className="ml-4"
-        />
-      </CardHeader>
-      <CardContent className="space-y-4">
-        <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-          <span>Step {expandedStep}</span>
-          <span>/</span>
-          <span>{totalSteps}</span>
-          <div className="flex-1 h-1 bg-muted rounded-full">
-            <div
-              className="h-full bg-primary rounded-full transition-all duration-300"
-              style={{ width: `${(expandedStep / totalSteps) * 100}%` }}
-            />
+    <div className="mt-10 flex items-center justify-center mb-10">
+      <Card className="w-full max-w-3xl mx-auto">
+        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-7">
+          <div className="space-y-2">
+            <CardTitle className="text-2xl font-bold">Onboarding Guide</CardTitle>
+            <p className="text-muted-foreground">
+              Complete the steps to start collecting & display reviews effectively
+            </p>
           </div>
-        </div>
-
-        <div className="space-y-4">
-          {steps.map((step) => (
-            <div
-              key={step.id}
-              className={cn(
-                "rounded-lg border bg-card transition-colors",
-                expandedStep === step.id && "bg-muted/50",
-              )}
-            >
+          <Switch
+            checked={enabled}
+            onCheckedChange={setEnabled}
+            className="ml-4"
+          />
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
+            <span>Step {expandedStep}</span>
+            <span>/</span>
+            <span>{totalSteps}</span>
+            <div className="flex-1 h-1 bg-muted rounded-full">
               <div
-                className="flex items-center gap-4 p-4 cursor-pointer"
-                onClick={() => setExpandedStep(step.id)}
-              >
-                <div className="flex-shrink-0">
-                  <div className="h-8 w-8 rounded-full bg-primary/10 text-primary flex items-center justify-center">
-                    <Check className="h-5 w-5" />
-                  </div>
-                </div>
-                <div className="flex-1 font-medium">{step.title}</div>
-                <ChevronDown
-                  className={cn(
-                    "h-5 w-5 text-muted-foreground/50 transition-transform",
-                    expandedStep === step.id && "rotate-180",
-                  )}
-                />
-              </div>
-
-              {expandedStep === step.id && step.content && (
-                <div className="px-16 pb-4 space-y-4">
-                  <ol className="list-decimal space-y-2">
-                    {step.content.steps.map((substep, index) => (
-                      <li key={index} className="text-muted-foreground">
-                        {substep}
-                      </li>
-                    ))}
-                  </ol>
-                  {step.content.buttonText && (
-                    <Button className="mt-4">
-                      {step.content.buttonText}
-                      {step.content.buttonIcon}
-                    </Button>
-                  )}
-                </div>
-              )}
+                className="h-full bg-primary rounded-full transition-all duration-300"
+                style={{ width: `${(expandedStep / totalSteps) * 100}%` }}
+              />
             </div>
-          ))}
-        </div>
-      </CardContent>
-    </Card>
+          </div>
+
+          <div className="space-y-4">
+            {steps.map((step) => (
+              <div
+                key={step.id}
+                className={cn(
+                  "rounded-lg border bg-card transition-colors",
+                  expandedStep === step.id && "bg-muted/50",
+                )}
+              >
+                <div
+                  className="flex items-center gap-4 p-4 cursor-pointer"
+                  onClick={() => setExpandedStep(step.id)}
+                >
+                  <div className="flex-shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                      <Check className="h-5 w-5" />
+                    </div>
+                  </div>
+                  <div className="flex-1 font-medium">{step.title}</div>
+                  <ChevronDown
+                    className={cn(
+                      "h-5 w-5 text-muted-foreground/50 transition-transform",
+                      expandedStep === step.id && "rotate-180",
+                    )}
+                  />
+                </div>
+
+                {expandedStep === step.id && step.content && (
+                  <div className="px-16 pb-4 space-y-4">
+                    <ol className="list-decimal space-y-2">
+                      {step.content.steps.map((substep, index) => (
+                        <li key={index} className="text-muted-foreground">
+                          {substep}
+                        </li>
+                      ))}
+                    </ol>
+                    {step.content.buttonText && (
+                      <Button className="mt-4">
+                        {step.content.buttonText}
+                        {step.content.buttonIcon}
+                      </Button>
+                    )}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+    </div>
   );
 };
 

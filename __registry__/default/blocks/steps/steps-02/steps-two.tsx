@@ -14,13 +14,14 @@ import { Label } from "@/registry/default/ui/label";
 import { Calendar } from "lucide-react";
 import { Textarea } from "@/registry/default/ui/textarea";
 import { Card, CardContent } from "@/registry/default/ui/card";
+import { cn } from "@/lib/utils";
 
 const StepsFormTwo = () => {
   const [currentStep, setCurrentStep] = useState(1);
 
   return (
-    <div className="min-h-screen border rounded-2xl p-6">
-      <div className="mx-auto max-w-3xl space-y-8">
+    <div className="flex items-center justify-center border rounded-2xl p-4 mx-10 my-6">
+      <div className="mx-auto w-full md:max-w-4xl space-y-3">
         <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold">Let&apos;s get you started</h1>
           <p className="text-muted-foreground">
@@ -267,7 +268,7 @@ function Step({
         {number}
       </div>
       <span
-        className={active ? "font-medium text-indigo-600" : "text-gray-500"}
+        className={cn("hidden md:block text-md",active ? "font-medium text-indigo-600" : "text-gray-500")}
       >
         {title}
       </span>

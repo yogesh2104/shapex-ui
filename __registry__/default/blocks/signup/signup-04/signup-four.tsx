@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { Flame, HeartHandshake } from "lucide-react";
+import { HeartHandshake } from "lucide-react";
 
 import { Button } from "@/registry/default/ui/button";
 import { Checkbox } from "@/registry/default/ui/checkbox";
 import { Input } from "@/registry/default/ui/input";
 import { Label } from "@/registry/default/ui/label";
+import Logo from "@/components/logo";   // remove with your logo
 
 const SignupFour = () => {
   return (
@@ -20,7 +21,8 @@ const SignupFour = () => {
         <main className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
           <div className="max-w-xl lg:max-w-3xl">
             <Link className="block text-blue-600" href="#">
-              <Flame className="size-10" />
+            {/* reomve this logo with your logo */}
+              <Logo/> 
             </Link>
 
             <h1 className="mt-6 text-2xl flex items-center gap-4 font-bold sm:text-3xl md:text-4xl">
@@ -111,7 +113,7 @@ const SignupFour = () => {
                 </p>
               </div>
 
-              <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
+              <div className="col-span-6 flex flex-col md:flex-row items-center justify-center md:justify-start sm:gap-4">
                 <Button className="px-10"> Create an account </Button>
 
                 <p className="mt-4 text-sm text-gray-500 sm:mt-0">

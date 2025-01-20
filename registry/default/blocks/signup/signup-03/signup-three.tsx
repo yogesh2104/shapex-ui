@@ -156,7 +156,7 @@ const SignupThree: React.FC = () => {
     placeholder: string = "",
   ) => (
     <div>
-      <Label htmlFor={field}>{label}</Label>
+      <Label htmlFor={field} className="text-black">{label}</Label>
       <div className={type === "password" ? "relative" : undefined}>
         <Input
           type={
@@ -167,7 +167,7 @@ const SignupThree: React.FC = () => {
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             handleInput(field, e.target.value)
           }
-          className={`mt-1 ${errors[field] ? "border-red-500 focus:ring-red-200" : ""} ${
+          className={`mt-1 bg-gray-100 focus-visible:ring-1 ring-offset-0 text-black border-ring  ${errors[field] ? "border-red-500" : ""} ${
             type === "password" ? "pr-10" : ""
           }`}
           placeholder={placeholder}
@@ -252,6 +252,7 @@ const SignupThree: React.FC = () => {
                 {renderInput("email", "Email", "email", "john@example.com")}
                 <Button
                   onClick={validateStep1}
+                  variant={"outline"}
                   className="w-full flex items-center justify-center gap-2"
                 >
                   Continue <ArrowRight className="size-4" />
