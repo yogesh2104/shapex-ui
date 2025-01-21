@@ -115,7 +115,7 @@ const steps: Step[] = [
   },
 ];
 
-const StepsOne = () => {
+const Steps = () => {
   const [expandedStep, setExpandedStep] = useState(1);
   const [enabled, setEnabled] = useState(false);
   const totalSteps = steps.length;
@@ -202,4 +202,4 @@ const StepsOne = () => {
   );
 };
 
-export default StepsOne;
+export default Steps;

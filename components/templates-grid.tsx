@@ -82,7 +82,7 @@ const PortfolioItem = ({ item }: { item: PortfolioItem }) => {
             <h3 className="text-white text-2xl font-bold">{item.title}</h3>
           </div>
         </motion.div>
-        <CardContent className="p-6">
+        <CardContent className="md:p-6">
           <motion.div
             initial={false}
             transition={{ duration: 0.3 }}
@@ -114,8 +114,8 @@ const PortfolioItem = ({ item }: { item: PortfolioItem }) => {
 export default function PortfolioGrid() {
   return (
     <section className="py-2">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {portfolioItems.map((item, index) => (
             <PortfolioItem key={index} item={item} />
           ))}

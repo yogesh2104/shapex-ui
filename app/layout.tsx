@@ -1,17 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Geist } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/provider/theme-provider";
-import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { siteInfo } from "@/config/site-info"
 import Script from "next/script";
-import { CSPostHogProvider } from "@/components/posthog-provider";
+import { JetBrains_Mono as FontMono } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { cn } from "@/lib/utils";
 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+export const fontSans = GeistSans;
+export const fontMono = FontMono({
   subsets: ["latin"],
+  variable: "--font-mono",
 });
+
 
 
 export const metadata: Metadata = {
@@ -94,8 +96,14 @@ export default function RootLayout({
       </Script>
       </head>
       <body
-        className={`${geistSans.variable} min-h-svh bg-background font-sans antialiased`}
+        className={cn(
+          "overflow-x-hidden scroll-smooth min-h-svh bg-background font-sans antialiased",
+          fontSans.variable,
+        )}
       >
+      {/* <body
+        className={`${fontMono.variable} min-h-svh bg-background font-sans antialiased`}
+      > */}
           <ThemeProvider 
             attribute="class"
             defaultTheme="dark"

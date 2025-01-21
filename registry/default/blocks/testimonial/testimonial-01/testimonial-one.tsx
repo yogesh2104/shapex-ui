@@ -67,7 +67,7 @@ const testimonials: Testimonial[] = [
   },
 ];
 
-const TestimonialOne = () => {
+const Testimonial = () => {
   return (
     <section className="py-12 bg-white ">
       <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -134,4 +134,4 @@ const TestimonialOne = () => {
   );
 };
 
-export default TestimonialOne;
+export default Testimonial;

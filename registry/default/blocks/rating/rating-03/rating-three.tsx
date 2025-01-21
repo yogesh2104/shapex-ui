@@ -27,7 +27,7 @@ interface Rating {
   value: number;
 }
 
-const RatingThree = () => {
+const Rating = () => {
   const ratings: Rating[] = [
     { label: "Reliability", value: 4.1 },
     { label: "Payout rating", value: 4.3 },
@@ -181,4 +181,4 @@ const RatingThree = () => {
   );
 };
 
-export default RatingThree;
+export default Rating;

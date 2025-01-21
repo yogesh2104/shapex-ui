@@ -25,7 +25,7 @@ const features = [
   },
 ];
 
-export default function FeatureThree() {
+const Feature=()=> {
   return (
     <section className="py-16 md:py-24 lg:py-28 bg-gradient-to-b from-background to-background/80">
       <div className="container px-4 md:px-6">
@@ -68,3 +68,5 @@ export default function FeatureThree() {
     </section>
   );
 }
+
+export default Feature

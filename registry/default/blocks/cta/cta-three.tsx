@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Lock } from "lucide-react";
 import { Button } from "@/registry/default/ui/button";
 
-const CallToActionThree = () => {
+const CallToAction = () => {
   return (
     <section className=" py-12 bg-gradient-to-br from-purple-700 via-indigo-800 to-blue-900 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
@@ -110,4 +110,4 @@ const CallToActionThree = () => {
   );
 };
 
-export default CallToActionThree;
+export default CallToAction;

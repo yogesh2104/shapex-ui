@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Menu, ShoppingCart, X } from "lucide-react";
 import Logo from "@/components/logo";
 
-const HeaderTwo = () => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -157,4 +157,4 @@ const HeaderTwo = () => {
   );
 };
 
-export default HeaderTwo;
+export default Header;

@@ -71,6 +71,7 @@ module.exports = {
         	"marquee-vertical": "marquee-vertical var(--duration) linear infinite",
 			spotlight: "spotlight 2s ease .75s 1 forwards",
 			'shake': 'shake 0.82s cubic-bezier(.36,.07,.19,.97) both',
+			"bg-shine": "bg-shine 8s linear infinite"
 		},
 		keyframes: {
 			spin: {
@@ -108,8 +109,19 @@ module.exports = {
 				'40%, 60%': {
 					transform: 'translate3d(4px, 0, 0)'
 				}
-            }
+            },
+			"bg-shine": {
+				"from": {
+					"backgroundPosition": "0 0"
+				},
+				"to": {
+					"backgroundPosition": "-200% 0"
+				}
+			}
 		},
+		transitionDuration: {
+			'2200': '2200ms',
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],

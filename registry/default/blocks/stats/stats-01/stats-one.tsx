@@ -17,7 +17,7 @@ const statsData: StatsData[] = [
   { value: "100%", label: "Client Satisfaction" },
 ];
 
-const StatsOne = () => {
+const Stats = () => {
   return (
     <section className="py-12 bg-gradient-to-b from-gray-50 to-white rounded-2xl">
       <div className="px-4 md:px-6">
@@ -70,4 +70,4 @@ const StatsOne = () => {
   );
 };
 
-export default StatsOne;
+export default Stats;

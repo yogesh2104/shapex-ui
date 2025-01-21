@@ -66,7 +66,7 @@ const testimonials: Testimonial[] = [
   },
 ];
 
-const TestimonialTwo = () => {
+const Testimonial = () => {
   return (
     <div className="container mx-auto ">
     <div className="min-h-screen w-full flex items-center justify-center">
@@ -96,4 +96,4 @@ const TestimonialTwo = () => {
   );
 };
 
-export default TestimonialTwo;
+export default Testimonial;

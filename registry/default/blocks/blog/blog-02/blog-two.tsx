@@ -13,7 +13,7 @@ import {
 } from "@/registry/default/ui/card";
 import MagazineHeader from "./blog-header";
 
-const BlogTwo = () => {
+const Blog = () => {
   return (
     <>
       <MagazineHeader />
@@ -60,7 +60,7 @@ const BlogTwo = () => {
   );
 };
 
-export default BlogTwo;
+export default Blog;
 
 interface BlogPost {
   title: string;

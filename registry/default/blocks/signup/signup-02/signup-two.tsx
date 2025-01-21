@@ -39,7 +39,7 @@ const PASSWORD_REQUIREMENTS = [
   { regex: /[!-\/:-@[-`{-~]/, text: "At least 1 special characters" },
 ] as const;
 
-const SignUpTwo = () => {
+const SignUp = () => {
   const [password, setPassword] = React.useState<string>("");
   const [isVisible, setIsVisible] = React.useState<boolean>(false);
 
@@ -249,4 +249,4 @@ const SignUpTwo = () => {
   );
 };
 
-export default SignUpTwo;
+export default SignUp;

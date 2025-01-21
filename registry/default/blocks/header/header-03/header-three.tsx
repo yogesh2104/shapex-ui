@@ -142,37 +142,28 @@ const Header = () => {
   }, []);
 
   return (
-    <header
-      className={cn(
-        "sticky top-2 inset-x-0 border rounded-full select-none",
-        scroll && "backdrop-blur-md",
-      )}
-    >
-      <div className="flex items-center justify-between h-16 px-4 max-w-7xl mx-auto">
-        <div className="flex items-center gap-4">
-          <Logo />
-          <DesktopNav />
+    <div className="container mx-auto my-2">
+      <header
+        className={cn(
+          "sticky top-2 inset-x-0 border rounded-full select-none",
+          scroll && "backdrop-blur-md",
+        )}
+      >
+        <div className="flex items-center justify-between h-16 px-4 max-w-7xl mx-auto">
+          <div className="flex items-center gap-4">
+            <Logo />
+            <DesktopNav />
+          </div>
+          <div className="flex items-center gap-4">
+            <Button variant="default" className="hidden md:inline-flex">
+              Request a proposal
+            </Button>
+            <MobileNav />
+          </div>
         </div>
-        <div className="flex items-center gap-4">
-          <Button variant="default" className="hidden md:inline-flex">
-            Request a proposal
-          </Button>
-          <MobileNav />
-        </div>
-      </div>
-    </header>
+      </header>
+    </div>
   );
 };
 
-
-// this is only for show on shapexui you can remove as you need
-const HeaderThree=()=>{
-  return(
-    <div className="container mx-auto my-2"> 
-      <Header/>
-    </div>
-  )
-}
-
-
-export default HeaderThree;
+export default Header;

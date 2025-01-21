@@ -28,7 +28,7 @@ const StatsGrid: React.FC<StatsGridProps> = ({ stats }) => (
   </div>
 );
 
-const StatsTwo = () => {
+const Stats = () => {
   const statsData: Stat[] = [
     { value: "200%",title: "More Speed",description: "Ut porttitor leo a diam sollicitudin." },
     { value: "21.2K", title: "Total Ratings", description: "Maecenas pharetra convallis posuere morbi." },
@@ -65,4 +65,4 @@ const StatsTwo = () => {
   );
 };
 
-export default StatsTwo;
+export default Stats;

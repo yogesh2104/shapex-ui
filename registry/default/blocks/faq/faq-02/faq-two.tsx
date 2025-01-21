@@ -73,7 +73,7 @@ const FAQ_SECTIONS = [
 ];
 
 
-const FAQTwo = () => {
+const FAQ = () => {
   return (
     <div className="w-full mx-auto p-6">
       <div className=" rounded-lg border p-6 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
@@ -116,4 +116,4 @@ const FAQTwo = () => {
   );
 };
 
-export default FAQTwo;
+export default FAQ;

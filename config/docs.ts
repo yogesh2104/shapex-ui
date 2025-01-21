@@ -28,6 +28,11 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
+          title: "Installation",
+          href: "/blocks/installation",
+          items: [],
+        },
+        {
           title: "Why ShapeX-UI",
           href: "/blocks/why-shapex-ui",
           items: [],

@@ -1377,7 +1377,7 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       categories: ["analytics"],
-      component: React.lazy(() => import("@/registry/default/blocks/analytics/page.tsx")),
+      component: React.lazy(() => import("@/registry/default/blocks/full-featured/analytics/page")),
       source: "__registry__/default/blocks/analytics/page.tsx",
       meta: {"iframeHeight":"820px"},
     },
@@ -1412,7 +1412,7 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       categories: ["e-commerce"],
-      component: React.lazy(() => import("@/registry/default/blocks/e-commerce/page.tsx")),
+      component: React.lazy(() => import("@/registry/default/blocks/full-featured/e-commerce/page")),
       source: "__registry__/default/blocks/e-commerce/page.tsx",
       meta: {"iframeHeight":"1100px"},
     },
@@ -1443,7 +1443,7 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       categories: ["file-manager"],
-      component: React.lazy(() => import("@/registry/default/blocks/file-management/page.tsx")),
+      component: React.lazy(() => import("@/registry/default/blocks/full-featured/file-management/page")),
       source: "__registry__/default/blocks/file-management/page.tsx",
       meta: {"iframeHeight":"700px"},
     },

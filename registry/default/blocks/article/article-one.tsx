@@ -7,7 +7,7 @@ import { Badge } from "@/registry/default/ui/badge";
 import { Separator } from "@/registry/default/ui/separator";
 import { ScrollArea } from "@/registry/default/ui/scroll-area";
 
-const ArticleOne = () => {
+const Article = () => {
   return (
     <ScrollArea className="h-[calc(100vh)]">
       <motion.div
@@ -126,4 +126,4 @@ const ArticleOne = () => {
   );
 };
 
-export default ArticleOne;
+export default Article;

@@ -6,7 +6,7 @@ import { UserImage } from "./user-image";
 import Link from "next/link";
 import { buttonVariants } from "@/registry/default/ui/button";
 
-const CallToActionTwo = () => {
+const CallToAction = () => {
   const people = [
     {
       id: 1,
@@ -146,4 +146,4 @@ const CallToActionTwo = () => {
   );
 };
 
-export default CallToActionTwo;
+export default CallToAction;

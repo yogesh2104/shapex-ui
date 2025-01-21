@@ -86,7 +86,7 @@ const itemVariants = {
   },
 };
 
-const RoadmapThree = () => {
+const Roadmap = () => {
   return (
     <div className="container mx-auto p-2 my-10 text-center">
       <div className="text-center mb-16">
@@ -151,4 +151,4 @@ const RoadmapThree = () => {
   );
 };
 
-export default RoadmapThree;
+export default Roadmap;

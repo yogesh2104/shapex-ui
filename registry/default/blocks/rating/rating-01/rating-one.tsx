@@ -203,7 +203,7 @@ const StarRating: React.FC<StarRatingProps> = ({
   );
 };
 
-const RatingOne = () => {
+const Rating = () => {
   return (
     <div className="mt-10 flex items-center justify-center">
       <div className="relative w-full max-w-2xl mx-auto">
@@ -226,4 +226,4 @@ const RatingOne = () => {
   );
 };
 
-export default RatingOne;
+export default Rating;

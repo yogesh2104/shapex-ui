@@ -43,6 +43,7 @@ const INITIAL_FORM_STATE: FormData = {
   passwordConfirm: "",
 };
 
+// I have use custom validation you can use zod for validation
 const validationRules: Record<keyof FormData, ValidationRule[]> = {
   firstName: [
     {
@@ -76,7 +77,7 @@ const validationRules: Record<keyof FormData, ValidationRule[]> = {
   ],
 };
 
-const SignupThree: React.FC = () => {
+const Signup: React.FC = () => {
   const [step, setStep] = useState<number>(1);
   const [showPassword, setShowPassword] = useState<boolean>(false);
   const [formData, setFormData] = useState<FormData>(INITIAL_FORM_STATE);
@@ -298,4 +299,4 @@ const SignupThree: React.FC = () => {
   );
 };
 
-export default SignupThree;
+export default Signup;

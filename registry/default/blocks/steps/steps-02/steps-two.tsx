@@ -16,65 +16,6 @@ import { Textarea } from "@/registry/default/ui/textarea";
 import { Card, CardContent } from "@/registry/default/ui/card";
 import { cn } from "@/lib/utils";
 
-const StepsFormTwo = () => {
-  const [currentStep, setCurrentStep] = useState(1);
-
-  return (
-    <div className="flex items-center justify-center border rounded-2xl p-4 mx-10 my-6">
-      <div className="mx-auto w-full md:max-w-4xl space-y-3">
-        <div className="text-center space-y-2">
-          <h1 className="text-3xl font-bold">Let&apos;s get you started</h1>
-          <p className="text-muted-foreground">
-            Enter the details to get going
-          </p>
-        </div>
-
-        <div className="flex items-center justify-center gap-4">
-          <Step number={1} title="General Details" active={currentStep === 1} />
-          <div className="h-px w-16 bg-gray-200" />
-          <Step number={2} title="Event Details" active={currentStep === 2} />
-          <div className="h-px w-16 bg-gray-200" />
-          <Step
-            number={3}
-            title="Pricing and Submit"
-            active={currentStep === 3}
-          />
-        </div>
-
-        <div className="space-y-6">
-          {currentStep === 1 && <GeneralDetailsStep />}
-          {currentStep === 2 && <EventDetailsStep />}
-          {currentStep === 3 && <PricingStep />}
-
-          <div className="flex justify-center gap-4 pt-6">
-            {currentStep > 1 && (
-              <Button
-                variant="outline"
-                className="w-32"
-                onClick={() => setCurrentStep((step) => step - 1)}
-              >
-                Previous
-              </Button>
-            )}
-            {currentStep < 3 ? (
-              <Button
-                className="w-32 bg-indigo-600 text-white hover:bg-indigo-700"
-                onClick={() => setCurrentStep((step) => step + 1)}
-              >
-                Next
-              </Button>
-            ) : (
-              <Button className="w-32 bg-green-600 hover:bg-green-700">
-                Submit
-              </Button>
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 function GeneralDetailsStep() {
   return (
     <div className="space-y-6">
@@ -276,4 +217,63 @@ function Step({
   );
 }
 
-export default StepsFormTwo;
+const StepsForm = () => {
+  const [currentStep, setCurrentStep] = useState(1);
+
+  return (
+    <div className="flex items-center justify-center border rounded-2xl p-4 mx-10 my-6">
+      <div className="mx-auto w-full md:max-w-4xl space-y-3">
+        <div className="text-center space-y-2">
+          <h1 className="text-3xl font-bold">Let&apos;s get you started</h1>
+          <p className="text-muted-foreground">
+            Enter the details to get going
+          </p>
+        </div>
+
+        <div className="flex items-center justify-center gap-4">
+          <Step number={1} title="General Details" active={currentStep === 1} />
+          <div className="h-px w-16 bg-gray-200" />
+          <Step number={2} title="Event Details" active={currentStep === 2} />
+          <div className="h-px w-16 bg-gray-200" />
+          <Step
+            number={3}
+            title="Pricing and Submit"
+            active={currentStep === 3}
+          />
+        </div>
+
+        <div className="space-y-6">
+          {currentStep === 1 && <GeneralDetailsStep />}
+          {currentStep === 2 && <EventDetailsStep />}
+          {currentStep === 3 && <PricingStep />}
+
+          <div className="flex justify-center gap-4 pt-6">
+            {currentStep > 1 && (
+              <Button
+                variant="outline"
+                className="w-32"
+                onClick={() => setCurrentStep((step) => step - 1)}
+              >
+                Previous
+              </Button>
+            )}
+            {currentStep < 3 ? (
+              <Button
+                className="w-32 bg-indigo-600 text-white hover:bg-indigo-700"
+                onClick={() => setCurrentStep((step) => step + 1)}
+              >
+                Next
+              </Button>
+            ) : (
+              <Button className="w-32 bg-green-600 hover:bg-green-700">
+                Submit
+              </Button>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default StepsForm;

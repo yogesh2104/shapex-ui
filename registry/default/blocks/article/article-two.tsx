@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const ArticleTwo = () => {
+const Article = () => {
   return (
     <div>
       <section className="py-12 sm:py-16 lg:py-20">
@@ -88,4 +88,4 @@ const ArticleTwo = () => {
   );
 };
 
-export default ArticleTwo;
+export default Article;

@@ -1,4 +1,4 @@
-import { AppSidebar } from "@/registry/default/blocks/analytics/components/app-sidebar"
+import { AppSidebar } from "@/registry/default/blocks/full-featured/analytics/components/app-sidebar"
 import { SidebarInset,SidebarProvider,SidebarTrigger } from "@/components/ui/sidebar"
 import { AnalyticsChart } from "./analytics-chart"
 import { Button } from "@/registry/default/ui/button"

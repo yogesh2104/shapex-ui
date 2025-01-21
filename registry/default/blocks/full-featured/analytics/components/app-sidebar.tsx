@@ -8,8 +8,8 @@ import {
   UserRound,
 } from "lucide-react"
 
-import { NavMain } from "@/registry/default/blocks/analytics/components/nav-main"
-import { NavUser } from "@/registry/default/blocks/analytics/components/nav-user"
+import { NavMain } from "@/registry/default/blocks/full-featured/analytics/components/nav-main"
+import { NavUser } from "@/registry/default/blocks/full-featured/analytics/components/nav-user"
 import {
   Sidebar,
   SidebarContent,

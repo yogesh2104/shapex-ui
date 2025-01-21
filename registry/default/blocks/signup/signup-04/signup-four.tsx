@@ -7,7 +7,7 @@ import { Input } from "@/registry/default/ui/input";
 import { Label } from "@/registry/default/ui/label";
 import Logo from "@/components/logo";   // remove with your logo
 
-const SignupFour = () => {
+const Signup = () => {
   return (
     <section className="bg-card">
       <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
@@ -132,4 +132,4 @@ const SignupFour = () => {
   );
 };
 
-export default SignupFour;
+export default Signup;

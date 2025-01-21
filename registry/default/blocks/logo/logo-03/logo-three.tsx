@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import LogoSlider from "./logo-slider";
 
-const LogoThree = () => {
+const Logo = () => {
   const companies = [
     "/logo/logo-20.svg",
     "/logo/logo-21.svg",
@@ -46,4 +46,4 @@ const LogoThree = () => {
   );
 };
 
-export default LogoThree
+export default Logo;

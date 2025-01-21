@@ -27,7 +27,7 @@ const footerLink = [
   },
 ];
 
-const FooterOne = () => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="relative border-t border-border pt-6 pb-8 px-4 sm:px-6 lg:px-8 w-full max-w-6xl mx-auto">
@@ -105,4 +105,4 @@ const FooterOne = () => {
   );
 };
 
-export default FooterOne;
+export default Footer;

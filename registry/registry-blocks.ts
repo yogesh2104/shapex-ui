@@ -38,7 +38,7 @@ export const blocks: Registry = [
     name: "blog-01",
     description: "Blog Grid View",
     type: "registry:block",
-    registryDependencies: ["button", "badge","input","select",],
+    registryDependencies: ["button", "badge","input","select","card"],
     dependencies:["framer-motion"],
     files: [
       {
