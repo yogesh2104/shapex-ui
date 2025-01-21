@@ -3,18 +3,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/provider/theme-provider";
 import { siteInfo } from "@/config/site-info"
 import Script from "next/script";
-import { JetBrains_Mono as FontMono } from "next/font/google";
-import { GeistSans } from "geist/font/sans";
 import { cn } from "@/lib/utils";
-
-
-export const fontSans = GeistSans;
-export const fontMono = FontMono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-});
-
-
+import { fontSans } from "@/components/font";
 
 export const metadata: Metadata = {
   title: {
@@ -101,9 +91,6 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-      {/* <body
-        className={`${fontMono.variable} min-h-svh bg-background font-sans antialiased`}
-      > */}
           <ThemeProvider 
             attribute="class"
             defaultTheme="dark"
@@ -116,8 +103,6 @@ export default function RootLayout({
             </div>
             {/* <TailwindIndicator/> */}
           </ThemeProvider>
-        {/* <CSPostHogProvider>
-        </CSPostHogProvider> */}
       </body>
     </html>
   );
