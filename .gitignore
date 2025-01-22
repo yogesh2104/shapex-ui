@@ -45,3 +45,5 @@ app/(view)/view/page.tsx
 info.txt
 ref.txt
 .env
+
+seo/shapexui.json

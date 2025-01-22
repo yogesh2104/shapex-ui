@@ -1,10 +1,62 @@
 import { BlockDisplay } from "@/components/block-display";
 import { BlockPagination } from "@/components/BlockPagination";
+import { siteInfo } from "@/config/site-info";
 import { getAllBlockIds } from "@/lib/blocks";
-import { registryCategories } from "@/registry/registry-categories";
+import { registryCategories, } from "@/registry/registry-categories";
 import { Clock, Sparkles } from "lucide-react";
 
 export const dynamicParams = false;
+
+function capitalizeFirstLetter(str: string): string {
+  if (!str) return "";
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+async function getDocFromParams({ params }: { params: Promise<{ slug: string[] }>}) {
+  const { slug } = await params;
+  const joinSlug = slug?.join("/") || ""
+  const doc = registryCategories.find((doc) => doc.slug === joinSlug)
+
+  if (!doc) {
+    return null
+  }
+
+  return doc
+}
+
+export async function generateMetadata({params,}: { params: Promise<{ slug: string[] }>}) {
+  const doc = await getDocFromParams({ params })
+
+  if (!doc) {
+    return {}
+  }
+
+  return {
+    title: `${capitalizeFirstLetter(doc.slug)} - shapex/ui`,
+    description: siteInfo.description,
+    openGraph: {
+      title: doc.slug,
+      description: siteInfo.description,
+      type: "article",
+      url: `https://www.shapexui.site/blocks/${doc.slug}`,
+      images: [
+        {
+          url: siteInfo.ogImage,
+          width: 1200,
+          height: 630,
+          alt: siteInfo.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: doc.slug,
+      description: siteInfo.description,
+      images: [siteInfo.ogImage],
+      creator: "@im_yogesh88",
+    },
+  }
+}
 
 export async function generateStaticParams() {
   return registryCategories.map((category) => ({
