@@ -10,51 +10,6 @@ import {
   SheetTitle,
 } from "@/registry/default/ui/sheet";
 
-const HeaderOne = () => {
-  return (
-    <header className="border-b">
-      <div className="flex items-center justify-between h-16 px-4 max-w-7xl mx-auto">
-        <Logo />
-        <nav className="hidden md:flex items-center gap-6">
-          <Link href="/" className="text-sm font-medium hover:text-gray-600">
-            Home
-          </Link>
-          <Link
-            href="/products"
-            className="text-sm font-medium hover:text-gray-600"
-          >
-            Products
-          </Link>
-          <Link
-            href="/resources"
-            className="text-sm font-medium hover:text-gray-600"
-          >
-            Resources
-          </Link>
-          <Link
-            href="/pricing"
-            className="text-sm font-medium hover:text-gray-600"
-          >
-            Pricing
-          </Link>
-          <Link
-            href="/blog"
-            className="text-sm font-medium hover:text-gray-600"
-          >
-            Blog
-          </Link>
-        </nav>
-
-        <div className="hidden md:flex items-center gap-4">
-          <Button variant="ghost">Log in</Button>
-          <Button>Sign up</Button>
-        </div>
-        <MobileMenu />
-      </div>
-    </header>
-  );
-};
-
 const MobileMenu = () => {
   return (
     <Sheet>
@@ -105,4 +60,49 @@ const MobileMenu = () => {
   );
 };
 
-export default HeaderOne;
+const Header = () => {
+  return (
+    <header className="border-b">
+      <div className="flex items-center justify-between h-16 px-4 max-w-7xl mx-auto">
+        <Logo />
+        <nav className="hidden md:flex items-center gap-6">
+          <Link href="/" className="text-sm font-medium hover:text-gray-600">
+            Home
+          </Link>
+          <Link
+            href="/products"
+            className="text-sm font-medium hover:text-gray-600"
+          >
+            Products
+          </Link>
+          <Link
+            href="/resources"
+            className="text-sm font-medium hover:text-gray-600"
+          >
+            Resources
+          </Link>
+          <Link
+            href="/pricing"
+            className="text-sm font-medium hover:text-gray-600"
+          >
+            Pricing
+          </Link>
+          <Link
+            href="/blog"
+            className="text-sm font-medium hover:text-gray-600"
+          >
+            Blog
+          </Link>
+        </nav>
+
+        <div className="hidden md:flex items-center gap-4">
+          <Button variant="ghost">Log in</Button>
+          <Button>Sign up</Button>
+        </div>
+        <MobileMenu />
+      </div>
+    </header>
+  );
+};
+
+export default Header;

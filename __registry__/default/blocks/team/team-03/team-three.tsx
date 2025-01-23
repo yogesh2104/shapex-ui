@@ -72,7 +72,7 @@ const TeamCard = ({
   );
 };
 
-const TeamThree = () => {
+const Team = () => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -130,4 +130,4 @@ const TeamThree = () => {
   );
 };
 
-export default TeamThree;
+export default Team;

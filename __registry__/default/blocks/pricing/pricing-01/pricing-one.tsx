@@ -28,7 +28,7 @@ interface PricingTier {
   gradient: string;
 }
 
-const PricingFour = () => {
+const Pricing = () => {
   const [isYearly, setIsYearly] = React.useState(false);
   const [sliderValue, setSliderValue] = React.useState(50);
 
@@ -202,4 +202,4 @@ const PricingFour = () => {
   );
 };
 
-export default PricingFour;
+export default Pricing;

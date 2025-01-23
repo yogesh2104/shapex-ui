@@ -75,7 +75,7 @@ const SocialIcon = ({
   </div>
 );
 
-const NewsletterOne = () => {
+const Newsletter = () => {
   return (
     <div className="relative py-10 bg-gray-50 flex items-center justify-center overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative">
@@ -122,4 +122,4 @@ const NewsletterOne = () => {
   );
 };
 
-export default NewsletterOne;
+export default Newsletter;

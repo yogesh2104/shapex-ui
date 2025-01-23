@@ -53,7 +53,7 @@ interface BlogPost {
  * Source: [https://ui.aceternity.com/components/expandable-card by Manu Arora]
  *
 */
-const BlogOne: React.FC = () => {
+const Blog: React.FC = () => {
   const [activePost, setActivePost] = useState<BlogPost | null>(null);
   const ref = useRef<HTMLDivElement>(null as unknown as HTMLDivElement);
   const id = useId();
@@ -180,7 +180,7 @@ const BlogOne: React.FC = () => {
   );
 };
 
-export default BlogOne;
+export default Blog;
 
 const blogPosts: BlogPost[] = [
   {

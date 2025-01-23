@@ -92,7 +92,7 @@ const getStatusIcon = (status: RoadmapItem["status"]) => {
   }
 };
 
-const RoadmapOne = () => {
+const Roadmap = () => {
   return (
     <div className="container mx-auto px-4 py-12">
       <motion.div
@@ -182,4 +182,4 @@ const RoadmapOne = () => {
   );
 };
 
-export default RoadmapOne;
+export default Roadmap;

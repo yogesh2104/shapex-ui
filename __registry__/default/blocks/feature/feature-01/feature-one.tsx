@@ -99,7 +99,7 @@ const FeatureCard: React.FC<{
   </Card>
 );
 
-const FeatureOne = ({
+const Feature = ({
   collapseDelay = 5000,
   ltr = false,
   linePosition = "left",
@@ -248,4 +248,4 @@ const FeatureOne = ({
   );
 };
 
-export default FeatureOne;
+export default Feature;

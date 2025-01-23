@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { UserCircle } from "lucide-react";
 
-const NewsletterThree = () => {
+const Newsletter = () => {
   return (
     <div className="relative w-full h-full flex items-center justify-center">
       <img
@@ -79,4 +79,4 @@ const NewsletterThree = () => {
   );
 };
 
-export default NewsletterThree;
+export default Newsletter;

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Marquee from "./marquee";
 
-const LogoTwo = () => {
+const Logo = () => {
   return (
     <section className="py-16 rounded-xl bg-gradient-to-b from-gray-900 via-gray-800 to-black">
       <div className="container mx-auto px-6 lg:px-12">
@@ -85,4 +85,4 @@ const LogoTwo = () => {
   );
 };
 
-export default LogoTwo;
+export default Logo;

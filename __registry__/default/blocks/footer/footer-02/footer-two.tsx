@@ -25,7 +25,7 @@ const FooterLinkGroup = ({ title, links }: footerGroupProps) => (
   </div>
 );
 
-const FooterTwo = () => {
+const Footer = () => {
   const socialLinks = [
     { icon: <FacebookIcon />, href: "https://facebook.com", label: "Facebook" },
     {
@@ -117,7 +117,7 @@ const FooterTwo = () => {
   );
 };
 
-export default FooterTwo;
+export default Footer;
 
 export const InstagramIcon = () => (
   <svg

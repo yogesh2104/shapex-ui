@@ -30,7 +30,7 @@ const StatsGrid: React.FC<StatsGridProps> = ({ stats }) => (
 );
 
 
-const StatsThree = () => {
+const Stats = () => {
 
   const statsData: Stat[] = [
     { value: "200%",title: "More Speed",icon: <Database className="h-5 w-5 text-muted-foreground" />},
@@ -72,4 +72,4 @@ const StatsThree = () => {
   );
 };
 
-export default StatsThree;
+export default Stats;

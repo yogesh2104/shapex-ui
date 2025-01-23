@@ -28,7 +28,7 @@ const features: Feature[] = [
   },
 ];
 
-const FeatureTwo = () => {
+const Feature = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -151,4 +151,4 @@ const FeatureTwo = () => {
   );
 };
 
-export default FeatureTwo;
+export default Feature;

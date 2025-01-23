@@ -44,7 +44,7 @@ const emojiVariants = {
   },
 };
 
-const RatingTwo: React.FC<RatingProps> = ({ onChange, defaultValue = 0 }) => {
+const Rating: React.FC<RatingProps> = ({ onChange, defaultValue = 0 }) => {
   const [selected, setSelected] = useState(defaultValue);
   const [feedback, setFeedback] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -170,4 +170,4 @@ const RatingTwo: React.FC<RatingProps> = ({ onChange, defaultValue = 0 }) => {
   );
 };
 
-export default RatingTwo;
+export default Rating;

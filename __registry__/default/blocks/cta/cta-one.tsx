@@ -2,7 +2,7 @@ import { Button } from "@/registry/default/ui/button";
 import { Github } from "lucide-react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/registry/default/ui/card";
 
-const CallToActionOne = () => {
+const CallToAction = () => {
   return (
     <section id="community">
       <div className="container py-10">
@@ -29,5 +29,5 @@ const CallToActionOne = () => {
   );
 };
 
-export default CallToActionOne;
+export default CallToAction;
 

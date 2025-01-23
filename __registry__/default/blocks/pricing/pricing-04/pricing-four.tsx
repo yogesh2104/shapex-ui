@@ -96,7 +96,7 @@ const PricingCard = ({ tier }: { tier: PricingTier }) => {
   );
 };
 
-export const PricingFour = () => {
+export const Pricing = () => {
   return (
     <div className="container py-12">
       <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-2xl mx-auto">
@@ -117,4 +117,4 @@ export const PricingFour = () => {
   );
 };
 
-export default PricingFour;
+export default Pricing;

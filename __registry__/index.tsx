@@ -504,7 +504,7 @@ export const Index: Record<string, any> = {
       name: "blog-01",
       description: "Blog Grid View",
       type: "registry:block",
-      registryDependencies: ["button","badge","input","select"],
+      registryDependencies: ["button","badge","input","select","card"],
       files: [{
         path: "registry/default/blocks/blog/blog-01/blog-one.tsx",
         type: "registry:component",
@@ -1341,111 +1341,6 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/default/blocks/testimonial/testimonial-03/testimonial-three.tsx")),
       source: "__registry__/default/blocks/testimonial/testimonial-03/testimonial-three.tsx",
       meta: {"iframeHeight":"560px"},
-    },
-    "analytics": {
-      name: "analytics",
-      description: "Analytics dashboard",
-      type: "registry:block",
-      registryDependencies: [],
-      files: [{
-        path: "registry/default/blocks/analytics/page.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/analytics/components/app-sidebar.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/analytics/components/nav-main.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/analytics/components/nav-user.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/analytics/components/analytics-chart.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/analytics/components/customer-table.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/analytics/components/info-card.tsx",
-        type: "registry:component",
-        target: ""
-      }],
-      categories: ["analytics"],
-      component: React.lazy(() => import("@/registry/default/blocks/full-featured/analytics/page")),
-      source: "__registry__/default/blocks/analytics/page.tsx",
-      meta: {"iframeHeight":"820px"},
-    },
-    "e-commerce": {
-      name: "e-commerce",
-      description: "e-commerce page",
-      type: "registry:block",
-      registryDependencies: [],
-      files: [{
-        path: "registry/default/blocks/e-commerce/page.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/e-commerce/components/category-carousel.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/e-commerce/components/Ecommerce.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/e-commerce/components/hero-carousel.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/e-commerce/components/popular-product-card.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/e-commerce/components/product-card.tsx",
-        type: "registry:component",
-        target: ""
-      }],
-      categories: ["e-commerce"],
-      component: React.lazy(() => import("@/registry/default/blocks/full-featured/e-commerce/page")),
-      source: "__registry__/default/blocks/e-commerce/page.tsx",
-      meta: {"iframeHeight":"1100px"},
-    },
-    "file-management": {
-      name: "file-management",
-      description: "file-management page",
-      type: "registry:block",
-      registryDependencies: [],
-      files: [{
-        path: "registry/default/blocks/file-management/page.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/file-management/components/file-manager.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/file-management/components/file-table.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/default/blocks/file-management/hook/useFileManager.ts",
-        type: "registry:hook",
-        target: ""
-      },{
-        path: "registry/default/blocks/file-management/types/types.ts",
-        type: "registry:lib",
-        target: ""
-      }],
-      categories: ["file-manager"],
-      component: React.lazy(() => import("@/registry/default/blocks/full-featured/file-management/page")),
-      source: "__registry__/default/blocks/file-management/page.tsx",
-      meta: {"iframeHeight":"700px"},
     },
     "utils": {
       name: "utils",

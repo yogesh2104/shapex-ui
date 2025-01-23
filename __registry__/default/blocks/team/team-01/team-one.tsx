@@ -77,7 +77,7 @@ const teamMembers: TeamMember[] = [
   },
 ];
 
-const TeamOne = () => {
+const Team = () => {
   return (
     <div className=" w-full p-6 bg-gradient-to-t from-white via-blue-50 to-pink-600 flex items-center justify-center">
       <div className="p-2 bg-pink-300 rounded-3xl">
@@ -145,4 +145,4 @@ const TeamOne = () => {
   );
 };
 
-export default TeamOne;
+export default Team;

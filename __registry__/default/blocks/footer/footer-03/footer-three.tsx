@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Logo from "@/components/logo";
 
-const FooterThree = () => {
+const Footer = () => {
   return (
     <footer className=" py-16">
       <div className="container mx-auto px-4">
@@ -131,4 +131,4 @@ const FooterThree = () => {
   );
 };
 
-export default FooterThree;
+export default Footer;

@@ -39,7 +39,7 @@ const FAQ_SECTIONS = [
 ];
 
 
-const FAQThree: React.FC = () => {
+const FAQ: React.FC = () => {
   return (
     <section className="py-12 bg-gradient-to-b">
       <div className="container mx-auto px-4">
@@ -81,4 +81,4 @@ const FAQThree: React.FC = () => {
   );
 };
 
-export default FAQThree;
+export default FAQ;

@@ -66,29 +66,34 @@ const testimonials: Testimonial[] = [
   },
 ];
 
-const TestimonialTwo = () => {
+const Testimonial = () => {
   return (
-    <Carousel
-      className="relative w-full"
-      opts={{
-        align: "start",
-        loop: true,
-      }}
-      plugins={[
-        Autoplay({
-          delay: 5000,
-        }),
-      ]}
-    >
-      <CarouselContent>
-        {testimonials.map((testimonial, index) => (
-          <CarouselItem key={index} className="xl:basis-1/2">
-            <TestimonialCard {...testimonial} />
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-    </Carousel>
+    <div className="container mx-auto ">
+    <div className="min-h-screen w-full flex items-center justify-center">
+        <Carousel
+        className="relative w-full"
+        opts={{
+            align: "start",
+            loop: true,
+        }}
+        plugins={[
+            Autoplay({
+            delay: 5000,
+            }),
+        ]}
+        >
+        <CarouselContent>
+            {testimonials.map((testimonial, index) => (
+            <CarouselItem key={index} className="xl:basis-1/2">
+                <TestimonialCard {...testimonial} />
+            </CarouselItem>
+            ))}
+        </CarouselContent>
+        </Carousel>
+    </div>
+  </div>
+  
   );
 };
 
-export default TestimonialTwo;
+export default Testimonial;

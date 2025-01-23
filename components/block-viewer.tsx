@@ -135,7 +135,7 @@ function BlockViewerToolbar() {
           variant="ghost"
           size="sm"
             onClick={() => {
-              copyToClipboard(`npx shadcn add https://www.shapexui.site/r/styles/default/${item.name}.json`)
+              copyToClipboard(`npx shadcn add https://shapexui.site/r/styles/default/${item.name}.json`)
           }}
           className={cn(
             'h-[29px] border-[1px] rounded-lg bg-clip-text text-transparent dark:text-transparent animate-bg-shine bg-[length:250%_100%] shadow font-bold tracking-wide duration-2200',
@@ -144,7 +144,7 @@ function BlockViewerToolbar() {
             
           )}
         >{isCopied ? <Check className="text-white"/> : <Terminal className="text-white"/>}
-        <span className="hidden lg:inline">{`npx shadcn add https://www.shapexui.site/r/styles/default/${item.name}.json`}</span>
+        <span className="hidden lg:inline">{`npx shadcn add https://shapexui.site/r/styles/default/${item.name}.json`}</span>
         </Button>
         <div className="hidden h-7 items-center gap-1.5 rounded-md border p-[2px] shadow-none lg:flex">
           <ToggleGroup
@@ -198,7 +198,7 @@ function BlockViewerToolbar() {
           className="h-[22px] w-auto gap-1 rounded-sm px-2 md:flex lg:w-auto"
           size="sm"
           onClick={() => {
-            copyToClipboard(`npx shadcn add https://www.shapexui.site/r/styles/default/${item.name}.json`)
+            copyToClipboard(`npx shadcn add https://shapexui.site/r/styles/default/${item.name}.json`)
           }}
         >
           {isCopied ? <Check /> : <Terminal />}

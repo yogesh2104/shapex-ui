@@ -56,7 +56,7 @@ const teamMembers: TeamMember[] = [
   },
 ];
 
-const TeamTwo = () => {
+const Team = () => {
   return (
     <div className="">
       <div className="p-6 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
@@ -86,4 +86,4 @@ const TeamTwo = () => {
   );
 };
 
-export default TeamTwo;
+export default Team;

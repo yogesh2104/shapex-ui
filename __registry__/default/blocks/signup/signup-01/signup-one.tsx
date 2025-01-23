@@ -7,7 +7,7 @@ import { Input } from "@/registry/default/ui/input";
 import { Button } from "@/registry/default/ui/button";
 import { Card, CardContent } from "@/registry/default/ui/card";
 
-const SignUpOne = () => {
+const SignUp = () => {
   return (
     <section className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
@@ -142,4 +142,4 @@ const SignUpOne = () => {
   );
 };
 
-export default SignUpOne;
+export default SignUp;

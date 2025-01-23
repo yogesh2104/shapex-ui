@@ -203,7 +203,7 @@ const NavigationControls = ({
   </div>
 );
 
-const TestimonialThree = () => {
+const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
   const isMobile = useMediaQuery();
@@ -281,4 +281,4 @@ const TestimonialThree = () => {
   );
 };
 
-export default TestimonialThree;
+export default Testimonial;

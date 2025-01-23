@@ -75,7 +75,7 @@ const cardVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
-const RoadmapTwo = () => {
+const Roadmap = () => {
   return (
     <div className="container mx-auto px-4 py-16">
       <motion.div
@@ -157,4 +157,4 @@ const RoadmapTwo = () => {
   );
 };
 
-export default RoadmapTwo;
+export default Roadmap;

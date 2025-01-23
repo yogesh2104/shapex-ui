@@ -49,7 +49,7 @@ const people = [
   },
 ];
 
-const NewsletterTwo = () => {
+const Newsletter = () => {
   return (
     <section className="relative overflow-hidden bg-gray-50">
       <div className="absolute inset-0 opacity-40">
@@ -134,4 +134,4 @@ const NewsletterTwo = () => {
   );
 };
 
-export default NewsletterTwo;
+export default Newsletter;

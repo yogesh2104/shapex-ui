@@ -1,7 +1,7 @@
 import Marquee from "./marquee";
 import Image from "next/image";
 
-const LogoOne = () => {
+const Logo = () => {
   return (
     <section id="logos">
       <div className="container mx-auto px-4 py-12 md:px-8">
@@ -29,4 +29,4 @@ const LogoOne = () => {
   );
 };
 
-export default LogoOne;
+export default Logo;
