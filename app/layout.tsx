@@ -5,6 +5,7 @@ import { siteInfo } from "@/config/site-info"
 import Script from "next/script";
 import { cn } from "@/lib/utils";
 import { fontSans } from "@/components/font";
+import GoogleAdsense from "@/components/GoogleAdsense";
 
 export const metadata: Metadata = {
   title: {
@@ -104,6 +105,7 @@ export default function RootLayout({
             {/* <TailwindIndicator/> */}
           </ThemeProvider>
       </body>
+      <GoogleAdsense pId="7738541873171359" />
     </html>
   );
 }
