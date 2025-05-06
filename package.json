@@ -4,9 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"content-collections watch\" \"next dev\"",
     "development": "next dev",
-    "build": "pnpm build:registry && next build",
+    "build": "pnpm build:docs && pnpm build:registry && next build",
+    "build:docs": "content-collections build",
     "build:registry": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/build-registry.mts --log-level silent --write \"registry/**/*.{ts,tsx,jsx,mdx}\" --cache",
     "start": "next start",
     "lint": "next lint",
@@ -29,6 +30,7 @@
     "@radix-ui/react-scroll-area": "^1.2.2",
     "@radix-ui/react-select": "^2.1.4",
     "@radix-ui/react-separator": "^1.1.1",
+    "@radix-ui/react-slider": "^1.2.3",
     "@radix-ui/react-slot": "^1.1.1",
     "@radix-ui/react-switch": "^1.1.2",
     "@radix-ui/react-tabs": "^1.1.2",
@@ -41,6 +43,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
+    "concurrently": "^9.1.2",
     "cssnano": "^7.0.6",
     "date-fns": "^3.6.0",
     "embla-carousel-autoplay": "^8.5.1",
@@ -68,6 +71,9 @@
     "zustand": "^5.0.2"
   },
   "devDependencies": {
+    "@content-collections/core": "^0.8.0",
+    "@content-collections/mdx": "^0.2.0",
+    "@content-collections/next": "^0.2.4",
     "@eslint/eslintrc": "^3",
     "@types/node": "^20.8.9",
     "@types/react": "^19",

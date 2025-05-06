@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+import { withContentCollections } from "@content-collections/next";
+
 const nextConfig = {
   outputFileTracingIncludes: {
     "/blocks/*": ["./registry/**/*"],
@@ -18,4 +20,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default withContentCollections(nextConfig);

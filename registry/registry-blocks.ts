@@ -1103,31 +1103,31 @@ export const blocks: Registry = [
     registryDependencies: [],
     files: [
       {
-        path: "blocks/analytics/page.tsx",
+        path: "blocks/full-featured/analytics/page.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/analytics/components/app-sidebar.tsx",
+        path: "blocks/full-featured/analytics/components/app-sidebar.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/analytics/components/nav-main.tsx",
+        path: "blocks/full-featured/analytics/components/nav-main.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/analytics/components/nav-user.tsx",
+        path: "blocks/full-featured/analytics/components/nav-user.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/analytics/components/analytics-chart.tsx",
+        path: "blocks/full-featured/analytics/components/analytics-chart.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/analytics/components/customer-table.tsx",
+        path: "blocks/full-featured/analytics/components/customer-table.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/analytics/components/info-card.tsx",
+        path: "blocks/full-featured/analytics/components/info-card.tsx",
         type: "registry:component",
       },
     ],
@@ -1143,27 +1143,27 @@ export const blocks: Registry = [
     registryDependencies: [],
     files: [
       {
-        path: "blocks/e-commerce/page.tsx",
+        path: "blocks/full-featured/e-commerce/page.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/e-commerce/components/category-carousel.tsx",
+        path: "blocks/full-featured/e-commerce/components/category-carousel.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/e-commerce/components/Ecommerce.tsx",
+        path: "blocks/full-featured/e-commerce/components/Ecommerce.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/e-commerce/components/hero-carousel.tsx",
+        path: "blocks/full-featured/e-commerce/components/hero-carousel.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/e-commerce/components/popular-product-card.tsx",
+        path: "blocks/full-featured/e-commerce/components/popular-product-card.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/e-commerce/components/product-card.tsx",
+        path: "blocks/full-featured/e-commerce/components/product-card.tsx",
         type: "registry:component",
       }
     ],
@@ -1179,23 +1179,23 @@ export const blocks: Registry = [
     registryDependencies: [],
     files: [
       {
-        path: "blocks/file-management/page.tsx",
+        path: "blocks/full-featured/file-management/page.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/file-management/components/file-manager.tsx",
+        path: "blocks/full-featured/file-management/components/file-manager.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/file-management/components/file-table.tsx",
+        path: "blocks/full-featured/file-management/components/file-table.tsx",
         type: "registry:component",
       },
       {
-        path: "blocks/file-management/hook/useFileManager.ts",
+        path: "blocks/full-featured/file-management/hook/useFileManager.ts",
         type: "registry:hook",
       },
       {
-        path: "blocks/file-management/types/types.ts",
+        path: "blocks/full-featured/file-management/types/types.ts",
         type: "registry:lib",
       }
     ],

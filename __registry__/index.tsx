@@ -1342,6 +1342,111 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/blocks/testimonial/testimonial-03/testimonial-three.tsx",
       meta: {"iframeHeight":"560px"},
     },
+    "analytics": {
+      name: "analytics",
+      description: "Analytics dashboard",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/full-featured/analytics/page.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/analytics/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/analytics/components/nav-main.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/analytics/components/nav-user.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/analytics/components/analytics-chart.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/analytics/components/customer-table.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/analytics/components/info-card.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["analytics"],
+      component: React.lazy(() => import("@/registry/default/blocks/full-featured/analytics/page.tsx")),
+      source: "__registry__/default/blocks/full-featured/analytics/page.tsx",
+      meta: {"iframeHeight":"820px"},
+    },
+    "e-commerce": {
+      name: "e-commerce",
+      description: "e-commerce page",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/full-featured/e-commerce/page.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/e-commerce/components/category-carousel.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/e-commerce/components/Ecommerce.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/e-commerce/components/hero-carousel.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/e-commerce/components/popular-product-card.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/e-commerce/components/product-card.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["e-commerce"],
+      component: React.lazy(() => import("@/registry/default/blocks/full-featured/e-commerce/page.tsx")),
+      source: "__registry__/default/blocks/full-featured/e-commerce/page.tsx",
+      meta: {"iframeHeight":"1100px"},
+    },
+    "file-management": {
+      name: "file-management",
+      description: "file-management page",
+      type: "registry:block",
+      registryDependencies: [],
+      files: [{
+        path: "registry/default/blocks/full-featured/file-management/page.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/file-management/components/file-manager.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/file-management/components/file-table.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/file-management/hook/useFileManager.ts",
+        type: "registry:hook",
+        target: ""
+      },{
+        path: "registry/default/blocks/full-featured/file-management/types/types.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: ["file-manager"],
+      component: React.lazy(() => import("@/registry/default/blocks/full-featured/file-management/page.tsx")),
+      source: "__registry__/default/blocks/full-featured/file-management/page.tsx",
+      meta: {"iframeHeight":"700px"},
+    },
     "utils": {
       name: "utils",
       description: "",
