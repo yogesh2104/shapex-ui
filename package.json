@@ -71,6 +71,7 @@
     "zustand": "^5.0.2"
   },
   "devDependencies": {
+    "@content-collections/cli": "^0.1.6",
     "@content-collections/core": "^0.8.0",
     "@content-collections/mdx": "^0.2.0",
     "@content-collections/next": "^0.2.4",
