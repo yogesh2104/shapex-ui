@@ -1,3 +1,5 @@
+
+
 <div align="center">
   <a href="https://github.com/yogesh2104/shapex-ui/">
 
@@ -24,4 +26,10 @@ ShapeX-UI is a collection of reusable blocks designed to simplify the developmen
 
 [https://ui.shadcn.com](https://ui.shadcn.com) heavily inspires this library.
 
+## Installation
 
+To get started, install the dependencies and start the development server:
+```sh
+pnpm install
+pnpm dev
+```
